@@ -1,0 +1,225 @@
+0: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: FastICA(algorithm='deflation', fun='exp', n_components=18, random_state=42)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=30,
+                                                    max_features=0.7878280266467313,
+                                                    min_samples_leaf=19,
+                                                    min_samples_split=7,
+                                                    random_state=42),
+                   learning_rate=0.15872959376009388, n_estimators=34,
+                   random_state=42)
+) -> Fitness: 0.5982523542123757
+
+1: Pipeline(
+	0: StandardScaler()
+	1: FastICA(algorithm='deflation', fun='exp', n_components=18, random_state=42)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=79, random_state=42)
+) -> Fitness: 0.6011529577094386
+
+2: Pipeline(
+	0: MinMaxScaler()
+	1: FastICA(algorithm='deflation', n_components=41, random_state=42)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=2, min_samples_split=3, n_estimators=79,
+                     random_state=42)
+) -> Fitness: 0.6268769503244578
+
+3: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='cube', n_components=23, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=7,
+                                                    max_features=0.7779589165970229,
+                                                    min_samples_leaf=17,
+                                                    min_samples_split=8,
+                                                    random_state=42),
+                   learning_rate=0.14442568383694113, n_estimators=64,
+                   random_state=42)
+) -> Fitness: 0.5834584907299766
+
+4: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.021563819931899042)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=79, random_state=42)
+) -> Fitness: 0.6102506096070729
+
+5: Pipeline(
+	0: MinMaxScaler()
+	1: FastICA(algorithm='deflation', n_components=41, random_state=42)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=2, min_samples_split=3, n_estimators=79,
+                     random_state=42)
+) -> Fitness: 0.6268769503244578
+
+6: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.025313487718913938)
+	2: Balancing(strategy='weighting')
+	3: KNeighborsClassifier(n_neighbors=7)
+) -> Fitness: 0.5801726041791538
+
+7: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='exp', n_components=35, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=0.4346248632352681, class_weight='balanced', max_iter=1000,
+                   random_state=42, solver='newton-cg')
+) -> Fitness: 0.581417324131612
+
+8: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.021563819931899042)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=79, random_state=42)
+) -> Fitness: 0.6102506096070729
+
+9: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='cube', n_components=48, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='none')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   random_state=42, solver='newton-cg')
+) -> Fitness: 0.6034240315518125
+
+10: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: SelectFwe(alpha=0.021563819931899042)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=5, n_estimators=79, random_state=42)
+) -> Fitness: 0.6281955107921826
+
+11: Pipeline(
+	0: RobustScaler()
+	1: FastICA(algorithm='deflation', fun='exp', n_components=18, random_state=42)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=30,
+                                                    max_features=0.7878280266467313,
+                                                    min_samples_leaf=19,
+                                                    min_samples_split=7,
+                                                    random_state=42),
+                   learning_rate=0.15872959376009388, n_estimators=34,
+                   random_state=42)
+) -> Fitness: 0.5982523542123757
+
+12: Pipeline(
+	0: RobustScaler()
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=83, random_state=42)
+) -> Fitness: 0.6204684391271096
+
+13: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='exp', n_components=35, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   random_state=42, solver='newton-cg')
+) -> Fitness: 0.6034240315518125
+
+14: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='cube', n_components=48, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='none')
+	3: LogisticRegression(C=12.51826395528015, class_weight='balanced', max_iter=1000,
+                   random_state=42, solver='newton-cg')
+) -> Fitness: 0.6047429066966638
+
+15: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.021563819931899042)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=5, n_estimators=79, random_state=42)
+) -> Fitness: 0.6281955107921826
+
+16: Pipeline(
+	0: MinMaxScaler()
+	1: FastICA(algorithm='deflation', n_components=41, random_state=42)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=2, min_samples_split=3, n_estimators=79,
+                     random_state=42)
+) -> Fitness: 0.6268769503244578
+
+17: Pipeline(
+	0: RobustScaler()
+	1: SelectFwe(alpha=0.0010735211029382055)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=5, n_estimators=79, random_state=42)
+) -> Fitness: 0.6281955107921826
+
+18: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectFwe(alpha=0.04969773873217073)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=2, min_samples_split=5, n_estimators=10,
+                     random_state=42)
+) -> Fitness: 0.6024917641480416
+
+19: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.035859351083120744)
+	2: Balancing(strategy='weighting')
+	3: GaussianNB(var_smoothing=0.008227178300676674)
+) -> Fitness: 0.5661979357459277
+
+Ensemble fitness: 0.6271791536219118
+Weights: [0.9523346536780448, 0.9569520115662046, 0.9979010348767662, 0.9287848778069256, 0.9714342097693751, 0.9979010348767662, 0.9235542028110488, 0.9255356240900524, 0.9714342097693751, 0.9605672456825866, 1.0, 0.9523346536780448, 0.9876995751604005, 0.9605672456825866, 0.9626667117280987, 1.0, 0.9979010348767662, 1.0, 0.9590832054630135, 0.9013084716761615]
+Prediction: [6 0 5 7 5 0 0 3 0 0 0 7 6 7 5 6 0 0 7 6 0 0 0 9 0 6 3 3 5 6 0 0 0 5 0 5 2
+ 0 0 0 7 0 6 0 7 6 0 7 3 0 7 0 7 0 3 0 0 6 0 7 3 0 6 1 3 7 0 0 0 6 0 0 6 6
+ 7 9 6 4 6 4 7 5 7 6 0 0 7 3 0 7 5 5 0 0 7 7 5 5 4 9 3 0 6 9 5 0 5 7 7 0 0
+ 3 6 6 5 6 6 2 0 6 7 7 6 6 6 5 6 6 0 6 6 7 0 9 6 0 0 7 7 7 5 7 6 5 0 3 0 7
+ 5 6 0 7 6 7 8 4 0 7 4 5 6 5 5 0 6 7 0 0 7 6 7 0 9 5 0 6 5 7 0 0 0 0 0 0 1
+ 5 7 0 0 6 6 5 9 0 6 9 0 6 3 9 6 7 5 6 0 7 5 0 0 0 7 6 0 7 0 5 4 0 0 0 7 0
+ 0 5 7 6 6 4 7 7 5 6 0 6 7 7 6 0 7 5 6 6 4 7 6 7 6 2 0 0 0 0 0 7 0 6 5 0 7
+ 6 0 6 2 6 7 0 0 7 5 6 0 0 7 7 7 3 0 6 5 0 7 7 7 3 6 7 5 0 7 7 6 7 4 7 7 7
+ 3 6 6 7 7 0 0 8 3 0 0 2 0 5 0 7 5 0 0 7 6 5 7 9 7 0 7 6 7 5 0 5 7 7 7 7 7
+ 0 6 6 5 0 7 6 7 0 5 7 5 5 5 5 0 0 0 5 6 0 7 0 0 0 6 6 7 0 7 0 6 5 7 7 4 7
+ 6 6 7 0 5 6 7 7 4 9 5 6 6 0 6 5 0 6 3 9 4 7 6 0 6 5 6 7 0 7 0 0 6 0 5 6 3
+ 7 3 7 0 7 7 0 0 5 6 0 7 0 7 4 0 5 0 7 1 5 0 7 7 5 5 7 7 6 7 7 5 7 6 3 7 0
+ 0 7 7 6 7 5 4 7 9 8 0 7 0 7 0 7 0 0 3 0 0 8 6 0 3 0 6 0 0 5 0 7 1 0 0 0 0
+ 7 4 0 7 6 0 5 0 0 7 7 4 3 5 7 0 7 5 0 0 6 0 6 2 7 6 7 1 4 7 5 0 0 6 5 6 0
+ 7 6 7 6 8 0 8 7 0 5 7 7 7 6 0 6 0 5 5 7 0 2 6 6 5 4 7 4 0 6 0 7 8 5 6 8 0
+ 7 0 7 0 6 5 9 2 7 5 5 6 6 2 6 6 4 7 7 0 7 7 5 5 0 6 3 7 7 7 6 0 5 2 5 0 4
+ 5 7 7 7 9 7 0 7 6 0 0 0 5 7 7 6 0 9 0 7 3 5 5 5 0 0 7 2 7 7 1 0 0 0 7 1 0
+ 1 0 7 0 0 5 7 0 7 6 5 0 7 7 5 7 8 4 6 7 5 4 0 8 4 3 5 5 9 0 7 6 0 6 0 7 2
+ 6 0 6 7 7 0 7 7 7 7 6 6 5 7 0 0 7 6 4 7 0 6 0 7 0 0 6 0 7 7 6 7 7 7 2 0 7
+ 7 5 6 7 7 7 6 0 5 0 7 5 7 7 2 0 7 6 0 6 6 2 7 7 6 0 3 7 7 5 7 7 5 0 7 0 7
+ 6 7 0 7 0 8 4 7 0 7 1 5 7 9 7 5 7 0 7 7 5 9 7 5 7 0 7 5 4 5 7 5 3 6 7 5 0
+ 0 6 7 6 0 5 5 7 5 7 3 5 5 6 0 7 7 7 6 7 7 0 7 0 0 6 0 0 4 6 4 6 7 5 7 0 4
+ 8 5 7 0 7 5 0 7 5 2 7 6 7 6 4 0 6 0 5 0 0 8 4 5 4 6 2 7 5 7 0 5 6 0 5 0 6
+ 7 6 0 5 5 7 8 3 0 6 0 6 0 0 5 0 0 7 7 7 0 6 7 0 7 0 0 8 5 2 6 4 7 7 9 2 7
+ 0 0 0 4 0 0 5 7 7 8 0 0 7 7 4 6 7 4 6 6 6 7 7 0 2 7 0 2 6 0 3 0 7 0 0 7 6
+ 0 0 0 6 0 7 0 7 7 6 2 0 0 5 0 5 7 0 6 7 4 0 4 7 6 5 5 4 0 6 7 5 0 0 0 6 0
+ 7 0 4 7 0 0 7 0 6 6 7 7 6 5 7 7 7 0 0 0 7 0 0 7 7 6 7 0 1 4 5 6 4]

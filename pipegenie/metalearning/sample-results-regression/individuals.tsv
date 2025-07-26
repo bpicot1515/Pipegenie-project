@@ -1,0 +1,251 @@
+pipeline	fitness	fit_time
+simpleImputer('most_frequent');robustScaler(True,True);adaBoost(decisionTree('squared_error',3,4,0.000553416931564521,19),69,1.829981687197106,'SAMME.R')	57.082917322921766	1.0585906505584717
+simpleImputer('most_frequent');robustScaler(False,True);adaBoost(decisionTree('friedman_mse',17,12,0.2767643366554816,10),46,0.6238536068448053,'SAMME')	53.78871963976735	1.2065000534057617
+simpleImputer('median');robustScaler(False,True);adaBoost(decisionTree('poisson',28,7,0.19809967506781356,16),46,1.0568288122792593,'SAMME')	55.430619864814275	1.406609058380127
+simpleImputer('mean');robustScaler(False,False);extraTreesRegressor(79,'absolute_error','log2',2,19,False)	59.97512424512786	1.6230432987213135
+simpleImputer('most_frequent');robustScaler(True,False);adaBoost(decisionTree('squared_error',29,11,0.20496012027737498,8),63,1.6601910442079952,'SAMME')	54.44464690421798	1.795823097229004
+simpleImputer('mean');standardScaler();adaBoost(decisionTree('absolute_error',20,2,0.6413495058866878,15),18,0.14245537866895078,'SAMME')	55.8466214978062	1.1598219871520996
+simpleImputer('most_frequent');robustScaler(True,False);extraTreesRegressor(16,'squared_error','sqrt',8,11,True)	61.04754427037399	0.9354941844940186
+simpleImputer('most_frequent');robustScaler(False,False);adaBoost(decisionTree('poisson',30,14,0.2112333379462924,18),52,0.09695738383932617,'SAMME')	55.51656387720633	1.1357824802398682
+simpleImputer('mean');robustScaler(False,True);adaBoost(decisionTree('absolute_error',14,5,0.851334392030985,13),41,0.18708462464573444,'SAMME')	54.395676666232234	1.9838025569915771
+simpleImputer('mean');minMaxScaler();adaBoost(decisionTree('absolute_error',22,9,0.5660264621497448,3),64,1.0446839086532345,'SAMME.R')	55.040974660352504	2.275759696960449
+simpleImputer('most_frequent');robustScaler(False,False);adaBoost(decisionTree('poisson',0,3,0.7429502213593779,7),48,1.428378137416252,'SAMME')	eval_error (The 'max_depth' parameter of DecisionTreeRegressor must be an int in the range [1, inf) or None. Got 0 instead.)	eval_error (The 'max_depth' parameter of DecisionTreeRegressor must be an int in the range [1, inf) or None. Got 0 instead.)
+simpleImputer('median');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',30,20,0.08488684811401703,12),43,1.6571451794785736,'SAMME')	56.787168384571075	1.1906566619873047
+simpleImputer('most_frequent');robustScaler(True,True);adaBoost(decisionTree('squared_error',27,13,0.10996591198471228,19),56,0.6508057086256043,'SAMME')	56.54159251240262	1.3366081714630127
+simpleImputer('mean');standardScaler();linearRegression()	52.39623415245512	1.1004211902618408
+simpleImputer('most_frequent');robustScaler(True,False);adaBoost(decisionTree('squared_error',27,20,0.6990421806622599,18),31,0.36327390998018494,'SAMME')	55.46857732465567	1.4460201263427734
+simpleImputer('median');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',16,5,0.7494327730839536,7),68,0.5848933498826885,'SAMME.R')	54.98338904043608	1.5012571811676025
+mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	52.129059162029215	1.0669307708740234
+simpleImputer('mean');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',20,18,0.9244835271003488,13),74,0.19186570140109374,'SAMME')	53.990079074641145	1.6623048782348633
+minMaxScaler();linearRegression()	52.39623415245512	0.7658929824829102
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	0.9601829051971436
+simpleImputer('mean');robustScaler(False,False);adaBoost(decisionTree('squared_error',23,19,0.2960103429555011,4),18,0.5953755990083385,'SAMME.R')	56.012079015401774	1.0011131763458252
+simpleImputer('most_frequent');robustScaler(True,False);adaBoost(decisionTree('absolute_error',17,4,0.9412873808373797,1),84,1.977723791667423,'SAMME')	55.88679827580614	3.3828883171081543
+simpleImputer('most_frequent');robustScaler(False,True);adaBoost(decisionTree('friedman_mse',13,18,0.6741627277942797,18),79,0.5002223650442716,'SAMME')	54.208599812805254	1.5443971157073975
+simpleImputer('median');robustScaler(True,True);adaBoost(decisionTree('absolute_error',16,19,0.974185558804758,13),80,1.1371648790990094,'SAMME.R')	55.41442827745573	2.8844399452209473
+simpleImputer('median');minMaxScaler();linearRegression()	52.39623415245512	1.1336534023284912
+simpleImputer('most_frequent');robustScaler(True,True);adaBoost(decisionTree('poisson',28,8,0.14599782714709053,17),62,0.05281345883184188,'SAMME.R')	57.432277659114575	1.4777286052703857
+simpleImputer('mean');robustScaler(True,False);adaBoost(decisionTree('friedman_mse',0,17,0.8667434316689449,14),33,0.06586137864065658,'SAMME')	eval_error (The 'max_depth' parameter of DecisionTreeRegressor must be an int in the range [1, inf) or None. Got 0 instead.)	eval_error (The 'max_depth' parameter of DecisionTreeRegressor must be an int in the range [1, inf) or None. Got 0 instead.)
+simpleImputer('most_frequent');robustScaler(False,True);adaBoost(decisionTree('poisson',2,15,0.14878417761000196,4),92,0.7520087849675532,'SAMME.R')	58.17649027185381	1.3236851692199707
+selectPercentile(27.459461870759352);fastICA(75,'parallel','unit-variance','cube');kNN(20,'uniform',2)	56.259739842092664	1.759984016418457
+simpleImputer('mean');standardScaler();linearRegression()	52.39623415245512	1.885026454925537
+simpleImputer('median');minMaxScaler();adaBoost(decisionTree('squared_error',28,13,0.6712368520447348,15),26,0.2450187831703362,'SAMME.R')	54.85167395817766	2.2854979038238525
+simpleImputer('median');standardScaler();randomForest(30,'absolute_error',0.6300150872131514,8,7,False)	56.27108860600671	3.04683518409729
+simpleImputer('most_frequent');robustScaler(False,False);adaBoost(decisionTree('absolute_error',29,3,0.16778958063636207,4),74,0.16127135432748024,'SAMME.R')	55.70956390288401	4.232277154922485
+simpleImputer('most_frequent');robustScaler(True,True);adaBoost(decisionTree('absolute_error',29,20,0.23756713552221476,1),84,0.07001297015207358,'SAMME.R')	55.121265748276116	5.574275970458984
+simpleImputer('mean');robustScaler(True,True);mlpRegressor((100, 16),0.04071705003690201,0.666920869816683,'sgd','identity')	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)
+simpleImputer('most_frequent');robustScaler(False,False);adaBoost(decisionTree('squared_error',21,3,0.13524191875341496,12),18,1.8931891688746314,'SAMME')	57.42003549638948	2.824195623397827
+maxAbsScaler();minMaxScaler();linearRegression()	52.39623415245512	1.7341487407684326
+simpleImputer('median');robustScaler(True,False);adaBoost(decisionTree('poisson',14,9,0.13198322568916676,8),94,1.9067419485753185,'SAMME')	56.37934941321227	2.53350567817688
+simpleImputer('median');robustScaler(False,True);adaBoost(decisionTree('poisson',7,20,0.8397666317730873,4),47,0.08685698649144591,'SAMME')	55.61334946314021	2.190352201461792
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	1.3587646484375
+simpleImputer('most_frequent');robustScaler(False,False);randomForest(77,'poisson',0.7180506478338041,2,10,False)	57.27562657372406	1.8978626728057861
+simpleImputer('median');standardScaler();adaBoost(decisionTree('absolute_error',0,4,0.13318339392371048,1),74,0.10772533865076762,'SAMME')	eval_error (The 'max_depth' parameter of DecisionTreeRegressor must be an int in the range [1, inf) or None. Got 0 instead.)	eval_error (The 'max_depth' parameter of DecisionTreeRegressor must be an int in the range [1, inf) or None. Got 0 instead.)
+simpleImputer('median');standardScaler();extraTreesRegressor(16,'absolute_error','sqrt',16,14,True)	60.13145984910898	1.6201720237731934
+simpleImputer('most_frequent');minMaxScaler();extraTreesRegressor(61,'squared_error','log2',5,1,False)	54.66673192081894	2.443260669708252
+simpleImputer('median');minMaxScaler();kNN(25,'distance',2)	55.72707811585134	1.6455984115600586
+simpleImputer('median');robustScaler(True,False);adaBoost(decisionTree('friedman_mse',17,2,0.13310441182419475,7),21,0.06290159679899636,'SAMME.R')	58.75154049512323	1.733140230178833
+simpleImputer('mean');robustScaler(True,True);adaBoost(decisionTree('poisson',16,3,0.9871476010172956,6),97,1.640834672629509,'SAMME.R')	55.24733672472487	2.2765305042266846
+simpleImputer('median');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'adam','identity')	52.7243869197474	1.596830129623413
+simpleImputer('mean');robustScaler(False,True);adaBoost(decisionTree('squared_error',19,4,0.613273956231107,14),62,0.9168619536115855,'SAMME.R')	54.362328022886025	1.7172133922576904
+simpleImputer('mean');robustScaler(False,True);adaBoost(decisionTree('absolute_error',11,10,0.201987052861193,13),82,0.23189771444591575,'SAMME.R')	53.64178153248012	2.298539876937866
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('most_frequent');robustScaler(True,True);adaBoost(decisionTree('absolute_error',29,20,0.23756713552221476,1),84,0.07001297015207358,'SAMME.R')	55.121265748276116	cached
+simpleImputer('median');robustScaler(True,False);adaBoost(decisionTree('friedman_mse',17,2,0.13310441182419475,7),21,0.06290159679899636,'SAMME.R')	58.75154049512323	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('mean');robustScaler(True,False);adaBoost(decisionTree('friedman_mse',0,17,0.7071027443932759,14),33,0.06586137864065658,'SAMME')	eval_error (The 'max_depth' parameter of DecisionTreeRegressor must be an int in the range [1, inf) or None. Got 0 instead.)	eval_error (The 'max_depth' parameter of DecisionTreeRegressor must be an int in the range [1, inf) or None. Got 0 instead.)
+simpleImputer('mean');standardScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('most_frequent');robustScaler(True,False);adaBoost(decisionTree('squared_error',27,20,0.6990421806622599,18),31,0.36327390998018494,'SAMME')	55.46857732465567	cached
+simpleImputer('median');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',16,5,0.7494327730839536,7),68,0.5848933498826885,'SAMME.R')	54.98338904043608	cached
+simpleImputer('median');minMaxScaler();adaBoost(decisionTree('squared_error',28,13,0.6712368520447348,15),26,0.2450187831703362,'SAMME.R')	54.85167395817766	cached
+simpleImputer('most_frequent');robustScaler(True,False);adaBoost(decisionTree('squared_error',29,11,0.20496012027737498,8),63,1.6601910442079952,'SAMME')	54.44464690421798	cached
+simpleImputer('median');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',16,5,0.7494327730839536,7),68,0.5848933498826885,'SAMME.R')	54.98338904043608	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	1.4601147174835205
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	1.4950075149536133
+simpleImputer('median');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'adam','identity')	52.7243869197474	1.9921050071716309
+simpleImputer('most_frequent');minMaxScaler();extraTreesRegressor(38,'squared_error','log2',5,1,False)	54.94631962251875	2.0927093029022217
+simpleImputer('most_frequent');robustScaler(True,True);extraTreesRegressor(61,'squared_error','log2',5,1,False)	54.66673192081894	2.6600401401519775
+simpleImputer('mean');maxAbsScaler();mlpRegressor((100, 16),0.04071705003690201,0.19279112703175058,'adam','identity')	53.51269102767253	4.78287935256958
+simpleImputer('most_frequent');robustScaler(True,False);adaBoost(decisionTree('poisson',30,20,0.6990421806622599,18),52,0.09695738383932617,'SAMME')	54.36352345982648	2.890636920928955
+simpleImputer('median');robustScaler(False,True);adaBoost(decisionTree('poisson',30,10,0.4057943947760221,13),52,0.09695738383932617,'SAMME')	55.132965282429595	2.582582712173462
+simpleImputer('median');robustScaler(False,True);mlpRegressor((49, 17),0.046130855479855445,0.666920869816683,'adam','identity')	200.582876095963	2.1174209117889404
+simpleImputer('mean');minMaxScaler();adaBoost(decisionTree('absolute_error',22,9,0.5660264621497448,3),64,1.0446839086532345,'SAMME.R')	55.040974660352504	5.510380983352661
+simpleImputer('median');minMaxScaler();linearRegression()	52.39623415245512	1.5842270851135254
+simpleImputer('most_frequent');robustScaler(False,False);adaBoost(decisionTree('absolute_error',23,14,0.4751735633956178,8),31,0.36327390998018494,'SAMME')	54.30509570168108	3.813612699508667
+simpleImputer('mean');minMaxScaler();mlpRegressor((100, 16),0.04071705003690201,0.666920869816683,'sgd','identity')	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)
+simpleImputer('mean');standardScaler();adaBoost(decisionTree('squared_error',5,18,0.6528263439725023,18),47,0.08685698649144591,'SAMME')	54.78021097623266	3.196906089782715
+simpleImputer('median');robustScaler(True,True);adaBoost(decisionTree('absolute_error',16,19,0.974185558804758,13),80,1.1371648790990094,'SAMME.R')	55.41442827745573	cached
+simpleImputer('median');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',16,5,0.7494327730839536,7),68,0.5848933498826885,'SAMME.R')	54.98338904043608	cached
+simpleImputer('most_frequent');robustScaler(False,False);adaBoost(decisionTree('absolute_error',11,14,0.201987052861193,18),82,0.23189771444591575,'SAMME.R')	54.094526692294096	4.911713600158691
+simpleImputer('most_frequent');robustScaler(False,True);linearRegression()	52.39623415245512	2.121215343475342
+simpleImputer('mean');robustScaler(True,True);mlpRegressor((100, 16),0.04071705003690201,0.666920869816683,'adam','identity')	335.94344876530744	3.5504865646362305
+simpleImputer('median');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'adam','identity')	52.7243869197474	cached
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	2.458371162414551
+simpleImputer('mean');robustScaler(False,True);adaBoost(decisionTree('squared_error',19,4,0.613273956231107,14),62,0.9168619536115855,'SAMME.R')	54.362328022886025	3.925414562225342
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+simpleImputer('most_frequent');robustScaler(True,False);adaBoost(decisionTree('squared_error',27,20,0.6990421806622599,18),31,0.36327390998018494,'SAMME')	55.46857732465567	cached
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	0.9934744834899902
+simpleImputer('median');robustScaler(False,True);linearRegression()	52.39623415245512	1.5584959983825684
+mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	52.129059162029215	2.0506250858306885
+minMaxScaler();adaBoost(decisionTree('friedman_mse',13,18,0.6741627277942797,18),79,0.5002223650442716,'SAMME')	54.96936056470143	2.634265184402466
+simpleImputer('median');robustScaler(True,True);linearRegression()	52.39623415245512	2.43601655960083
+simpleImputer('median');robustScaler(False,True);adaBoost(decisionTree('absolute_error',7,20,0.8397666317730873,4),74,0.10772533865076762,'SAMME')	54.29710229266484	5.894311428070068
+simpleImputer('most_frequent');minMaxScaler();adaBoost(decisionTree('friedman_mse',17,12,0.2767643366554816,10),46,0.6238536068448053,'SAMME')	54.58503348486789	2.9638795852661133
+simpleImputer('median');robustScaler(True,True);linearRegression()	52.39623415245512	1.1873135566711426
+simpleImputer('median');robustScaler(True,False);adaBoost(decisionTree('poisson',14,9,0.13198322568916676,8),94,1.9067419485753185,'SAMME')	56.37934941321227	4.237807273864746
+selectPercentile(27.459461870759352);fastICA(75,'parallel','unit-variance','cube');adaBoost(decisionTree('squared_error',28,13,0.6712368520447348,15),26,0.2450187831703362,'SAMME.R')	54.99368812791745	2.3484973907470703
+maxAbsScaler();minMaxScaler();mlpRegressor((100, 16),0.04071705003690201,0.666920869816683,'sgd','identity')	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)
+simpleImputer('mean');minMaxScaler();adaBoost(decisionTree('poisson',16,3,0.9871476010172956,6),97,1.640834672629509,'SAMME.R')	55.87552233286597	3.167177438735962
+simpleImputer('median');minMaxScaler();kNN(20,'uniform',2)	56.15014552413517	2.1344263553619385
+minMaxScaler();adaBoost(decisionTree('absolute_error',16,19,0.974185558804758,13),80,1.1371648790990094,'SAMME.R')	55.75425687252077	4.723765134811401
+simpleImputer('most_frequent');robustScaler(False,True);linearRegression()	52.39623415245512	cached
+minMaxScaler();linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	2.435405731201172
+minMaxScaler();linearRegression()	52.39623415245512	2.5442559719085693
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	2.4106485843658447
+simpleImputer('most_frequent');robustScaler(True,True);linearRegression()	52.39623415245512	3.1296181678771973
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	2.260222911834717
+simpleImputer('median');robustScaler(False,True);linearRegression()	52.39623415245512	cached
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+simpleImputer('most_frequent');robustScaler(False,True);extraTreesRegressor(61,'squared_error','log2',5,1,False)	54.66673192081894	3.294173240661621
+simpleImputer('most_frequent');robustScaler(True,True);adaBoost(decisionTree('absolute_error',29,20,0.23756713552221476,1),84,0.07001297015207358,'SAMME.R')	55.121265748276116	cached
+simpleImputer('median');minMaxScaler();adaBoost(decisionTree('squared_error',5,3,0.23457854593751848,11),37,0.28014114188442957,'SAMME')	54.797626619061454	3.3588180541992188
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('mean');minMaxScaler();adaBoost(decisionTree('absolute_error',22,9,0.5660264621497448,3),64,1.0446839086532345,'SAMME.R')	55.040974660352504	cached
+simpleImputer('most_frequent');robustScaler(False,False);adaBoost(decisionTree('poisson',12,3,0.26091633097223665,19),31,0.36327390998018494,'SAMME')	55.59493391212025	4.159519672393799
+simpleImputer('mean');standardScaler();adaBoost(decisionTree('squared_error',5,18,0.6528263439725023,18),47,0.08685698649144591,'SAMME')	54.78021097623266	cached
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	cached
+simpleImputer('median');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'adam','identity')	52.7243869197474	2.5007920265197754
+simpleImputer('most_frequent');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'lbfgs','identity')	52.395410645595994	7.8531880378723145
+simpleImputer('median');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',16,5,0.7494327730839536,7),68,0.5848933498826885,'SAMME.R')	54.98338904043608	cached
+simpleImputer('median');minMaxScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('median');minMaxScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	2.574645519256592
+simpleImputer('most_frequent');robustScaler(True,True);linearRegression()	52.39623415245512	2.2414181232452393
+simpleImputer('most_frequent');maxAbsScaler();extraTreesRegressor(61,'squared_error','log2',5,1,False)	54.66673192081894	3.08123779296875
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	2.675806999206543
+simpleImputer('mean');robustScaler(False,True);linearRegression()	52.39623415245512	2.5259978771209717
+simpleImputer('median');robustScaler(True,True);linearRegression()	52.39623415245512	3.0252106189727783
+simpleImputer('most_frequent');robustScaler(True,True);linearRegression()	52.39623415245512	2.5012102127075195
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+simpleImputer('mean');minMaxScaler();adaBoost(decisionTree('poisson',16,3,0.9871476010172956,6),97,1.640834672629509,'SAMME.R')	55.87552233286597	6.703994035720825
+simpleImputer('most_frequent');minMaxScaler();extraTreesRegressor(38,'squared_error','log2',5,1,False)	54.94631962251875	3.199769973754883
+varianceThreshold();fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.39623415245511	3.4655892848968506
+minMaxScaler();adaBoost(decisionTree('absolute_error',15,11,0.5665976434932914,17),79,0.5002223650442716,'SAMME')	53.352293009278085	5.690994501113892
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	1.5198562145233154
+simpleImputer('mean');robustScaler(True,True);adaBoost(decisionTree('absolute_error',22,9,0.7284412885640137,12),47,0.08685698649144591,'SAMME.R')	55.40024074892309	5.254420757293701
+maxAbsScaler();minMaxScaler();linearRegression()	52.39623415245512	2.206759214401245
+simpleImputer('median');robustScaler(True,True);linearRegression()	52.39623415245512	1.5430989265441895
+selectPercentile(27.459461870759352);fastICA(75,'deflation','unit-variance','cube');adaBoost(decisionTree('squared_error',28,13,0.6712368520447348,15),26,0.2450187831703362,'SAMME.R')	55.99958455287477	2.187443733215332
+simpleImputer('median');robustScaler(False,True);linearRegression()	52.39623415245512	1.1755332946777344
+simpleImputer('mean');maxAbsScaler();mlpRegressor((100, 16),0.04071705003690201,0.19279112703175058,'adam','identity')	53.51269102767253	cached
+simpleImputer('median');robustScaler(False,True);linearRegression()	52.39623415245512	1.4847908020019531
+simpleImputer('mean');standardScaler();adaBoost(decisionTree('squared_error',29,18,0.20496012027737498,8),63,1.6601910442079952,'SAMME')	53.9171119827015	1.8508458137512207
+simpleImputer('mean');minMaxScaler();adaBoost(decisionTree('absolute_error',22,9,0.5660264621497448,3),64,1.0446839086532345,'SAMME.R')	55.040974660352504	3.6312453746795654
+simpleImputer('most_frequent');robustScaler(True,False);adaBoost(decisionTree('squared_error',29,11,0.20496012027737498,8),63,1.6601910442079952,'SAMME')	54.44464690421798	2.8909125328063965
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(False,True);linearRegression()	52.39623415245512	2.1243791580200195
+minMaxScaler();adaBoost(decisionTree('friedman_mse',13,18,0.6741627277942797,18),79,0.5002223650442716,'SAMME.R')	54.96936056470143	2.4151957035064697
+simpleImputer('most_frequent');robustScaler(False,False);adaBoost(decisionTree('poisson',2,10,0.8744886185738543,17),31,0.36327390998018494,'SAMME')	56.27942252291982	1.1904990673065186
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(False,True);linearRegression()	52.39623415245512	cached
+simpleImputer('mean');robustScaler(False,True);linearRegression()	52.39623415245512	1.0191872119903564
+simpleImputer('mean');robustScaler(False,True);linearRegression()	52.39623415245512	1.1711034774780273
+simpleImputer('median');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',30,16,0.22192679638852653,11),26,1.153819363948192,'SAMME.R')	55.16872380359589	1.6675503253936768
+simpleImputer('median');robustScaler(False,True);linearRegression()	52.39623415245512	1.5139095783233643
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(False,True);linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.39623415245511	1.9503886699676514
+simpleImputer('most_frequent');robustScaler(False,True);linearRegression()	52.39623415245512	1.5116610527038574
+simpleImputer('median');robustScaler(False,True);linearRegression()	52.39623415245512	1.2781481742858887
+minMaxScaler();adaBoost(decisionTree('friedman_mse',9,18,0.6741627277942797,18),79,0.5002223650442716,'SAMME.R')	54.918761851986076	2.4070425033569336
+mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	52.129059162029215	1.690485954284668
+simpleImputer('most_frequent');robustScaler(True,True);linearRegression()	52.39623415245512	1.210170030593872
+simpleImputer('most_frequent');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'lbfgs','identity')	52.395410645595994	2.7725863456726074
+simpleImputer('mean');maxAbsScaler();extraTreesRegressor(61,'squared_error','log2',5,1,False)	54.66673192081894	1.8541254997253418
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	cached
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	1.2409446239471436
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	1.4160575866699219
+simpleImputer('median');robustScaler(False,True);linearRegression()	52.39623415245512	1.1548211574554443
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	1.2498347759246826
+simpleImputer('most_frequent');robustScaler(True,True);linearRegression()	52.39623415245512	cached
+simpleImputer('median');minMaxScaler();linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+simpleImputer('median');maxAbsScaler();linearRegression()	52.39623415245512	1.5332751274108887
+simpleImputer('mean');standardScaler();linearRegression()	52.39623415245512	1.2016749382019043
+simpleImputer('median');robustScaler(True,True);linearRegression()	52.39623415245512	1.167715072631836
+selectPercentile(50.371504568958436);fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(False,True);linearRegression()	52.99808869626594	1.7094449996948242
+simpleImputer('median');minMaxScaler();linearRegression()	52.39623415245512	0.7306571006774902
+minMaxScaler();linearRegression()	52.39623415245512	0.9295687675476074
+simpleImputer('median');minMaxScaler();randomForest(26,'absolute_error','log2',14,10,True)	55.90067212240471	1.4731667041778564
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	1.3028991222381592
+simpleImputer('most_frequent');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'lbfgs','identity')	52.395410645595994	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+simpleImputer('most_frequent');robustScaler(True,True);linearRegression()	52.39623415245512	cached
+simpleImputer('most_frequent');robustScaler(False,True);linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.39623415245511	1.514631748199463
+simpleImputer('most_frequent');robustScaler(True,True);linearRegression()	52.39623415245512	1.2511205673217773
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);extraTreesRegressor(61,'squared_error','log2',5,1,False)	57.12284918223743	2.036566734313965
+simpleImputer('median');minMaxScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'lbfgs','identity')	52.39616891824407	3.323326587677002
+mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	52.129059162029215	1.4865138530731201
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'adam','identity')	54.20366394624714	1.6113431453704834
+simpleImputer('median');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'lbfgs','identity')	52.395410645595994	1.377115249633789
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	1.2047693729400635
+simpleImputer('median');maxAbsScaler();linearRegression()	52.39623415245512	0.7576489448547363
+simpleImputer('most_frequent');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'adam','identity')	52.7243869197474	1.0278277397155762
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(False,True);linearRegression()	52.39623415245512	cached
+simpleImputer('mean');robustScaler(False,True);linearRegression()	52.39623415245512	cached
+simpleImputer('mean');standardScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	cached
+simpleImputer('median');maxAbsScaler();linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	52.129059162029215	cached
+mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	52.129059162029215	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	cached
+simpleImputer('median');maxAbsScaler();linearRegression()	52.39623415245512	cached
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');pca(0.6883373037018916,True);robustScaler(True,True);linearRegression()	62.038428032161406	1.4921705722808838
+simpleImputer('most_frequent');robustScaler(True,True);mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	53.29548359424181	1.5380134582519531
+varianceThreshold();fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(True,False);linearRegression()	52.39623415245512	2.1464617252349854
+simpleImputer('median');maxAbsScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('most_frequent');robustScaler(False,True);mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'lbfgs','identity')	52.396189841007676	1.8816924095153809
+simpleImputer('median');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'lbfgs','identity')	52.395410645595994	1.9477112293243408
+simpleImputer('most_frequent');maxAbsScaler();linearRegression()	52.39623415245512	0.912487268447876
+linearRegression()	52.39623415245512	0.9091880321502686
+simpleImputer('median');maxAbsScaler();linearRegression()	52.39623415245512	cached
+simpleImputer('median');robustScaler(False,True);linearRegression()	52.39623415245512	0.9943661689758301
+simpleImputer('median');robustScaler(True,True);linearRegression()	52.39623415245512	0.9607534408569336
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.396234152455136	1.1822950839996338
+simpleImputer('median');robustScaler(False,True);mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	52.95093459343921	1.291698694229126
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','cube');minMaxScaler();robustScaler(False,True);linearRegression()	52.39623415245512	1.456989049911499
+mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	52.129059162029215	1.319333553314209
+simpleImputer('most_frequent');robustScaler(False,True);linearRegression()	52.39623415245512	cached
+simpleImputer('most_frequent');robustScaler(True,True);adaBoost(decisionTree('squared_error',26,10,0.6497440724929694,18),100,1.6481846233228912,'SAMME')	54.5933806153226	2.3335063457489014
+varianceThreshold();fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.39623415245511	cached
+varianceThreshold();fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.39623415245511	2.0617666244506836
+linearRegression()	52.39623415245512	1.9271111488342285
+simpleImputer('mean');robustScaler(True,True);linearRegression()	52.39623415245512	1.8946950435638428
+selectPercentile(50.371504568958436);fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);linearRegression()	52.99808869626594	1.3450016975402832
+simpleImputer('mean');robustScaler(False,True);linearRegression()	timeout_error	timeout_error
+varianceThreshold();fastICA(67,'parallel','arbitrary-variance','cube');minMaxScaler();robustScaler(True,True);mlpRegressor((62, 18),0.04856171507892712,0.08504291026680227,'adam','identity')	timeout_error	timeout_error
+linearRegression()	timeout_error	timeout_error
+simpleImputer('most_frequent');robustScaler(False,True);linearRegression()	timeout_error	timeout_error
+simpleImputer('most_frequent');robustScaler(True,True);linearRegression()	timeout_error	timeout_error
+simpleImputer('median');robustScaler(False,False);adaBoost(decisionTree('friedman_mse',28,3,0.24412691019951116,6),61,0.1412905401448517,'SAMME')	timeout_error	timeout_error
+simpleImputer('most_frequent');maxAbsScaler();mlpRegressor((97, 7),0.0015751929701701335,0.19279112703175058,'lbfgs','identity')	52.395410645595994	cached
+mlpRegressor((62, 18),0.04856171507892712,0.542892278495253,'adam','identity')	53.57078845720865	2.164374351501465
+simpleImputer('mean');robustScaler(True,True);linearRegression()	timeout_error	timeout_error
+simpleImputer('mean');robustScaler(False,False);adaBoost(decisionTree('squared_error',11,14,0.4162203915448328,7),56,0.6591986046114027,'SAMME.R')	54.88490233893042	2.5297844409942627
+simpleImputer('most_frequent');minMaxScaler();linearRegression()	timeout_error	timeout_error
+simpleImputer('median');robustScaler(True,True);linearRegression()	timeout_error	timeout_error
+simpleImputer('median');minMaxScaler();linearRegression()	52.39623415245512	1.0009632110595703
+simpleImputer('median');robustScaler(False,True);linearRegression()	timeout_error	timeout_error
+varianceThreshold();fastICA(67,'deflation','arbitrary-variance','logcosh');minMaxScaler();robustScaler(True,True);linearRegression()	52.39623415245512	8.902519464492798
+varianceThreshold();fastICA(67,'parallel','arbitrary-variance','cube');adaBoost(decisionTree('friedman_mse',9,18,0.6741627277942797,18),79,0.5002223650442716,'SAMME.R')	timeout_error	timeout_error
+minMaxScaler();minMaxScaler();robustScaler(True,False);linearRegression()	timeout_error	timeout_error

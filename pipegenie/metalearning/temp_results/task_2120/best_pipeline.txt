@@ -1,0 +1,3 @@
+maxAbsScaler();selectFwe(0.0015721641851217025);Balancing('weighting');adaBoost(decisionTree('entropy',23,19,0.96134213503737,2,'balanced'),80,0.7092692870804471,'SAMME')
+Fitness: 0.9055512975004012
+Prediction: [0 5 5 ... 3 3 1]

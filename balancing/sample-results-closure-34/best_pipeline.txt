@@ -1,0 +1,3 @@
+extraTreesClassifier(82,'entropy','log2',9,2,False,'balanced')
+Fitness: 0.8049496564158591
+Prediction: [0 0 0 ... 0 0 0]

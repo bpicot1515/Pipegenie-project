@@ -1,0 +1,3 @@
+adaBoost(decisionTree('entropy',11,9,0.47435828088397436,16,'balanced'),20,0.5717780961322763,'SAMME')
+Fitness: 0.808182174113312
+Prediction: [0 0 0 ... 0 0 0]

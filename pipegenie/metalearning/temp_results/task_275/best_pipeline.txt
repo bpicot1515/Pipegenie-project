@@ -1,0 +1,3 @@
+robustScaler(True,False);selectPercentile(40.502131493682974);Balancing('weighting');extraTreesClassifier(94,'gini','log2',3,2,True,'balanced_subsample')
+Fitness: 0.9685710181055699
+Prediction: [2 1 1 ... 2 1 2]

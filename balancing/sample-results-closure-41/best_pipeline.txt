@@ -1,0 +1,3 @@
+minMaxScaler();varianceThreshold();randomForest(40,'gini','log2',14,20,False,'balanced_subsample')
+Fitness: 0.8101688392172217
+Prediction: [0 1 0 ... 0 0 1]

@@ -1,0 +1,2415 @@
+{
+    "metafeatures": {
+        "NumberOfInstances": 335.0,
+        "NumberOfFeatures": 7.0,
+        "DatasetRatio": 0.020895522388059702,
+        "SkewnessMean": 0.11072604024477015,
+        "KurtosisMean": 0.12266674940704754,
+        "TargetSkewness": -0.2658513589633985,
+        "TargetKurtosis": 0.30241079841505547,
+        "TargetMean": 3.245542417910448,
+        "TargetStdev": 0.8830415765768945
+    },
+    "elite_pipelines": [
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "squared_error"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5455902892055223"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "84"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8431266290100057"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ]
+    ]
+}

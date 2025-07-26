@@ -1,0 +1,3 @@
+robustScaler(True,False);maxAbsScaler();minMaxScaler();extraTreesClassifier(71,'entropy','sqrt',6,5,False,'balanced_subsample')
+Fitness: 0.8716141206251313
+Prediction: [0 0 0 ... 0 0 0]

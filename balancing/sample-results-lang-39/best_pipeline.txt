@@ -1,0 +1,3 @@
+decisionTree('entropy',11,16,0.7810941773938322,20,'balanced')
+Fitness: 0.8437940360848648
+Prediction: [0 1 0 ... 0 1 0]

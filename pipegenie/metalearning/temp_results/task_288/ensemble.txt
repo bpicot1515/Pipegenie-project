@@ -1,0 +1,159 @@
+0: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.013775610962502455)
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=1.166071919512486, max_iter=1000, random_state=42)
+) -> Fitness: 0.8659342398970882
+
+1: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: Balancing(strategy='weighting')
+	2: ExtraTreesClassifier(max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=79, random_state=42)
+) -> Fitness: 0.866436469377646
+
+2: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.03637804934178833)
+	2: Balancing(strategy='none')
+	3: QuadraticDiscriminantAnalysis(reg_param=0.2878456261559771)
+) -> Fitness: 0.8683172566144701
+
+3: Pipeline(
+	0: RobustScaler()
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=79, random_state=42)
+) -> Fitness: 0.866436469377646
+
+4: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: Balancing(strategy='none')
+	2: ExtraTreesClassifier(max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=42, random_state=42)
+) -> Fitness: 0.8634023525354795
+
+5: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.03637804934178833)
+	2: Balancing(strategy='none')
+	3: QuadraticDiscriminantAnalysis(reg_param=0.03048205277646021)
+) -> Fitness: 0.8622971084271394
+
+6: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.03637804934178833)
+	2: Balancing(strategy='weighting')
+	3: QuadraticDiscriminantAnalysis(reg_param=0.2878456261559771)
+) -> Fitness: 0.8683172566144701
+
+7: Pipeline(
+	0: StandardScaler()
+	1: SelectPercentile(percentile=70.21707969487579)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(min_samples_leaf=3, min_samples_split=7, n_estimators=79,
+                     random_state=42)
+) -> Fitness: 0.8663198100349803
+
+8: Pipeline(
+	0: RobustScaler()
+	1: Balancing(strategy='weighting')
+	2: ExtraTreesClassifier(max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=79, random_state=42)
+) -> Fitness: 0.866436469377646
+
+9: Pipeline(
+	0: StandardScaler()
+	1: SelectPercentile(percentile=70.21707969487579)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(min_samples_leaf=3, min_samples_split=7, n_estimators=79,
+                     random_state=42)
+) -> Fitness: 0.8663198100349803
+
+10: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.04789159396006314)
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.8650755821963252
+
+11: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(algorithm='deflation', fun='exp', n_components=7, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=8,
+                                                    max_features=0.3621505825434207,
+                                                    min_samples_leaf=19,
+                                                    min_samples_split=13,
+                                                    random_state=42),
+                   learning_rate=0.193622286807008, n_estimators=87,
+                   random_state=42)
+) -> Fitness: 0.8544091618085426
+
+12: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.009535870173160493)
+	2: Balancing(strategy='none')
+	3: QuadraticDiscriminantAnalysis(reg_param=0.19131545127609184)
+) -> Fitness: 0.868503927296497
+
+13: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.03637804934178833)
+	2: Balancing(strategy='weighting')
+	3: QuadraticDiscriminantAnalysis(reg_param=0.3620122483120023)
+) -> Fitness: 0.8677814986174119
+
+14: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.03637804934178833)
+	2: Balancing(strategy='none')
+	3: QuadraticDiscriminantAnalysis(reg_param=0.23069594730269105)
+) -> Fitness: 0.8697315664188728
+
+15: Pipeline(
+	0: RobustScaler()
+	1: Balancing(strategy='none')
+	2: ExtraTreesClassifier(max_features='log2', min_samples_leaf=2, n_estimators=79,
+                     random_state=42)
+) -> Fitness: 0.866436469377646
+
+16: Pipeline(
+	0: StandardScaler()
+	1: SelectPercentile(percentile=77.9426769658239)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(criterion='entropy', max_features='log2',
+                     min_samples_leaf=2, min_samples_split=3, n_estimators=79,
+                     random_state=42)
+) -> Fitness: 0.8636569326043011
+
+17: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.013775610962502455)
+	2: Balancing(strategy='none')
+	3: LogisticRegression(C=2.453871751860708, max_iter=1000, random_state=42,
+                   solver='liblinear')
+) -> Fitness: 0.8665045887646506
+
+18: Pipeline(
+	0: StandardScaler()
+	1: SelectFwe(alpha=0.03637804934178833)
+	2: Balancing(strategy='none')
+	3: QuadraticDiscriminantAnalysis(reg_param=0.03179753269670016)
+) -> Fitness: 0.862589506087958
+
+19: Pipeline(
+	0: MinMaxScaler()
+	1: SelectFwe(alpha=0.01640807638575838)
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=0.614907352503322, max_iter=1000, random_state=42)
+) -> Fitness: 0.8684374469513788
+
+Ensemble fitness: 0.8727392082810039
+Weights: [0.9956339097390472, 0.9962113631740487, 0.9983738548087588, 0.9962113631740487, 0.9927227961732447, 0.9914520085520813, 0.9983738548087588, 0.9960772305897319, 0.9962113631740487, 0.9960772305897319, 0.9946466422488047, 0.9823826049301392, 0.998588485034031, 0.9977578509545304, 1.0, 0.9962113631740487, 0.9930155072563549, 0.9962896854859375, 0.9917882015478382, 0.998512047259797]
+Prediction: [2 1 2 ... 2 2 1]

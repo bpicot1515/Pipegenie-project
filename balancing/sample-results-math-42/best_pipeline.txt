@@ -1,0 +1,3 @@
+minMaxScaler();robustScaler(False,False);maxAbsScaler();varianceThreshold();decisionTree('entropy',6,11,0.6156870157159208,17,'balanced')
+Fitness: 0.8012966522433158
+Prediction: [0 0 0 ... 0 0 0]

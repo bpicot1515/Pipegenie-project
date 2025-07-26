@@ -1,0 +1,198 @@
+0: Pipeline(
+	0: Nystroem(coef0=-0.7574759336108514, degree=4, gamma=5.3304230747934165,
+         kernel='poly', n_components=43, random_state=37)
+	1: PCA(n_components=0.8762256507079944, random_state=37, whiten=True)
+	2: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=9, min_samples_split=7, n_estimators=13,
+                     random_state=37)
+) -> Fitness: 0.8282217285517826
+
+1: Pipeline(
+	0: Nystroem(coef0=-0.7574759336108514, degree=4, gamma=3.907612703678866,
+         kernel='poly', n_components=28, random_state=37)
+	1: MinMaxScaler()
+	2: VarianceThreshold()
+	3: DecisionTreeClassifier(class_weight='balanced', max_depth=24,
+                       max_features=0.3928417726912343, min_samples_leaf=12,
+                       min_samples_split=11, random_state=37)
+) -> Fitness: 0.8171924256849679
+
+2: Pipeline(
+	0: Nystroem(coef0=-0.7456124710909326, degree=5, gamma=0.03414311334833898,
+         kernel='poly', n_components=28, random_state=37)
+	1: MinMaxScaler()
+	2: VarianceThreshold()
+	3: DecisionTreeClassifier(class_weight='balanced', max_depth=24,
+                       max_features=0.3928417726912343, min_samples_leaf=12,
+                       min_samples_split=11, random_state=37)
+) -> Fitness: 0.8171871363588279
+
+3: Pipeline(
+	0: Nystroem(coef0=-0.30460487280879, degree=4, gamma=3.907612703678866,
+         kernel='poly', n_components=28, random_state=37)
+	1: MinMaxScaler()
+	2: VarianceThreshold()
+	3: DecisionTreeClassifier(class_weight='balanced', max_depth=24,
+                       max_features=0.3928417726912343, min_samples_leaf=12,
+                       min_samples_split=11, random_state=37)
+) -> Fitness: 0.8171924256849679
+
+4: Pipeline(
+	0: PCA(n_components=0.8095149838842453, random_state=37, whiten=True)
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=24,
+                       max_features=0.3928417726912343, min_samples_leaf=12,
+                       min_samples_split=11, random_state=37)
+) -> Fitness: 0.7971606897281287
+
+5: Pipeline(
+	0: Nystroem(coef0=0.05924865299462323, degree=4, gamma=5.470181233450036,
+         kernel='poly', n_components=28, random_state=37)
+	1: MinMaxScaler()
+	2: VarianceThreshold()
+	3: DecisionTreeClassifier(class_weight='balanced', max_depth=24,
+                       max_features=0.3928417726912343, min_samples_leaf=12,
+                       min_samples_split=11, random_state=37)
+) -> Fitness: 0.8171924256849679
+
+6: Pipeline(
+	0: PCA(n_components=0.9107890128633733, random_state=37, whiten=True)
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=24,
+                       max_features=0.8147101556794951, min_samples_leaf=12,
+                       min_samples_split=13, random_state=37)
+) -> Fitness: 0.7971606897281287
+
+7: Pipeline(
+	0: SelectPercentile(percentile=68.90267541517393)
+	1: VarianceThreshold()
+	2: PCA(n_components=0.6447372016938282, random_state=37)
+	3: RandomForestClassifier(class_weight='balanced_subsample', max_features=None,
+                       min_samples_leaf=13, min_samples_split=16,
+                       n_estimators=78, random_state=37)
+) -> Fitness: 0.7875267110970061
+
+8: Pipeline(
+	0: PCA(n_components=0.6156850219629, random_state=37, whiten=True)
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.9401245316450544, min_samples_leaf=6,
+                       min_samples_split=11, n_estimators=57, random_state=37)
+) -> Fitness: 0.795387707606051
+
+9: Pipeline(
+	0: MinMaxScaler()
+	1: PCA(n_components=0.6156850219629, random_state=37)
+	2: LogisticRegression(C=3.1200926487911658, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=37)
+) -> Fitness: 0.7506050989103988
+
+10: Pipeline(
+	0: SelectPercentile(percentile=91.9262033794967)
+	1: VarianceThreshold()
+	2: PCA(n_components=0.6156850219629, random_state=37, whiten=True)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.9401245316450544, min_samples_leaf=6,
+                       min_samples_split=16, n_estimators=78, random_state=37)
+) -> Fitness: 0.8110081455622552
+
+11: Pipeline(
+	0: FastICA(n_components=22, random_state=37, whiten='arbitrary-variance')
+	1: MaxAbsScaler()
+	2: VarianceThreshold()
+	3: Nystroem(coef0=-0.7574759336108514, degree=4, gamma=3.907612703678866,
+         n_components=24, random_state=37)
+	4: LogisticRegression(C=3.1200926487911658, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=37)
+) -> Fitness: 0.7765302020522584
+
+12: Pipeline(
+	0: SelectPercentile(percentile=91.9262033794967)
+	1: VarianceThreshold()
+	2: PCA(n_components=0.6156850219629, random_state=37, whiten=True)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.9401245316450544, min_samples_leaf=6,
+                       min_samples_split=16, n_estimators=11, random_state=37)
+) -> Fitness: 0.8110081455622552
+
+13: Pipeline(
+	0: Nystroem(coef0=-0.1471575283191755, degree=4, gamma=0.03414311334833898,
+         kernel='poly', n_components=85, random_state=37)
+	1: VarianceThreshold()
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=2, min_samples_split=20, n_estimators=13,
+                     random_state=37)
+) -> Fitness: 0.7968158256638105
+
+14: Pipeline(
+	0: Nystroem(coef0=-0.7456124710909326, degree=4, gamma=0.03414311334833898,
+         kernel='poly', n_components=85, random_state=37)
+	1: VarianceThreshold()
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=2, min_samples_split=20, n_estimators=13,
+                     random_state=37)
+) -> Fitness: 0.8011848090553263
+
+15: Pipeline(
+	0: Nystroem(coef0=-0.7456124710909326, degree=4, gamma=5.3304230747934165,
+         kernel='poly', n_components=85, random_state=37)
+	1: VarianceThreshold()
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=2, min_samples_split=20, n_estimators=13,
+                     random_state=37)
+) -> Fitness: 0.7997302443668677
+
+16: Pipeline(
+	0: PCA(n_components=0.9107890128633733, random_state=37, whiten=True)
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=24, max_features=0.8147101556794951,
+                       min_samples_leaf=12, min_samples_split=13,
+                       random_state=37)
+) -> Fitness: 0.7971606897281287
+
+17: Pipeline(
+	0: PCA(n_components=0.8655638382911424, random_state=37, whiten=True)
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.9401245316450544, min_samples_leaf=6,
+                       min_samples_split=11, n_estimators=57, random_state=37)
+) -> Fitness: 0.795387707606051
+
+18: Pipeline(
+	0: Nystroem(coef0=-0.30460487280879, degree=4, gamma=0.03414311334833898,
+         kernel='poly', n_components=85, random_state=37)
+	1: VarianceThreshold()
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=2, min_samples_split=20, n_estimators=13,
+                     random_state=37)
+) -> Fitness: 0.7960911879826511
+
+19: Pipeline(
+	0: PCA(n_components=0.9123023178055863, random_state=37, whiten=True)
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.9401245316450544, min_samples_leaf=6,
+                       min_samples_split=11, n_estimators=57, random_state=37)
+) -> Fitness: 0.795387707606051
+
+Ensemble fitness: 0.8182915476568284
+Weights: [1.0, 0.9866831520031473, 0.9866767656382915, 0.9866831520031473, 0.9624967110220994, 0.9866831520031473, 0.9624967110220994, 0.950864586074148, 0.9603560015225094, 0.9062852048362664, 0.9792162142140043, 0.9375873335393998, 0.9792162142140043, 0.9620803200335156, 0.9673554574042236, 0.9655992070689395, 0.9624967110220994, 0.9603560015225094, 0.9612053880483014, 0.9603560015225094]
+Prediction: [0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+ 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0
+ 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0
+ 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 1
+ 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0
+ 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0
+ 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+ 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0
+ 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 1 1 0 1 0 0 0 0
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0
+ 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0
+ 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 1 1
+ 0 0 0 0 0 0 0 0 0]

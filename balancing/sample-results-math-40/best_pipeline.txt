@@ -1,0 +1,3 @@
+fastICA(33,'parallel','unit-variance','cube');minMaxScaler();extraTreesClassifier(24,'gini','sqrt',16,19,False,'balanced_subsample')
+Fitness: 0.7924511600152331
+Prediction: [0 0 0 ... 1 0 0]

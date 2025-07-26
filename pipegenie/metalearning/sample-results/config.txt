@@ -1,0 +1,33 @@
+grammar: ../../tutorials/sample-grammar-classification.xml
+grammar_type: evoflow-xml
+pop_size: 50
+generations: 5
+fitness: balanced_accuracy_score
+nderiv: 13
+selection: TournamentSelection(tournament_size=2)
+crossover: MultiCrossover(p_crossover=0.8)
+mutation: MultiMutation(p_mutation=0.2, p_hyper=0.5)
+mutation_elite: HyperparameterMutation(p_mutation=0.2)
+replacement: ElitistGenerationalReplacement(elitism=10)
+use_double_mutation: False
+elite_size: 5
+timeout: 90
+eval_timeout: 36
+cross_validator: StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+maximization: True
+early_stopping_threshold: 0.0001
+early_stopping_generations: None
+early_stopping_time: None
+outdir: sample-results
+n_jobs: 5
+verbose: False
+enable_metalearning: True
+save_to_metabase: False
+metabase_path: metabase_test
+metalearning_seeding_strategy: 1
+metabase: <pipegenie.metalearning.metabase.MetaBase object at 0x73a52d00b350>
+metafeature_calculator: <pipegenie.metalearning.metafeatures.ClassificationMetafeatureCalculator object at 0x73a492319280>
+ensemble_file_format: json
+seed: 42
+use_predict_proba: False
+diversity_weight: 0.2

@@ -1,0 +1,3 @@
+decisionTree('gini',6,13,0.6809215181270325,17,'balanced')
+Fitness: 0.8044659611918906
+Prediction: [0 0 0 ... 0 0 0]

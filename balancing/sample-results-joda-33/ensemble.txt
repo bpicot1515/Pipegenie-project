@@ -1,0 +1,152 @@
+0: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=16,
+                       n_estimators=94, random_state=33)
+) -> Fitness: 0.8942730496453901
+
+1: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: MaxAbsScaler()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=16,
+                       n_estimators=94, random_state=33)
+) -> Fitness: 0.8842287234042553
+
+2: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=18,
+                       n_estimators=42, random_state=33)
+) -> Fitness: 0.8942730496453901
+
+3: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=4, n_estimators=94, random_state=33)
+) -> Fitness: 0.8921010638297873
+
+4: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=16,
+                       n_estimators=83, random_state=33)
+) -> Fitness: 0.8942730496453901
+
+5: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: MaxAbsScaler()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=18, n_estimators=94, random_state=33)
+) -> Fitness: 0.8957624113475177
+
+6: Pipeline(
+	0: MaxAbsScaler()
+	1: MinMaxScaler()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=18, n_estimators=42, random_state=33)
+) -> Fitness: 0.889468085106383
+
+7: Pipeline(
+	0: MinMaxScaler()
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=18,
+                       n_estimators=42, random_state=33)
+) -> Fitness: 0.8942730496453901
+
+8: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=16,
+                       n_estimators=94, random_state=33)
+) -> Fitness: 0.8732180851063831
+
+9: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: MaxAbsScaler()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=16, n_estimators=94, random_state=33)
+) -> Fitness: 0.8936790780141843
+
+10: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=8, n_estimators=94, random_state=33)
+) -> Fitness: 0.8921010638297873
+
+11: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.7505059984476125, min_samples_split=18,
+                       n_estimators=42, random_state=33)
+) -> Fitness: 0.8942730496453901
+
+12: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=18, n_estimators=42, random_state=33)
+) -> Fitness: 0.8915957446808511
+
+13: Pipeline(
+	0: RobustScaler()
+	1: VarianceThreshold()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=16,
+                       n_estimators=94, random_state=33)
+) -> Fitness: 0.8753014184397163
+
+14: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=18,
+                       n_estimators=42, random_state=33)
+) -> Fitness: 0.8942730496453901
+
+15: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.7505059984476125, min_samples_split=16,
+                       n_estimators=83, random_state=33)
+) -> Fitness: 0.8942730496453901
+
+16: Pipeline(
+	0: MaxAbsScaler()
+	1: MinMaxScaler()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_split=18,
+                       n_estimators=42, random_state=33)
+) -> Fitness: 0.8942730496453901
+
+17: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=18, random_state=33)
+) -> Fitness: 0.8936790780141844
+
+18: Pipeline(
+	0: MinMaxScaler()
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=16, n_estimators=94, random_state=33)
+) -> Fitness: 0.8915957446808511
+
+19: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.7505059984476125, min_samples_leaf=4,
+                       min_samples_split=18, n_estimators=94, random_state=33)
+) -> Fitness: 0.8936790780141844
+
+Ensemble fitness: 0.8963563829787236
+Weights: [0.9983373250727422, 0.9871241661883178, 0.9983373250727422, 0.9959125908038242, 0.9983373250727422, 1.0, 0.9929732190574218, 0.9983373250727422, 0.9748322479760894, 0.9976742344767523, 0.9959125908038242, 0.9983373250727422, 0.9953484689535046, 0.977158013499337, 0.9983373250727422, 0.9983373250727422, 0.9983373250727422, 0.9976742344767524, 0.9953484689535046, 0.9976742344767524]
+Prediction: [0 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+ 0 1 0 0 1 0 0 0 0 0 0 0 1 0 1 0 1 1 0 1 1 1 0 1 1 0 0 0 0 0 0 1 0 0 1 0 1
+ 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 1 1 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 1 1 0 0 0 0 0 1 1 0 1 0 0 0 1 0 0 0
+ 0 0 0 1 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 1 0 1 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0
+ 0 0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0
+ 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 1 0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 0 0
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 1 0 0 0 0 0]

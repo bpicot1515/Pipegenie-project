@@ -1,0 +1,3 @@
+robustScaler(True,True);extraTreesClassifier(38,'gini','log2',16,8,False,'balanced')
+Fitness: 0.8644534077381707
+Prediction: [0 0 0 ... 0 0 0]

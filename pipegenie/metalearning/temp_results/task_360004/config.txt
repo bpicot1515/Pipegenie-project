@@ -1,0 +1,29 @@
+grammar: /hhome/bpicot25/autoML_uco/evoflow-dev-main/tutorials/sample-grammar-regression.xml
+grammar_type: evoflow-xml
+pop_size: 200
+generations: 200
+fitness: root_mean_squared_error
+nderiv: 13
+selection: TournamentSelection(tournament_size=2)
+crossover: MultiCrossover(p_crossover=0.8)
+mutation: MultiMutation(p_mutation=0.2, p_hyper=0.5)
+mutation_elite: HyperparameterMutation(p_mutation=0.2)
+replacement: ElitistGenerationalReplacement(elitism=10)
+use_double_mutation: False
+elite_size: 20
+timeout: 3600
+eval_timeout: 360
+cross_validator: KFold(n_splits=5, shuffle=True, random_state=42)
+maximization: False
+early_stopping_threshold: 0.0001
+early_stopping_generations: None
+early_stopping_time: None
+outdir: temp_results/task_360004
+n_jobs: -1
+verbose: True
+enable_metalearning: False
+metabase_path: /hhome/bpicot25/autoML_uco/evoflow-dev-main/pipegenie/metalearning/openml_metabase
+metalearning_seeding_strategy: 0.25
+metabase: <pipegenie.metalearning.metabase.MetaBase object at 0x70fea90fb320>
+metafeature_calculator: <pipegenie.metalearning.metafeatures.RegressionMetafeatureCalculator object at 0x70ff4b4cb7a0>
+seed: 42

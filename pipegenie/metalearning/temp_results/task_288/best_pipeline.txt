@@ -1,0 +1,3 @@
+standardScaler();selectFwe(0.03637804934178833);Balancing('none');qda(0.23069594730269105)
+Fitness: 0.8697315664188728
+Prediction: [2 1 2 ... 2 2 1]

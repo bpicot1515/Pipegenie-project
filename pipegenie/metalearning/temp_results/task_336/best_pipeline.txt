@@ -1,0 +1,3 @@
+standardScaler();Balancing('weighting');adaBoost(decisionTree('entropy',23,2,0.8606694665915507,6,'balanced'),78,0.38294421529187067,'SAMME')
+Fitness: 0.9294803641443259
+Prediction: [0 0 1 ... 0 0 1]

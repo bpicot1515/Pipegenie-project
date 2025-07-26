@@ -1,0 +1,128 @@
+0: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=20,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=13, random_state=36)
+) -> Fitness: 0.7984211978278013
+
+1: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=20,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=18, random_state=36)
+) -> Fitness: 0.7984211978278013
+
+2: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=22,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=13, random_state=36)
+) -> Fitness: 0.7984211978278013
+
+3: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=15,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=13, random_state=36)
+) -> Fitness: 0.7984211978278013
+
+4: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=18,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=13, random_state=36)
+) -> Fitness: 0.7984211978278013
+
+5: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=13, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+6: Pipeline(
+	0: VarianceThreshold()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=19, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+7: Pipeline(
+	0: RobustScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=8, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+8: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=6, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+9: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=30,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=18, random_state=36)
+) -> Fitness: 0.7984211978278013
+
+10: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=3,
+                       max_features=0.7806300808028726, min_samples_leaf=7,
+                       min_samples_split=7, random_state=36)
+) -> Fitness: 0.775858249347051
+
+11: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=15, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+12: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=8, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+13: Pipeline(
+	0: RobustScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=20,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=8, random_state=36)
+) -> Fitness: 0.7984211978278013
+
+14: Pipeline(
+	0: RobustScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=20,
+                       max_features=0.48039816293831483, min_samples_leaf=11,
+                       min_samples_split=8, random_state=36)
+) -> Fitness: 0.7901517500432301
+
+15: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.7640133964035706, min_samples_leaf=17,
+                       min_samples_split=8, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+16: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=20,
+                       max_features=0.6809215181270325, min_samples_leaf=18,
+                       min_samples_split=19, random_state=36)
+) -> Fitness: 0.7895932575082887
+
+17: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=28,
+                       max_features=0.7640133964035706, min_samples_leaf=17,
+                       min_samples_split=13, random_state=36)
+) -> Fitness: 0.7984211978278013
+
+18: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=16, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+19: Pipeline(
+	0: VarianceThreshold()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=6,
+                       max_features=0.6809215181270325, min_samples_leaf=17,
+                       min_samples_split=20, random_state=36)
+) -> Fitness: 0.8044659611918906
+
+Ensemble fitness: 0.8056888474413295
+Weights: [0.992485992377933, 0.992485992377933, 0.992485992377933, 0.992485992377933, 0.992485992377933, 1.0, 1.0, 1.0, 1.0, 0.992485992377933, 0.96443887843004, 1.0, 1.0, 0.992485992377933, 0.9822065670405089, 1.0, 0.9815123269335515, 0.992485992377933, 1.0, 1.0]
+Prediction: [0 0 0 ... 0 0 0]

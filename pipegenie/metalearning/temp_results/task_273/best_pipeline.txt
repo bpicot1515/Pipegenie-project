@@ -1,0 +1,3 @@
+robustScaler(False,True);Balancing('none');adaBoost(decisionTree('gini',24,17,0.08299435227418828,1,'balanced'),88,0.14481068487239887,'SAMME')
+Fitness: 0.9600196778870196
+Prediction: [1 0 0 ... 0 0 0]

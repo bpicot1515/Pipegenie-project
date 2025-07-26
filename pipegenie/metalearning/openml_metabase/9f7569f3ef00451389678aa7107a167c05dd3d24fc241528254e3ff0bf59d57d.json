@@ -1,0 +1,2663 @@
+{
+    "metafeatures": {
+        "NumberOfInstances": 30260.0,
+        "NumberOfFeatures": 74.0,
+        "DatasetRatio": 0.002445472571050892,
+        "SkewnessMean": 0.8499460906230648,
+        "KurtosisMean": 45.10309911317486,
+        "NumberOfClasses": 11.0,
+        "MinClassProbability": 0.0013549239920687376,
+        "MaxClassProbability": 0.5075346992729676,
+        "ClassImbalanceRatio": 0.0026696184399010287
+    },
+    "elite_pipelines": [
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectPercentile(selectPercentile_hp)"
+            },
+            {
+                "symbol": "selectPercentile",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectPercentile"
+            },
+            {
+                "symbol": "selectPercentile_hp",
+                "type": "nonterminal",
+                "production": "sp::percentile"
+            },
+            {
+                "symbol": "sp::percentile",
+                "type": "terminal",
+                "arity": 0,
+                "name": "34.33719635704243"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "entropy"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "25"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "7"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5393790301196257"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "17"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "86"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.43741548441344225"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectFwe(selectFwe_hp)"
+            },
+            {
+                "symbol": "selectFwe",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectFwe"
+            },
+            {
+                "symbol": "selectFwe_hp",
+                "type": "nonterminal",
+                "production": "fwe::alpha"
+            },
+            {
+                "symbol": "fwe::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.04117349979145906"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "randomForest(randomForest_hp)"
+            },
+            {
+                "symbol": "randomForest",
+                "type": "terminal",
+                "arity": 8,
+                "name": "randomForest"
+            },
+            {
+                "symbol": "randomForest_hp",
+                "type": "nonterminal",
+                "production": "rf::n_estimators;rf::criterion;rf::max_features;rf::min_samples_split;rf::min_samples_leaf;rf::bootstrap;rf::class_weight"
+            },
+            {
+                "symbol": "rf::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "rf::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "rf::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "sqrt"
+            },
+            {
+                "symbol": "rf::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "5"
+            },
+            {
+                "symbol": "rf::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "20"
+            },
+            {
+                "symbol": "rf::bootstrap",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rf::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced_subsample"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "varianceThreshold"
+            },
+            {
+                "symbol": "varianceThreshold",
+                "type": "terminal",
+                "arity": 1,
+                "name": "varianceThreshold"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "entropy"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "14"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "18"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.11564578402933046"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "19"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "42"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.0600035546333409"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "nystroem(nystroem_hp)"
+            },
+            {
+                "symbol": "nystroem",
+                "type": "terminal",
+                "arity": 6,
+                "name": "nystroem"
+            },
+            {
+                "symbol": "nystroem_hp",
+                "type": "nonterminal",
+                "production": "nyss::kernel;nyss::gamma;nyss::n_components;nyss::degree;nyss::coef0"
+            },
+            {
+                "symbol": "nyss::kernel",
+                "type": "terminal",
+                "arity": 0,
+                "name": "poly"
+            },
+            {
+                "symbol": "nyss::gamma",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6.419742148365144"
+            },
+            {
+                "symbol": "nyss::n_components",
+                "type": "terminal",
+                "arity": 0,
+                "name": "53"
+            },
+            {
+                "symbol": "nyss::degree",
+                "type": "terminal",
+                "arity": 0,
+                "name": "4"
+            },
+            {
+                "symbol": "nyss::coef0",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.351737153112736"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "entropy"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "11"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "17"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.3488031742013066"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "9"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "None"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "25"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8856502298096347"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectFwe(selectFwe_hp)"
+            },
+            {
+                "symbol": "selectFwe",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectFwe"
+            },
+            {
+                "symbol": "selectFwe_hp",
+                "type": "nonterminal",
+                "production": "fwe::alpha"
+            },
+            {
+                "symbol": "fwe::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.04117349979145906"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "randomForest(randomForest_hp)"
+            },
+            {
+                "symbol": "randomForest",
+                "type": "terminal",
+                "arity": 8,
+                "name": "randomForest"
+            },
+            {
+                "symbol": "randomForest_hp",
+                "type": "nonterminal",
+                "production": "rf::n_estimators;rf::criterion;rf::max_features;rf::min_samples_split;rf::min_samples_leaf;rf::bootstrap;rf::class_weight"
+            },
+            {
+                "symbol": "rf::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "rf::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "rf::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "sqrt"
+            },
+            {
+                "symbol": "rf::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "5"
+            },
+            {
+                "symbol": "rf::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "20"
+            },
+            {
+                "symbol": "rf::bootstrap",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rf::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced_subsample"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "standardScaler"
+            },
+            {
+                "symbol": "standardScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "standardScaler"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "entropy"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "8"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "10"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.3957858467912545"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "10"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "None"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "50"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "1.776905690152184"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectFwe(selectFwe_hp)"
+            },
+            {
+                "symbol": "selectFwe",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectFwe"
+            },
+            {
+                "symbol": "selectFwe_hp",
+                "type": "nonterminal",
+                "production": "fwe::alpha"
+            },
+            {
+                "symbol": "fwe::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.04117349979145906"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "randomForest(randomForest_hp)"
+            },
+            {
+                "symbol": "randomForest",
+                "type": "terminal",
+                "arity": 8,
+                "name": "randomForest"
+            },
+            {
+                "symbol": "randomForest_hp",
+                "type": "nonterminal",
+                "production": "rf::n_estimators;rf::criterion;rf::max_features;rf::min_samples_split;rf::min_samples_leaf;rf::bootstrap;rf::class_weight"
+            },
+            {
+                "symbol": "rf::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "rf::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "rf::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "sqrt"
+            },
+            {
+                "symbol": "rf::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "5"
+            },
+            {
+                "symbol": "rf::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "20"
+            },
+            {
+                "symbol": "rf::bootstrap",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rf::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced_subsample"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "standardScaler"
+            },
+            {
+                "symbol": "standardScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "standardScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectFwe(selectFwe_hp)"
+            },
+            {
+                "symbol": "selectFwe",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectFwe"
+            },
+            {
+                "symbol": "selectFwe_hp",
+                "type": "nonterminal",
+                "production": "fwe::alpha"
+            },
+            {
+                "symbol": "fwe::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.025313487718913938"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "kNN(kNN_hp)"
+            },
+            {
+                "symbol": "kNN",
+                "type": "terminal",
+                "arity": 4,
+                "name": "kNN"
+            },
+            {
+                "symbol": "kNN_hp",
+                "type": "nonterminal",
+                "production": "knn::n_neighbors;knn::weights;knn::p"
+            },
+            {
+                "symbol": "knn::n_neighbors",
+                "type": "terminal",
+                "arity": 0,
+                "name": "11"
+            },
+            {
+                "symbol": "knn::weights",
+                "type": "terminal",
+                "arity": 0,
+                "name": "uniform"
+            },
+            {
+                "symbol": "knn::p",
+                "type": "terminal",
+                "arity": 0,
+                "name": "2"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectFwe(selectFwe_hp)"
+            },
+            {
+                "symbol": "selectFwe",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectFwe"
+            },
+            {
+                "symbol": "selectFwe_hp",
+                "type": "nonterminal",
+                "production": "fwe::alpha"
+            },
+            {
+                "symbol": "fwe::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.021563819931899042"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "qda(qda_hp)"
+            },
+            {
+                "symbol": "qda",
+                "type": "terminal",
+                "arity": 2,
+                "name": "qda"
+            },
+            {
+                "symbol": "qda_hp",
+                "type": "nonterminal",
+                "production": "qda::reg_param"
+            },
+            {
+                "symbol": "qda::reg_param",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.9508775603934347"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "entropy"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "18"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.7810814970818334"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "26"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.1305289142339613"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "nystroem(nystroem_hp)"
+            },
+            {
+                "symbol": "nystroem",
+                "type": "terminal",
+                "arity": 6,
+                "name": "nystroem"
+            },
+            {
+                "symbol": "nystroem_hp",
+                "type": "nonterminal",
+                "production": "nyss::kernel;nyss::gamma;nyss::n_components;nyss::degree;nyss::coef0"
+            },
+            {
+                "symbol": "nyss::kernel",
+                "type": "terminal",
+                "arity": 0,
+                "name": "poly"
+            },
+            {
+                "symbol": "nyss::gamma",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6.419742148365144"
+            },
+            {
+                "symbol": "nyss::n_components",
+                "type": "terminal",
+                "arity": 0,
+                "name": "53"
+            },
+            {
+                "symbol": "nyss::degree",
+                "type": "terminal",
+                "arity": 0,
+                "name": "4"
+            },
+            {
+                "symbol": "nyss::coef0",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.351737153112736"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "entropy"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "11"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "17"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.3488031742013066"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "9"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "None"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "25"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.8856502298096347"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "standardScaler"
+            },
+            {
+                "symbol": "standardScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "standardScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "varianceThreshold"
+            },
+            {
+                "symbol": "varianceThreshold",
+                "type": "terminal",
+                "arity": 1,
+                "name": "varianceThreshold"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "21"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "9"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.22626571128908346"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "None"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "26"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.12948848981183406"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "kNN(kNN_hp)"
+            },
+            {
+                "symbol": "kNN",
+                "type": "terminal",
+                "arity": 4,
+                "name": "kNN"
+            },
+            {
+                "symbol": "kNN_hp",
+                "type": "nonterminal",
+                "production": "knn::n_neighbors;knn::weights;knn::p"
+            },
+            {
+                "symbol": "knn::n_neighbors",
+                "type": "terminal",
+                "arity": 0,
+                "name": "7"
+            },
+            {
+                "symbol": "knn::weights",
+                "type": "terminal",
+                "arity": 0,
+                "name": "uniform"
+            },
+            {
+                "symbol": "knn::p",
+                "type": "terminal",
+                "arity": 0,
+                "name": "2"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "entropy"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "30"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "18"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.7810814970818334"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "26"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.1305289142339613"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectFwe(selectFwe_hp)"
+            },
+            {
+                "symbol": "selectFwe",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectFwe"
+            },
+            {
+                "symbol": "selectFwe_hp",
+                "type": "nonterminal",
+                "production": "fwe::alpha"
+            },
+            {
+                "symbol": "fwe::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.04117349979145906"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "randomForest(randomForest_hp)"
+            },
+            {
+                "symbol": "randomForest",
+                "type": "terminal",
+                "arity": 8,
+                "name": "randomForest"
+            },
+            {
+                "symbol": "randomForest_hp",
+                "type": "nonterminal",
+                "production": "rf::n_estimators;rf::criterion;rf::max_features;rf::min_samples_split;rf::min_samples_leaf;rf::bootstrap;rf::class_weight"
+            },
+            {
+                "symbol": "rf::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "rf::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "rf::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "sqrt"
+            },
+            {
+                "symbol": "rf::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "5"
+            },
+            {
+                "symbol": "rf::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "20"
+            },
+            {
+                "symbol": "rf::bootstrap",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rf::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced_subsample"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectFwe(selectFwe_hp)"
+            },
+            {
+                "symbol": "selectFwe",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectFwe"
+            },
+            {
+                "symbol": "selectFwe_hp",
+                "type": "nonterminal",
+                "production": "fwe::alpha"
+            },
+            {
+                "symbol": "fwe::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.04117349979145906"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "randomForest(randomForest_hp)"
+            },
+            {
+                "symbol": "randomForest",
+                "type": "terminal",
+                "arity": 8,
+                "name": "randomForest"
+            },
+            {
+                "symbol": "randomForest_hp",
+                "type": "nonterminal",
+                "production": "rf::n_estimators;rf::criterion;rf::max_features;rf::min_samples_split;rf::min_samples_leaf;rf::bootstrap;rf::class_weight"
+            },
+            {
+                "symbol": "rf::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "rf::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "rf::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "sqrt"
+            },
+            {
+                "symbol": "rf::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "5"
+            },
+            {
+                "symbol": "rf::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "20"
+            },
+            {
+                "symbol": "rf::bootstrap",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rf::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced_subsample"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "standardScaler"
+            },
+            {
+                "symbol": "standardScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "standardScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "varianceThreshold"
+            },
+            {
+                "symbol": "varianceThreshold",
+                "type": "terminal",
+                "arity": 1,
+                "name": "varianceThreshold"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "weighting"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "21"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "9"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.22626571128908346"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "None"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "26"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.12948848981183406"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "standardScaler"
+            },
+            {
+                "symbol": "standardScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "standardScaler"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "bernoulliNB(bernoulliNB_hp)"
+            },
+            {
+                "symbol": "bernoulliNB",
+                "type": "terminal",
+                "arity": 3,
+                "name": "bernoulliNB"
+            },
+            {
+                "symbol": "bernoulliNB_hp",
+                "type": "nonterminal",
+                "production": "ber::alpha;ber::fit_prior"
+            },
+            {
+                "symbol": "ber::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "36.769918305727955"
+            },
+            {
+                "symbol": "ber::fit_prior",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "nystroem(nystroem_hp)"
+            },
+            {
+                "symbol": "nystroem",
+                "type": "terminal",
+                "arity": 6,
+                "name": "nystroem"
+            },
+            {
+                "symbol": "nystroem_hp",
+                "type": "nonterminal",
+                "production": "nyss::kernel;nyss::gamma;nyss::n_components;nyss::degree;nyss::coef0"
+            },
+            {
+                "symbol": "nyss::kernel",
+                "type": "terminal",
+                "arity": 0,
+                "name": "cosine"
+            },
+            {
+                "symbol": "nyss::gamma",
+                "type": "terminal",
+                "arity": 0,
+                "name": "6.783761695708273"
+            },
+            {
+                "symbol": "nyss::n_components",
+                "type": "terminal",
+                "arity": 0,
+                "name": "14"
+            },
+            {
+                "symbol": "nyss::degree",
+                "type": "terminal",
+                "arity": 0,
+                "name": "5"
+            },
+            {
+                "symbol": "nyss::coef0",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5759212597516759"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 7,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf;dt::class_weight"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "28"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "18"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.4680207690062901"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "7"
+            },
+            {
+                "symbol": "dt::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "52"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.20544844693562897"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ],
+        [
+            {
+                "symbol": "pipeline",
+                "type": "nonterminal",
+                "production": "rescaling;feature-preprocessing;balancing;classifier"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "feature-preprocessing",
+                "type": "nonterminal",
+                "production": "selectFwe(selectFwe_hp)"
+            },
+            {
+                "symbol": "selectFwe",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectFwe"
+            },
+            {
+                "symbol": "selectFwe_hp",
+                "type": "nonterminal",
+                "production": "fwe::alpha"
+            },
+            {
+                "symbol": "fwe::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.04117349979145906"
+            },
+            {
+                "symbol": "balancing",
+                "type": "nonterminal",
+                "production": "Balancing(Balancing_hp)"
+            },
+            {
+                "symbol": "Balancing",
+                "type": "terminal",
+                "arity": 2,
+                "name": "Balancing"
+            },
+            {
+                "symbol": "Balancing_hp",
+                "type": "nonterminal",
+                "production": "balancing::strategy"
+            },
+            {
+                "symbol": "balancing::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "none"
+            },
+            {
+                "symbol": "classifier",
+                "type": "nonterminal",
+                "production": "randomForest(randomForest_hp)"
+            },
+            {
+                "symbol": "randomForest",
+                "type": "terminal",
+                "arity": 8,
+                "name": "randomForest"
+            },
+            {
+                "symbol": "randomForest_hp",
+                "type": "nonterminal",
+                "production": "rf::n_estimators;rf::criterion;rf::max_features;rf::min_samples_split;rf::min_samples_leaf;rf::bootstrap;rf::class_weight"
+            },
+            {
+                "symbol": "rf::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "12"
+            },
+            {
+                "symbol": "rf::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "gini"
+            },
+            {
+                "symbol": "rf::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "sqrt"
+            },
+            {
+                "symbol": "rf::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "5"
+            },
+            {
+                "symbol": "rf::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "20"
+            },
+            {
+                "symbol": "rf::bootstrap",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rf::class_weight",
+                "type": "terminal",
+                "arity": 0,
+                "name": "balanced_subsample"
+            }
+        ]
+    ]
+}

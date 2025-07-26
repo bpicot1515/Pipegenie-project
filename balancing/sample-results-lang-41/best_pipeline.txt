@@ -1,0 +1,3 @@
+maxAbsScaler();decisionTree('gini',27,17,0.48771143390084926,19,'balanced')
+Fitness: 0.8565341115153208
+Prediction: [0 0 0 ... 0 0 0]

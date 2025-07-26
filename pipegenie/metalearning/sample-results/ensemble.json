@@ -1,0 +1,386 @@
+{
+    "ensemble_fitness": 0.9714285714285715,
+    "best_individual_fitness": 0.961904761904762,
+    "weights": [
+        1.0,
+        1.0,
+        0.9999999999999998,
+        1.0,
+        1.0
+    ],
+    "members": [
+        {
+            "name": "0",
+            "fitness": 0.961904761904762,
+            "pipeline_string": "standardScaler();selectPercentile(67.2709862625947);Balancing('weighting');extraTreesClassifier(46,'entropy','sqrt',5,5,True,'balanced')",
+            "pipeline_json": {
+                "class": "pipegenie.pipeline.Pipeline",
+                "steps": [
+                    {
+                        "name": "0",
+                        "estimator": {
+                            "class": "sklearn.preprocessing._data.StandardScaler",
+                            "params": {
+                                "copy": true,
+                                "with_mean": true,
+                                "with_std": true
+                            }
+                        }
+                    },
+                    {
+                        "name": "1",
+                        "estimator": {
+                            "class": "sklearn.feature_selection._univariate_selection.SelectPercentile",
+                            "params": {
+                                "percentile": 67.2709862625947,
+                                "score_func": "<function sklearn.feature_selection._univariate_selection.f_classif>"
+                            }
+                        }
+                    },
+                    {
+                        "name": "2",
+                        "estimator": {
+                            "class": "pipegenie.preprocessing._balancing.Balancing",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "name": "3",
+                        "estimator": {
+                            "class": "sklearn.ensemble._forest.ExtraTreesClassifier",
+                            "params": {
+                                "bootstrap": true,
+                                "ccp_alpha": 0.0,
+                                "class_weight": "balanced",
+                                "criterion": "entropy",
+                                "max_depth": null,
+                                "max_features": "sqrt",
+                                "max_leaf_nodes": null,
+                                "max_samples": null,
+                                "min_impurity_decrease": 0.0,
+                                "min_samples_leaf": 5,
+                                "min_samples_split": 5,
+                                "min_weight_fraction_leaf": 0.0,
+                                "monotonic_cst": null,
+                                "n_estimators": 46,
+                                "n_jobs": null,
+                                "oob_score": false,
+                                "random_state": 42,
+                                "verbose": 0,
+                                "warm_start": false
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "1",
+            "fitness": 0.961904761904762,
+            "pipeline_string": "robustScaler(True,True);fastICA(4,'parallel','unit-variance','logcosh');Balancing('weighting');adaBoost(decisionTree('gini',30,11,0.5757967284124141,13,None),35,0.09711587555507438,'SAMME')",
+            "pipeline_json": {
+                "class": "pipegenie.pipeline.Pipeline",
+                "steps": [
+                    {
+                        "name": "0",
+                        "estimator": {
+                            "class": "sklearn.preprocessing._data.RobustScaler",
+                            "params": {
+                                "copy": true,
+                                "quantile_range": [
+                                    25.0,
+                                    75.0
+                                ],
+                                "unit_variance": false,
+                                "with_centering": true,
+                                "with_scaling": true
+                            }
+                        }
+                    },
+                    {
+                        "name": "1",
+                        "estimator": {
+                            "class": "sklearn.decomposition._fastica.FastICA",
+                            "params": {
+                                "algorithm": "parallel",
+                                "fun": "logcosh",
+                                "fun_args": null,
+                                "max_iter": 200,
+                                "n_components": 4,
+                                "random_state": 42,
+                                "tol": 0.0001,
+                                "w_init": null,
+                                "whiten": "unit-variance",
+                                "whiten_solver": "svd"
+                            }
+                        }
+                    },
+                    {
+                        "name": "2",
+                        "estimator": {
+                            "class": "pipegenie.preprocessing._balancing.Balancing",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "name": "3",
+                        "estimator": {
+                            "class": "sklearn.ensemble._weight_boosting.AdaBoostClassifier",
+                            "params": {
+                                "algorithm": "SAMME",
+                                "estimator": {
+                                    "class": "sklearn.tree._classes.DecisionTreeClassifier",
+                                    "params": {
+                                        "ccp_alpha": 0.0,
+                                        "class_weight": null,
+                                        "criterion": "gini",
+                                        "max_depth": 30,
+                                        "max_features": 0.5757967284124141,
+                                        "max_leaf_nodes": null,
+                                        "min_impurity_decrease": 0.0,
+                                        "min_samples_leaf": 13,
+                                        "min_samples_split": 11,
+                                        "min_weight_fraction_leaf": 0.0,
+                                        "monotonic_cst": null,
+                                        "random_state": 42,
+                                        "splitter": "best"
+                                    }
+                                },
+                                "learning_rate": 0.09711587555507438,
+                                "n_estimators": 35,
+                                "random_state": 42
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "2",
+            "fitness": 0.9619047619047618,
+            "pipeline_string": "robustScaler(False,False);fastICA(56,'deflation','arbitrary-variance','exp');Balancing('weighting');adaBoost(decisionTree('gini',25,6,0.7641608957612477,10,None),25,0.018535270642291685,'SAMME')",
+            "pipeline_json": {
+                "class": "pipegenie.pipeline.Pipeline",
+                "steps": [
+                    {
+                        "name": "0",
+                        "estimator": {
+                            "class": "sklearn.preprocessing._data.RobustScaler",
+                            "params": {
+                                "copy": true,
+                                "quantile_range": [
+                                    25.0,
+                                    75.0
+                                ],
+                                "unit_variance": false,
+                                "with_centering": false,
+                                "with_scaling": false
+                            }
+                        }
+                    },
+                    {
+                        "name": "1",
+                        "estimator": {
+                            "class": "sklearn.decomposition._fastica.FastICA",
+                            "params": {
+                                "algorithm": "deflation",
+                                "fun": "exp",
+                                "fun_args": null,
+                                "max_iter": 200,
+                                "n_components": 56,
+                                "random_state": 42,
+                                "tol": 0.0001,
+                                "w_init": null,
+                                "whiten": "arbitrary-variance",
+                                "whiten_solver": "svd"
+                            }
+                        }
+                    },
+                    {
+                        "name": "2",
+                        "estimator": {
+                            "class": "pipegenie.preprocessing._balancing.Balancing",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "name": "3",
+                        "estimator": {
+                            "class": "sklearn.ensemble._weight_boosting.AdaBoostClassifier",
+                            "params": {
+                                "algorithm": "SAMME",
+                                "estimator": {
+                                    "class": "sklearn.tree._classes.DecisionTreeClassifier",
+                                    "params": {
+                                        "ccp_alpha": 0.0,
+                                        "class_weight": null,
+                                        "criterion": "gini",
+                                        "max_depth": 25,
+                                        "max_features": 0.7641608957612477,
+                                        "max_leaf_nodes": null,
+                                        "min_impurity_decrease": 0.0,
+                                        "min_samples_leaf": 10,
+                                        "min_samples_split": 6,
+                                        "min_weight_fraction_leaf": 0.0,
+                                        "monotonic_cst": null,
+                                        "random_state": 42,
+                                        "splitter": "best"
+                                    }
+                                },
+                                "learning_rate": 0.018535270642291685,
+                                "n_estimators": 25,
+                                "random_state": 42
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "3",
+            "fitness": 0.961904761904762,
+            "pipeline_string": "robustScaler(False,True);fastICA(56,'parallel','arbitrary-variance','exp');Balancing('none');adaBoost(decisionTree('gini',4,15,0.3302936234873388,14,'balanced'),81,1.2938463460478093,'SAMME')",
+            "pipeline_json": {
+                "class": "pipegenie.pipeline.Pipeline",
+                "steps": [
+                    {
+                        "name": "0",
+                        "estimator": {
+                            "class": "sklearn.preprocessing._data.RobustScaler",
+                            "params": {
+                                "copy": true,
+                                "quantile_range": [
+                                    25.0,
+                                    75.0
+                                ],
+                                "unit_variance": false,
+                                "with_centering": false,
+                                "with_scaling": true
+                            }
+                        }
+                    },
+                    {
+                        "name": "1",
+                        "estimator": {
+                            "class": "sklearn.decomposition._fastica.FastICA",
+                            "params": {
+                                "algorithm": "parallel",
+                                "fun": "exp",
+                                "fun_args": null,
+                                "max_iter": 200,
+                                "n_components": 56,
+                                "random_state": 42,
+                                "tol": 0.0001,
+                                "w_init": null,
+                                "whiten": "arbitrary-variance",
+                                "whiten_solver": "svd"
+                            }
+                        }
+                    },
+                    {
+                        "name": "2",
+                        "estimator": {
+                            "class": "pipegenie.preprocessing._balancing.Balancing",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "name": "3",
+                        "estimator": {
+                            "class": "sklearn.ensemble._weight_boosting.AdaBoostClassifier",
+                            "params": {
+                                "algorithm": "SAMME",
+                                "estimator": {
+                                    "class": "sklearn.tree._classes.DecisionTreeClassifier",
+                                    "params": {
+                                        "ccp_alpha": 0.0,
+                                        "class_weight": "balanced",
+                                        "criterion": "gini",
+                                        "max_depth": 4,
+                                        "max_features": 0.3302936234873388,
+                                        "max_leaf_nodes": null,
+                                        "min_impurity_decrease": 0.0,
+                                        "min_samples_leaf": 14,
+                                        "min_samples_split": 15,
+                                        "min_weight_fraction_leaf": 0.0,
+                                        "monotonic_cst": null,
+                                        "random_state": 42,
+                                        "splitter": "best"
+                                    }
+                                },
+                                "learning_rate": 1.2938463460478093,
+                                "n_estimators": 81,
+                                "random_state": 42
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "4",
+            "fitness": 0.961904761904762,
+            "pipeline_string": "standardScaler();selectPercentile(77.9426769658239);Balancing('weighting');extraTreesClassifier(46,'entropy','sqrt',5,5,True,'balanced')",
+            "pipeline_json": {
+                "class": "pipegenie.pipeline.Pipeline",
+                "steps": [
+                    {
+                        "name": "0",
+                        "estimator": {
+                            "class": "sklearn.preprocessing._data.StandardScaler",
+                            "params": {
+                                "copy": true,
+                                "with_mean": true,
+                                "with_std": true
+                            }
+                        }
+                    },
+                    {
+                        "name": "1",
+                        "estimator": {
+                            "class": "sklearn.feature_selection._univariate_selection.SelectPercentile",
+                            "params": {
+                                "percentile": 77.9426769658239,
+                                "score_func": "<function sklearn.feature_selection._univariate_selection.f_classif>"
+                            }
+                        }
+                    },
+                    {
+                        "name": "2",
+                        "estimator": {
+                            "class": "pipegenie.preprocessing._balancing.Balancing",
+                            "params": {}
+                        }
+                    },
+                    {
+                        "name": "3",
+                        "estimator": {
+                            "class": "sklearn.ensemble._forest.ExtraTreesClassifier",
+                            "params": {
+                                "bootstrap": true,
+                                "ccp_alpha": 0.0,
+                                "class_weight": "balanced",
+                                "criterion": "entropy",
+                                "max_depth": null,
+                                "max_features": "sqrt",
+                                "max_leaf_nodes": null,
+                                "max_samples": null,
+                                "min_impurity_decrease": 0.0,
+                                "min_samples_leaf": 5,
+                                "min_samples_split": 5,
+                                "min_weight_fraction_leaf": 0.0,
+                                "monotonic_cst": null,
+                                "n_estimators": 46,
+                                "n_jobs": null,
+                                "oob_score": false,
+                                "random_state": 42,
+                                "verbose": 0,
+                                "warm_start": false
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

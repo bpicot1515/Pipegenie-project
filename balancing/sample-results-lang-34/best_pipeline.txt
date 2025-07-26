@@ -1,0 +1,3 @@
+randomForest(53,'gini',0.5925861149273224,6,18,True,'balanced')
+Fitness: 0.8054638236351928
+Prediction: [0 0 0 ... 0 0 0]

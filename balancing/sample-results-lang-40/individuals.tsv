@@ -1,0 +1,997 @@
+pipeline	fitness	fit_time
+maxAbsScaler();pca(0.8534894654273016,True);maxAbsScaler();multinomialNB(9.725689938863905,True)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('gini',7,9,0.46134770254563384,4,'None'),91,1.8226495329183878,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	0.7328599669306467	2.631819725036621
+selectPercentile(64.88767841197175);maxAbsScaler();maxAbsScaler();decisionTree('gini',17,8,0.5883400736089128,2,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();adaBoost(decisionTree('entropy',30,15,0.48352257188411496,6,'None'),13,0.7101824637285459,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();nystroem('cosine',1.5832887498268873,56,3,0.858367136016849);adaBoost(decisionTree('entropy',4,8,0.5613868757541819,11,'None'),84,1.4295784621776957,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+robustScaler(False,False);randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8090378885526246	2.8404457569122314
+varianceThreshold();minMaxScaler();maxAbsScaler();selectPercentile(62.67101259229533);bernoulliNB(1.2798036689945347,False)	0.593508366317755	1.8194518089294434
+selectPercentile(47.107090922381936);logisticRegression('l2','liblinear',1000,0.4156196104389417,'None')	0.49942528735632186	1.583108901977539
+gaussianNB(0.009001268870153137)	0.5	0.834477424621582
+lda(0.4749653849366374,64,0.0959999874277292)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+maxAbsScaler();varianceThreshold();selectPercentile(85.42690827571663);nystroem('sigmoid',0.1723186882042884,51,2,-0.8200802950213784);mlpClassifier((82, 9),0.07957942637449097,0.06937328562933401,'sgd','logistic')	0.5	20.9160315990448
+maxAbsScaler();maxAbsScaler();pca(0.9220881454677948,True);decisionTree('gini',18,17,0.6570978700911487,12,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);pca(0.7215772345737769,False);minMaxScaler();kNN(17,'distance',1)	0.6929008040961625	1.6845262050628662
+selectFwe(0.0467040859202195);maxAbsScaler();adaBoost(decisionTree('entropy',6,2,0.31349221594874466,17,'None'),98,1.4036697593533005,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+mlpClassifier((56, 14),0.034545478705289796,0.19072907650296858,'lbfgs','relu')	0.5	69.6634566783905
+selectFwe(0.020697662057810973);minMaxScaler();adaBoost(decisionTree('gini',11,6,0.6049773554827524,16,'None'),68,1.0196252882354515,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+fastICA(92,'parallel','arbitrary-variance','logcosh');maxAbsScaler();varianceThreshold();maxAbsScaler();mlpClassifier((25, 6),0.08595489590979694,0.04649113679281867,'adam','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8442474838334271	3.269679307937622
+maxAbsScaler();minMaxScaler();maxAbsScaler();extraTreesClassifier(78,'gini','log2',9,12,True,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,True);maxAbsScaler();adaBoost(decisionTree('gini',23,5,0.19846553707611192,17,'None'),74,0.0793014943287898,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();maxAbsScaler();extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.8584181541556104	2.2979137897491455
+bernoulliNB(8.08179739240647,True)	0.5	1.5481641292572021
+nystroem('rbf',3.7063134317541366,74,5,-0.9708683519029775);multinomialNB(9.185694399707694,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();mlpClassifier((60, 10),0.057791228780402895,0.051935881333576295,'lbfgs','logistic')	0.7166003999590075	179.13010692596436
+multinomialNB(41.902024025014086,False)	0.6831557258372054	1.069164514541626
+fastICA(53,'parallel','unit-variance','exp');robustScaler(True,False);selectFwe(0.03349432750028628);randomForest(100,'gini','log2',9,13,True,'balanced')	0.7420439095127562	4.535902261734009
+selectFwe(0.047957080181832666);maxAbsScaler();lda(0.625647616624204,219,0.05865745252518076)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+maxAbsScaler();varianceThreshold();lda(0.6558460764545249,129,0.08951474641292105)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+robustScaler(True,False);adaBoost(decisionTree('entropy',30,11,0.7102030667320312,7,'None'),84,1.2772002050056597,'SAMME')	0.710198930539143	4.365859746932983
+maxAbsScaler();maxAbsScaler();varianceThreshold();minMaxScaler();adaBoost(decisionTree('gini',20,2,0.33664178913620557,11,'None'),29,1.6623848756280022,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();selectPercentile(7.240327322219754);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.7195647432938921	1.046311378479004
+kNN(1,'distance',1)	0.7081180118168315	1.4481172561645508
+varianceThreshold();adaBoost(decisionTree('entropy',4,2,0.694119725005362,20,'None'),83,0.09993503467306088,'SAMME')	0.6803864552990946	4.007873058319092
+selectPercentile(93.73083049998698);qda(0.6857068887977663)	0.6699536773051641	1.9734461307525635
+pca(0.9139864927957411,False);adaBoost(decisionTree('entropy',23,12,0.8227921521086479,8,'None'),96,1.4469136401067684,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+varianceThreshold();varianceThreshold();selectFwe(0.018197547794541632);kNN(16,'uniform',1)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();fastICA(7,'parallel','unit-variance','exp');adaBoost(decisionTree('entropy',4,19,0.14741933352810044,14,'None'),18,0.6977441370837303,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();adaBoost(decisionTree('entropy',30,6,0.4777366662052569,8,'None'),29,0.8821870662618138,'SAMME')	0.7177007662271722	2.9246153831481934
+varianceThreshold();robustScaler(True,True);bernoulliNB(0.40389289031833264,False)	0.7454143261191458	1.0905828475952148
+bernoulliNB(48.271270176622956,False)	0.6208299813561237	0.7586288452148438
+selectPercentile(24.066554442338795);varianceThreshold();pca(0.8457970416233583,False);qda(0.483725162608619)	0.6520782741722941	1.1961324214935303
+minMaxScaler();minMaxScaler();adaBoost(decisionTree('entropy',2,16,0.772397954569202,6,'None'),91,0.8407380501436125,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();maxAbsScaler();maxAbsScaler();pca(0.7551384308989475,True);extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();varianceThreshold();minMaxScaler();selectFwe(0.026691403294372605);decisionTree('gini',12,5,0.26099635215507666,18,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();pca(0.9056038390578716,False);adaBoost(decisionTree('gini',19,5,0.516714228221606,7,'balanced'),23,0.9678473074717765,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+pca(0.6429548344859308,True);adaBoost(decisionTree('gini',27,9,0.5512908120654102,1,'None'),57,0.874988851857677,'SAMME')	0.676009982632914	2.084423780441284
+fastICA(2,'deflation','unit-variance','cube');fastICA(88,'deflation','arbitrary-variance','cube');maxAbsScaler();randomForest(49,'gini',0.9299733179526174,17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.8109006339111172	1.573732852935791
+extraTreesClassifier(50,'gini','sqrt',13,15,False,'balanced_subsample')	0.8492253159029713	2.2367405891418457
+qda(0.8395630825106078)	0.6588495257480554	1.3515303134918213
+pca(0.6057669347624586,False);robustScaler(True,False);randomForest(35,'entropy','sqrt',9,17,True,'balanced_subsample')	0.6870757177739442	1.8657913208007812
+varianceThreshold();minMaxScaler();varianceThreshold();minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();maxAbsScaler();nystroem('cosine',7.540831190657452,92,2,0.43750193167164375);selectPercentile(71.07697447836384);qda(0.5009791823591049)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();adaBoost(decisionTree('entropy',13,8,0.4799802786928311,19,'None'),100,0.9934852637173633,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();maxAbsScaler();robustScaler(False,False);multinomialNB(45.6172859031999,True)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.013951266168905173);maxAbsScaler();robustScaler(True,False);mlpClassifier((65, 12),0.06948188619589625,0.8410851852196947,'sgd','tanh')	0.5	5.24813175201416
+nystroem('sigmoid',1.1589249297494142,41,5,-0.8507375815660461);maxAbsScaler();extraTreesClassifier(83,'entropy','log2',17,3,False,'balanced')	0.5	1.9829163551330566
+selectPercentile(1.487183243184026);varianceThreshold();gaussianNB(0.0033105663410356767)	0.4977011494252873	0.9396896362304688
+selectPercentile(68.48811133111856);maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('gini',15,3,0.022926243301656157,13,'None'),52,1.2460808866861441,'SAMME.R')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+gaussianNB(0.0004110692109191081)	0.4990436107631334	0.9391567707061768
+maxAbsScaler();nystroem('poly',6.7896474205363875,46,4,-0.0663480717125382);adaBoost(decisionTree('entropy',10,11,0.25686745591920024,12,'None'),62,1.2194770853196386,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();maxAbsScaler();fastICA(96,'deflation','unit-variance','logcosh');pca(0.8336973251722128,True);randomForest(52,'entropy',0.86702775510755,6,16,True,'None')	0.5955791335101679	27.133890867233276
+pca(0.9942217580291551,True);adaBoost(decisionTree('gini',14,20,0.4609622126374009,15,'None'),69,0.49781118962466075,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+selectPercentile(94.29199144875699);fastICA(48,'parallel','unit-variance','logcosh');varianceThreshold();lda(0.538197346847668,49,0.028708883714963714)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+maxAbsScaler();selectPercentile(65.62297682980338);selectFwe(0.04819870299666892);qda(0.9574601297555748)	0.5	1.1241602897644043
+maxAbsScaler();varianceThreshold();selectFwe(0.010045856047544743);bernoulliNB(3.1363773520764324,True)	0.5	1.6522486209869385
+fastICA(23,'deflation','arbitrary-variance','exp');selectFwe(0.03889696799100665);logisticRegression('l2','sag',1000,0.21653128684386858,'None')	0.5	4.0505287647247314
+varianceThreshold();varianceThreshold();kNN(6,'uniform',2)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();nystroem('cosine',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.0010234299154528613)	0.7892101111491894	3.8166615962982178
+selectFwe(0.0025141354155604873);nystroem('sigmoid',0.18140645336368708,66,2,-0.061536526024176474);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();fastICA(80,'deflation','arbitrary-variance','exp');maxAbsScaler();adaBoost(decisionTree('gini',14,19,0.4931518554120493,16,'None'),29,0.22050717815109902,'SAMME.R')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+bernoulliNB(0.2046665702059624,True)	0.5	0.818535327911377
+lda(0.9889843833045608,121,0.05304447353198557)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+selectPercentile(93.8714850736751);maxAbsScaler();minMaxScaler();maxAbsScaler();extraTreesClassifier(53,'entropy','log2',17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();pca(0.7737730713033023,False);extraTreesClassifier(23,'entropy','sqrt',11,14,False,'None')	0.5	1.430368185043335
+fastICA(23,'deflation','arbitrary-variance','exp');minMaxScaler();mlpClassifier((93, 8),0.09291481982674611,0.24728896998740363,'lbfgs','logistic')	0.5	5.534273624420166
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	164.33096957206726
+pca(0.6502837494980038,False);maxAbsScaler();selectFwe(0.01454993571349908);maxAbsScaler();bernoulliNB(82.97554793188093,True)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(85,'deflation','arbitrary-variance','exp');maxAbsScaler();maxAbsScaler();robustScaler(False,True);bernoulliNB(16.415331903191603,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();mlpClassifier((61, 3),0.02296051660265383,0.5888525928330754,'adam','tanh')	0.5	5.853421926498413
+minMaxScaler();minMaxScaler();selectFwe(0.01174754520574795);mlpClassifier((83, 18),0.06608436060832434,0.8479840436852978,'adam','relu')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(10.084706715381971);maxAbsScaler();maxAbsScaler();mlpClassifier((37, 2),0.0777516676630584,0.11761458100869125,'sgd','relu')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();maxAbsScaler();fastICA(2,'parallel','arbitrary-variance','cube');extraTreesClassifier(98,'entropy','log2',4,18,True,'None')	0.5	2.9564483165740967
+maxAbsScaler();gaussianNB(0.005304815309714867)	0.5820448779735388	1.0368115901947021
+maxAbsScaler();nystroem('rbf',0.18214968718322702,69,3,0.7952181749379288);varianceThreshold();minMaxScaler();bernoulliNB(47.14309256408824,False)	0.49904287817850157	4.373675346374512
+fastICA(29,'deflation','unit-variance','cube');selectPercentile(77.70738072320933);maxAbsScaler();minMaxScaler();qda(0.2705821588914955)	0.5	5.0848228931427
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',2.3242835260334958,51,4,0.6370609841942945);kNN(12,'uniform',2)	0.6719289629588305	11.08973217010498
+decisionTree('entropy',3,7,0.0038089484021988085,13,'None')	0.5	1.636136770248413
+selectFwe(0.009509185975927925);maxAbsScaler();minMaxScaler();maxAbsScaler();extraTreesClassifier(11,'entropy','log2',2,6,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+multinomialNB(0.24455000778321268,False)	0.6791374991315652	1.629662275314331
+fastICA(89,'parallel','arbitrary-variance','logcosh');pca(0.8212619665313494,True);bernoulliNB(17.34931339696502,False)	0.7073830120708211	3.0831525325775146
+robustScaler(True,True);maxAbsScaler();nystroem('poly',0.5881817147723083,26,5,0.08456352275775303);multinomialNB(0.6804727733663464,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();decisionTree('gini',25,3,0.5819162245704291,5,'None')	0.693665988744119	1.6093988418579102
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();minMaxScaler();pca(0.9261918998383935,False);qda(0.5649230059460494)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(85,'deflation','arbitrary-variance','logcosh');adaBoost(decisionTree('gini',15,9,0.7284017540321592,16,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+varianceThreshold();selectFwe(0.011357976016282413);selectPercentile(85.5981615486737);adaBoost(decisionTree('entropy',14,20,0.8845962926926596,7,'None'),31,0.16373223321609967,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+varianceThreshold();minMaxScaler();logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.810709429322207	8.204650163650513
+varianceThreshold();randomForest(23,'gini','log2',19,16,False,'balanced_subsample')	0.8267191567580572	2.22621750831604
+gaussianNB(0.008166080445644458)	0.5	1.1634364128112793
+selectPercentile(73.33165698086398);kNN(5,'uniform',2)	0.6573091659298556	2.083620309829712
+maxAbsScaler();qda(0.23192586359637068)	0.5	1.1504132747650146
+fastICA(54,'deflation','unit-variance','exp');adaBoost(decisionTree('gini',6,14,0.49536220387012964,9,'balanced'),11,0.6827385155686925,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();selectFwe(0.01186234330504001);multinomialNB(0.6319441039470504,False)	0.7454525372505196	1.0127129554748535
+selectPercentile(20.154240853980127);minMaxScaler();randomForest(47,'gini','log2',4,17,True,'balanced_subsample')	0.6976434402721737	2.0090887546539307
+maxAbsScaler();maxAbsScaler();varianceThreshold();extraTreesClassifier(98,'gini','sqrt',18,11,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+multinomialNB(0.10611738660248689,False)	0.6791374991315652	1.366598129272461
+varianceThreshold();varianceThreshold();gaussianNB(0.004406972042869195)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(84,'deflation','arbitrary-variance','exp');adaBoost(decisionTree('entropy',13,20,0.8067400693093005,10,'balanced'),18,0.7939036446550196,'SAMME')	0.7165502420628682	10.595146179199219
+minMaxScaler();pca(0.9883949309461915,False);qda(0.17374749681548096)	0.5	1.1961207389831543
+fastICA(28,'deflation','arbitrary-variance','logcosh');extraTreesClassifier(33,'entropy','log2',4,10,True,'balanced_subsample')	0.8277480436971437	19.494269371032715
+selectFwe(0.033819373817155655);extraTreesClassifier(26,'gini','log2',11,6,False,'None')	0.5532967032967033	2.1471433639526367
+lda(0.12911636465904042,189,0.026071764036150396)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+varianceThreshold();varianceThreshold();varianceThreshold();decisionTree('gini',6,11,0.7170229596498487,6,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(58.28758998175094);fastICA(66,'parallel','unit-variance','cube');varianceThreshold();kNN(2,'distance',2)	0.7236696685730772	1.344944715499878
+maxAbsScaler();varianceThreshold();qda(0.11030073361599846)	0.5	1.1091582775115967
+minMaxScaler();extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	0.8422975407777938	2.436539649963379
+selectPercentile(69.43230576105869);pca(0.9457395135323632,False);randomForest(20,'gini','log2',14,13,True,'balanced_subsample')	0.6798782991767762	1.6512231826782227
+qda(0.8915021188845426)	0.6613738151550507	1.3307225704193115
+gaussianNB(0.00870311493222287)	0.5	1.2546322345733643
+minMaxScaler();selectFwe(0.008240986533720554);varianceThreshold();adaBoost(decisionTree('gini',23,11,0.7248680556867526,19,'balanced'),15,0.35795167673821526,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();decisionTree('entropy',14,4,0.1565061957205034,18,'balanced')	0.774742051718382	1.187934398651123
+maxAbsScaler();decisionTree('entropy',30,4,0.9764080124619022,11,'None')	0.7005942106654179	1.7944426536560059
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+nystroem('rbf',5.154928731621999,56,5,0.28655521670848483);maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('gini',5,7,0.40709373769605095,2,'None'),82,0.4345099435912581,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();selectPercentile(80.89344230473203);extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.836951045555252	1.3187487125396729
+varianceThreshold();minMaxScaler();fastICA(37,'deflation','unit-variance','logcosh');adaBoost(decisionTree('entropy',11,19,0.7760043714271633,17,'balanced'),12,1.261948025336331,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+selectPercentile(97.14737408579465);qda(0.8898246054465815)	0.6615653860362768	0.888608455657959
+lda(0.4896232779125115,217,0.001112722629739165)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+maxAbsScaler();minMaxScaler();pca(0.9851538933180588,True);adaBoost(decisionTree('entropy',26,20,0.8737785779364751,12,'balanced'),70,0.578014088814875,'SAMME')	0.7611986147227131	6.6667585372924805
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(61,'parallel','unit-variance','logcosh');multinomialNB(91.8917328739435,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();nystroem('poly',1.1586526013771086,50,4,0.903249430760729);qda(0.15307288707533862)	0.8012490406965254	2.1487627029418945
+robustScaler(True,False);maxAbsScaler();minMaxScaler();fastICA(75,'deflation','arbitrary-variance','logcosh');multinomialNB(0.9277954867081649,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+kNN(1,'distance',1)	0.7081180118168315	1.4851775169372559
+fastICA(35,'parallel','unit-variance','exp');multinomialNB(0.46195837139120743,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+maxAbsScaler();varianceThreshold();maxAbsScaler();nystroem('rbf',4.305761677240663,82,2,-0.6450051107766861);mlpClassifier((35, 16),0.07906677393077186,0.17841220466478475,'sgd','tanh')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.0498250223597228);pca(0.7419527352600827,False);varianceThreshold();mlpClassifier((15, 15),0.017649736583742713,0.35623656545278876,'sgd','identity')	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)
+maxAbsScaler();maxAbsScaler();lda(0.8713139206248772,105,0.00029595578695883033)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+bernoulliNB(9.904035232464592,True)	0.5	1.021409511566162
+multinomialNB(11.145114699745069,True)	0.6890550608194177	0.8403267860412598
+minMaxScaler();maxAbsScaler();minMaxScaler();fastICA(26,'parallel','unit-variance','logcosh');gaussianNB(0.006370657044792428)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();logisticRegression('None','liblinear',1000,0.01277929367718808,'balanced')	eval_error (penalty=None is not supported for the liblinear solver)	eval_error (penalty=None is not supported for the liblinear solver)
+varianceThreshold();minMaxScaler();multinomialNB(1.5967427846639362,False)	0.786381138988774	0.9662380218505859
+selectFwe(0.04142684945519789);minMaxScaler();logisticRegression('l1','saga',1000,9.463083269876108,'balanced')	0.7101287151198141	1.626495122909546
+lda(0.9620912667469511,199,0.002412799488099349)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+maxAbsScaler();mlpClassifier((15, 1),0.0809027254514435,0.16983643311105376,'lbfgs','tanh')	0.7391282387787959	52.72141242027283
+minMaxScaler();minMaxScaler();adaBoost(decisionTree('entropy',24,5,0.052248040427616105,8,'None'),57,0.3679670166902985,'SAMME.R')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+nystroem('cosine',7.273223907732208,10,3,0.0701034337366877);bernoulliNB(52.865814858594355,False)	0.4959814070020439	0.8649017810821533
+maxAbsScaler();varianceThreshold();nystroem('sigmoid',0.2462148967885159,20,4,0.43615929224283545);robustScaler(True,False);kNN(2,'uniform',2)	0.6951967243323477	3.3667311668395996
+varianceThreshold();nystroem('rbf',3.2512473805971567,47,5,0.09335138569756674);gaussianNB(0.0028705653378822966)	0.5214361589122583	2.190383195877075
+maxAbsScaler();minMaxScaler();maxAbsScaler();selectFwe(0.0438793612648037);bernoulliNB(2.1518041649333837,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();logisticRegression('l2','sag',1000,0.2780929620184398,'None')	0.5	3.0598013401031494
+decisionTree('entropy',20,2,0.44463322088890755,1,'balanced')	0.7365898571806134	0.9406998157501221
+selectFwe(0.030157845680910688);varianceThreshold();bernoulliNB(0.04727601220742924,False)	0.5768000590575919	0.9154329299926758
+fastICA(89,'parallel','unit-variance','exp');fastICA(75,'deflation','unit-variance','exp');minMaxScaler();lda(0.006337731730863272,216,0.018676162810055245)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+gaussianNB(0.0020971282969279377)	0.5	0.604189395904541
+pca(0.5542482905583985,False);maxAbsScaler();lda(0.5080103661779392,192,0.05654901820626112)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+selectPercentile(55.59511743904313);minMaxScaler();fastICA(29,'parallel','arbitrary-variance','logcosh');mlpClassifier((78, 7),0.08486117379021828,0.1009015787497452,'sgd','relu')	0.5	2.627786874771118
+varianceThreshold();maxAbsScaler();lda(0.09377148681741465,100,0.011108228899766755)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+minMaxScaler();maxAbsScaler();qda(0.609883778082395)	0.5	1.2866058349609375
+logisticRegression('None','newton-cg',1000,8.783931825179613,'balanced')	0.8103270201443868	10.176316022872925
+minMaxScaler();varianceThreshold();adaBoost(decisionTree('gini',22,20,0.2450623703127689,7,'None'),61,1.886463182744424,'SAMME')	0.6876963538135821	1.8964781761169434
+nystroem('cosine',7.378177819495653,51,4,0.1554208662321852);nystroem('rbf',3.9473081569444233,83,5,0.1598600125502707);minMaxScaler();qda(0.17646838661904862)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.8809986964210473,True);bernoulliNB(11.051101111644677,False)	0.5272608064887356	1.3135697841644287
+pca(0.656372797600541,False);minMaxScaler();adaBoost(decisionTree('entropy',13,2,0.2101755214453076,18,'None'),84,0.32120722106508415,'SAMME')	0.676009616340598	2.8574163913726807
+minMaxScaler();minMaxScaler();pca(0.9829158088716685,False);robustScaler(True,True);gaussianNB(0.0027090860173281514)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();nystroem('rbf',3.2316652153826353,79,5,-0.5671792571254342);maxAbsScaler();adaBoost(decisionTree('gini',20,11,0.0670995002390361,5,'balanced'),56,0.3406677395419655,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7215894824353979	1.4610483646392822
+pca(0.6279801787268492,False);selectPercentile(96.7033486968821);minMaxScaler();lda(0.5497226856760037,206,0.005216098145009929)	eval_error (Found array with 0 feature(s) (shape=(2142, 0)) while a minimum of 1 is required by MinMaxScaler.)	eval_error (Found array with 0 feature(s) (shape=(2142, 0)) while a minimum of 1 is required by MinMaxScaler.)
+nystroem('sigmoid',0.7607119352567456,12,2,0.9300501244013939);decisionTree('entropy',5,5,0.432057324941297,19,'None')	0.5	1.298811912536621
+minMaxScaler();minMaxScaler();pca(0.7080645635431918,False);mlpClassifier((71, 17),0.06185621557838577,0.11456865849772284,'adam','logistic')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();robustScaler(False,True);pca(0.8639083389989255,False);kNN(27,'distance',1)	0.6873124794664982	1.2277085781097412
+qda(0.908928149123928)	0.6598419806898741	1.0381767749786377
+selectFwe(0.03887530869808729);minMaxScaler();maxAbsScaler();lda(0.6874626661142145,178,0.08495946148242504)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+selectFwe(0.04368287844990651);varianceThreshold();maxAbsScaler();logisticRegression('l1','sag',1000,10.429418658708713,'None')	eval_error (Solver sag supports only 'l2' or None penalties, got l1 penalty.)	eval_error (Solver sag supports only 'l2' or None penalties, got l1 penalty.)
+pca(0.5949045601929107,True);multinomialNB(4.653580718215118,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+gaussianNB(0.0025633908466967015)	0.5	1.9907712936401367
+decisionTree('entropy',22,11,0.35569965853419894,14,'None')	0.6706132288844756	2.081421375274658
+mlpClassifier((78, 1),0.0511474676178349,0.5272622046973706,'sgd','identity')	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)	eval_error (Solver produced non-finite parameter weights. The input data may contain large values and need to be preprocessed.)
+randomForest(22,'entropy',0.8787734620566514,19,13,True,'None')	0.6651930445033893	1.459378719329834
+varianceThreshold();decisionTree('gini',29,14,0.5216286617785904,13,'None')	0.6419000210356444	0.7200202941894531
+nystroem('poly',2.208470666911688,64,4,0.5837592750272027);adaBoost(decisionTree('gini',3,14,0.9969138986049636,1,'None'),90,1.2213340157338453,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+randomForest(46,'gini','None',16,16,True,'balanced')	0.815388101199402	1.1633837223052979
+maxAbsScaler();randomForest(77,'entropy',0.968975331283085,6,7,False,'balanced')	0.7832873978618029	1.9626834392547607
+pca(0.9869941671203828,True);robustScaler(False,False);robustScaler(True,False);logisticRegression('l2','sag',1000,15.322682803502554,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.02452614572451222);minMaxScaler();adaBoost(decisionTree('gini',21,14,0.6284984366000624,15,'balanced'),27,1.2285608787748943,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();varianceThreshold();fastICA(37,'parallel','unit-variance','cube');adaBoost(decisionTree('gini',20,14,0.563844444919824,17,'balanced'),24,1.014487694128151,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();maxAbsScaler();qda(0.24809806734772877)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);varianceThreshold();maxAbsScaler();adaBoost(decisionTree('entropy',6,6,0.17648017614070066,12,'None'),30,0.07874737326128625,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+pca(0.9542024848455095,True);maxAbsScaler();pca(0.9022090524053668,True);extraTreesClassifier(15,'gini','log2',20,11,False,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();selectPercentile(40.40935870459569);minMaxScaler();bernoulliNB(1.248267256183814,True)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.8215205671525313	5.1092915534973145
+maxAbsScaler();fastICA(52,'deflation','unit-variance','logcosh');minMaxScaler();robustScaler(True,False);gaussianNB(0.005888656834712672)	0.6772311730378585	29.24160671234131
+minMaxScaler();selectFwe(0.0059893322213879505);fastICA(15,'parallel','unit-variance','exp');kNN(2,'distance',2)	0.6651930445033893	0.9784610271453857
+gaussianNB(0.001851331031711305)	0.5	1.1556785106658936
+maxAbsScaler();minMaxScaler();varianceThreshold();adaBoost(decisionTree('gini',20,16,0.531780841855169,11,'balanced'),79,0.41943995658829025,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();varianceThreshold();extraTreesClassifier(11,'gini','log2',20,1,True,'balanced')	0.8241959662280095	1.075653314590454
+maxAbsScaler();robustScaler(True,True);fastICA(11,'parallel','arbitrary-variance','exp');adaBoost(decisionTree('gini',29,8,0.8691851172496176,9,'None'),53,1.286593866877256,'SAMME')	0.7092410761330126	5.483344078063965
+minMaxScaler();varianceThreshold();adaBoost(decisionTree('gini',27,20,0.2450623703127689,7,'None'),57,0.874988851857677,'SAMME')	0.7182740137015868	2.4080300331115723
+pca(0.6429548344859308,True);adaBoost(decisionTree('gini',22,9,0.5512908120654102,1,'None'),61,1.886463182744424,'SAMME')	0.676009982632914	2.568406105041504
+varianceThreshold();pca(0.8534894654273016,False);adaBoost(decisionTree('gini',19,5,0.516714228221606,7,'balanced'),23,0.9678473074717765,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();pca(0.9056038390578716,True);maxAbsScaler();multinomialNB(9.725689938863905,True)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();fastICA(52,'deflation','unit-variance','logcosh');maxAbsScaler();robustScaler(True,False);gaussianNB(0.005888656834712672)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();maxAbsScaler();pca(0.9220881454677948,True);decisionTree('gini',18,17,0.6570978700911487,12,'None')	0.6878875584024922	0.8563477993011475
+randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8442474838334271	2.242177724838257
+kNN(1,'distance',1)	0.7081180118168315	1.3506474494934082
+pca(0.9869941671203828,True);robustScaler(False,False);robustScaler(True,False);logisticRegression('l2','sag',1000,15.322682803502554,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();varianceThreshold();minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	1.0648374557495117
+minMaxScaler();selectPercentile(7.240327322219754);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.576543936199768	1.825350284576416
+varianceThreshold();nystroem('rbf',3.2316652153826353,79,5,-0.5671792571254342);pca(0.5542482905583985,False);adaBoost(decisionTree('gini',20,11,0.0670995002390361,5,'balanced'),56,0.3406677395419655,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+maxAbsScaler();maxAbsScaler();lda(0.46257972496480004,192,0.05654901820626112)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);mlpClassifier((60, 10),0.057791228780402895,0.051935881333576295,'lbfgs','logistic')	0.6651934107957053	156.9906349182129
+minMaxScaler();multinomialNB(0.08381897600818744,True)	0.5	1.3051891326904297
+fastICA(85,'deflation','arbitrary-variance','logcosh');adaBoost(decisionTree('gini',15,9,0.7284017540321592,2,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+selectPercentile(10.084706715381971);maxAbsScaler();maxAbsScaler();mlpClassifier((37, 2),0.0777516676630584,0.11761458100869125,'sgd','relu')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+bernoulliNB(9.904035232464592,True)	0.5	0.8472492694854736
+minMaxScaler();decisionTree('gini',25,3,0.5819162245704291,5,'None')	0.693665988744119	1.1216318607330322
+bernoulliNB(8.08179739240647,True)	0.5	2.2016265392303467
+maxAbsScaler();robustScaler(True,True);fastICA(11,'parallel','arbitrary-variance','logcosh');adaBoost(decisionTree('gini',29,8,0.8691851172496176,9,'None'),53,1.2557669523714414,'SAMME')	0.708500054702336	6.494226455688477
+minMaxScaler();minMaxScaler();maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',24,8,0.2672616463491052,6,'None'),67,0.06069424736403554,'SAMME.R')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.6429548344859308,True);adaBoost(decisionTree('gini',27,9,0.5512908120654102,1,'None'),57,0.874988851857677,'SAMME')	0.676009982632914	2.0455565452575684
+lda(0.9620912667469511,199,0.002412799488099349)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+maxAbsScaler();logisticRegression('None','liblinear',1000,0.01277929367718808,'balanced')	eval_error (penalty=None is not supported for the liblinear solver)	eval_error (penalty=None is not supported for the liblinear solver)
+qda(0.908928149123928)	0.6598419806898741	1.109783411026001
+selectPercentile(20.154240853980127);minMaxScaler();randomForest(47,'gini','log2',4,17,True,'balanced_subsample')	0.6976434402721737	2.4084696769714355
+minMaxScaler();selectPercentile(7.240327322219754);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.7195647432938921	1.3860957622528076
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();minMaxScaler();pca(0.9261918998383935,False);qda(0.5649230059460494)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();selectFwe(0.0026261365898972186);multinomialNB(0.11765566689625444,False)	0.7473660483088848	1.3754799365997314
+minMaxScaler();adaBoost(decisionTree('entropy',30,6,0.4777366662052569,8,'None'),29,0.8821870662618138,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();nystroem('cosine',1.5832887498268873,56,3,0.858367136016849);adaBoost(decisionTree('entropy',4,8,0.5613868757541819,11,'None'),84,1.4295784621776957,'SAMME')	0.7242681781417193	28.121951580047607
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7215894824353979	1.4671614170074463
+varianceThreshold();maxAbsScaler();maxAbsScaler();pca(0.7551384308989475,True);extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();minMaxScaler();selectFwe(0.01174754520574795);mlpClassifier((83, 18),0.06608436060832434,0.8479840436852978,'adam','relu')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();decisionTree('gini',25,3,0.5819162245704291,5,'None')	0.693665988744119	1.427746057510376
+minMaxScaler();maxAbsScaler();extraTreesClassifier(78,'gini','log2',9,12,True,'balanced_subsample')	0.8399349030126375	1.7291853427886963
+maxAbsScaler();minMaxScaler();maxAbsScaler();qda(0.7098080996320225)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+qda(0.8915021188845426)	0.6613738151550507	1.1605980396270752
+minMaxScaler();varianceThreshold();extraTreesClassifier(11,'gini','log2',20,1,True,'balanced')	0.8241959662280095	1.0028631687164307
+fastICA(84,'deflation','arbitrary-variance','exp');adaBoost(decisionTree('entropy',13,20,0.8067400693093005,10,'balanced'),18,0.7939036446550196,'SAMME')	0.7165502420628682	4.737153053283691
+adaBoost(decisionTree('entropy',6,13,0.9319429910315697,1,'None'),55,0.4843088575644773,'SAMME')	0.7101992968314589	3.316610336303711
+pca(0.5949045601929107,True);multinomialNB(4.653580718215118,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+fastICA(28,'deflation','arbitrary-variance','logcosh');extraTreesClassifier(33,'entropy','log2',4,10,True,'balanced_subsample')	0.8277480436971437	14.290369510650635
+maxAbsScaler();varianceThreshold();selectPercentile(85.42690827571663);maxAbsScaler();mlpClassifier((82, 9),0.07957942637449097,0.06937328562933401,'sgd','logistic')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.009509185975927925);nystroem('sigmoid',0.1723186882042884,51,2,-0.8200802950213784);minMaxScaler();maxAbsScaler();extraTreesClassifier(11,'entropy','log2',2,6,False,'None')	0.545962641564936	1.449472427368164
+bernoulliNB(48.271270176622956,True)	0.5	0.8375580310821533
+bernoulliNB(0.2046665702059624,False)	0.6583578004524797	1.3921139240264893
+pca(0.5949045601929107,True);multinomialNB(4.653580718215118,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(93.73083049998698);lda(0.5080103661779392,192,0.05654901820626112)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+pca(0.5542482905583985,False);maxAbsScaler();qda(0.6857068887977663)	0.5	0.7220852375030518
+maxAbsScaler();selectFwe(0.03285043277404381);robustScaler(False,False);multinomialNB(45.6172859031999,True)	0.5	0.9696924686431885
+varianceThreshold();maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('gini',7,9,0.46134770254563384,4,'None'),91,1.8226495329183878,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();decisionTree('entropy',17,3,0.9600753160876888,19,'balanced')	0.8166749344075118	0.9396417140960693
+gaussianNB(0.00870311493222287)	0.5	0.8663969039916992
+minMaxScaler();minMaxScaler();adaBoost(decisionTree('entropy',2,16,0.772397954569202,6,'None'),91,0.8407380501436125,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+bernoulliNB(48.271270176622956,False)	0.6208299813561237	1.0040397644042969
+minMaxScaler();nystroem('poly',1.1586526013771086,50,4,0.903249430760729);adaBoost(decisionTree('gini',7,9,0.46134770254563384,4,'None'),91,1.8226495329183878,'SAMME')	0.7100318891675126	18.346317529678345
+varianceThreshold();maxAbsScaler();maxAbsScaler();qda(0.841813281778146)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.030157845680910688);adaBoost(decisionTree('gini',15,9,0.7284017540321592,16,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+fastICA(85,'deflation','arbitrary-variance','logcosh');varianceThreshold();bernoulliNB(3.8561018595911403,False)	0.74950680148478	15.587114334106445
+fastICA(2,'deflation','unit-variance','cube');fastICA(88,'deflation','arbitrary-variance','cube');maxAbsScaler();randomForest(49,'gini',0.9299733179526174,17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.5542482905583985,False);maxAbsScaler();lda(0.5080103661779392,192,0.05654901820626112)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+adaBoost(decisionTree('entropy',19,17,0.8260381249885828,2,'None'),61,0.814781768440245,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	2.135035276412964
+selectFwe(0.04368287844990651);varianceThreshold();maxAbsScaler();decisionTree('entropy',20,2,0.44463322088890755,1,'balanced')	0.7093778520988911	0.9354658126831055
+logisticRegression('l1','sag',1000,10.429418658708713,'None')	eval_error (Solver sag supports only 'l2' or None penalties, got l1 penalty.)	eval_error (Solver sag supports only 'l2' or None penalties, got l1 penalty.)
+maxAbsScaler();fastICA(7,'parallel','unit-variance','logcosh');adaBoost(decisionTree('entropy',4,19,0.14741933352810044,14,'None'),18,0.6977441370837303,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+selectPercentile(55.59511743904313);minMaxScaler();fastICA(29,'parallel','arbitrary-variance','exp');mlpClassifier((78, 7),0.08486117379021828,0.1009015787497452,'sgd','relu')	0.5	3.7376794815063477
+pca(0.6502837494980038,False);maxAbsScaler();selectFwe(0.01454993571349908);maxAbsScaler();bernoulliNB(82.97554793188093,True)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(51.0812562886196);maxAbsScaler();maxAbsScaler();decisionTree('gini',17,8,0.5883400736089128,2,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();robustScaler(True,True);bernoulliNB(0.40389289031833264,False)	0.7454143261191458	cached
+pca(0.5571659319866661,False);maxAbsScaler();adaBoost(decisionTree('entropy',15,19,0.46557324685667756,6,'None'),75,0.7889294230443228,'SAMME')	0.676009616340598	2.957427501678467
+varianceThreshold();varianceThreshold();varianceThreshold();decisionTree('gini',6,11,0.7170229596498487,6,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+nystroem('rbf',5.154928731621999,56,5,0.28655521670848483);maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('gini',5,7,0.40709373769605095,2,'None'),82,0.4345099435912581,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();varianceThreshold();qda(0.11030073361599846)	0.5	1.2095298767089844
+maxAbsScaler();mlpClassifier((15, 1),0.0809027254514435,0.16983643311105376,'lbfgs','tanh')	0.7391282387787959	36.7137668132782
+selectFwe(0.009509185975927925);pca(0.656372797600541,False);minMaxScaler();maxAbsScaler();extraTreesClassifier(11,'entropy','log2',2,6,False,'None')	0.545962641564936	0.7649521827697754
+maxAbsScaler();minMaxScaler();adaBoost(decisionTree('entropy',13,2,0.2101755214453076,18,'None'),84,0.32120722106508415,'SAMME')	0.7025066228468353	1.2053520679473877
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',2.3242835260334958,51,4,0.6370609841942945);kNN(12,'uniform',2)	0.6719289629588305	4.945924758911133
+minMaxScaler();selectFwe(0.008240986533720554);varianceThreshold();adaBoost(decisionTree('gini',23,11,0.7248680556867526,19,'balanced'),15,0.35795167673821526,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();maxAbsScaler();varianceThreshold();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+extraTreesClassifier(98,'gini','sqrt',18,11,False,'balanced')	0.8533778149061331	1.2835607528686523
+fastICA(2,'deflation','unit-variance','cube');fastICA(88,'deflation','arbitrary-variance','cube');maxAbsScaler();randomForest(49,'gini',0.9299733179526174,17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+gaussianNB(0.0004110692109191081)	0.4990436107631334	0.678978443145752
+maxAbsScaler();nystroem('rbf',0.18214968718322702,69,3,0.7952181749379288);fastICA(23,'deflation','arbitrary-variance','exp');minMaxScaler();bernoulliNB(47.14309256408824,False)	0.4994263862332696	19.774919748306274
+varianceThreshold();selectFwe(0.03889696799100665);logisticRegression('l2','sag',1000,0.21653128684386858,'None')	0.5	1.9694745540618896
+selectFwe(0.0025141354155604873);nystroem('sigmoid',0.18140645336368708,66,2,-0.061536526024176474);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(54,'deflation','unit-variance','exp');adaBoost(decisionTree('gini',7,13,0.04929787546460629,11,'None'),19,0.6161400969229749,'SAMME')	0.6563516778160412	4.621896028518677
+maxAbsScaler();maxAbsScaler();nystroem('cosine',7.540831190657452,92,2,0.43750193167164375);selectPercentile(71.07697447836384);qda(0.5009791823591049)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();randomForest(77,'entropy',0.968975331283085,6,7,False,'balanced')	0.7832873978618029	cached
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+varianceThreshold();maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('gini',7,9,0.46134770254563384,4,'None'),91,1.8226495329183878,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();selectPercentile(80.89344230473203);adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7212052417959981	1.4657585620880127
+selectPercentile(97.6537950677149);varianceThreshold();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.8401504519523904	1.112356424331665
+randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8090378885526246	1.5056889057159424
+robustScaler(False,False);multinomialNB(0.24455000778321268,False)	0.6791374991315652	0.7956051826477051
+maxAbsScaler();fastICA(52,'deflation','unit-variance','logcosh');minMaxScaler();robustScaler(True,False);gaussianNB(0.005888656834712672)	0.6772311730378585	33.24304151535034
+varianceThreshold();pca(0.7737730713033023,False);extraTreesClassifier(23,'entropy','sqrt',11,14,False,'None')	0.5	1.533431053161621
+maxAbsScaler();maxAbsScaler();varianceThreshold();minMaxScaler();adaBoost(decisionTree('gini',20,2,0.33664178913620557,11,'balanced'),79,0.41943995658829025,'SAMME.R')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();minMaxScaler();varianceThreshold();adaBoost(decisionTree('gini',20,16,0.531780841855169,11,'None'),29,1.6623848756280022,'SAMME')	0.7023150519656092	2.6143760681152344
+minMaxScaler();selectFwe(0.008240986533720554);varianceThreshold();adaBoost(decisionTree('gini',23,11,0.7248680556867526,19,'balanced'),15,0.35795167673821526,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+robustScaler(True,True);nystroem('rbf',3.2316652153826353,79,5,-0.5671792571254342);maxAbsScaler();adaBoost(decisionTree('gini',20,11,0.0670995002390361,5,'balanced'),56,0.3406677395419655,'SAMME')	0.7132975662975003	4.387432813644409
+maxAbsScaler();fastICA(7,'parallel','unit-variance','exp');adaBoost(decisionTree('entropy',4,19,0.14741933352810044,14,'None'),18,0.6977441370837303,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+selectFwe(0.0025141354155604873);nystroem('sigmoid',0.18140645336368708,66,2,-0.061536526024176474);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();varianceThreshold();minMaxScaler();randomForest(47,'gini','log2',4,17,True,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(20.154240853980127);minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6627062859706098	4.073821783065796
+randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.8372846613764395	2.2513415813446045
+minMaxScaler();adaBoost(decisionTree('entropy',13,8,0.4799802786928311,19,'None'),100,0.9934852637173633,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+gaussianNB(0.0025633908466967015)	0.5	cached
+maxAbsScaler();selectFwe(0.040650824342305825);multinomialNB(0.6319441039470504,False)	0.7408577664396218	0.9395501613616943
+logisticRegression('None','newton-cg',1000,8.783931825179613,'balanced')	0.8103270201443868	5.664238691329956
+fastICA(67,'deflation','arbitrary-variance','cube');adaBoost(decisionTree('entropy',13,20,0.8067400693093005,10,'balanced'),18,0.7939036446550196,'SAMME')	0.7238597742850397	6.7129175662994385
+fastICA(84,'deflation','unit-variance','exp');selectPercentile(77.70738072320933);maxAbsScaler();minMaxScaler();qda(0.2705821588914955)	0.5	5.749711036682129
+varianceThreshold();maxAbsScaler();fastICA(2,'parallel','arbitrary-variance','cube');extraTreesClassifier(98,'entropy','log2',4,18,True,'None')	0.5	cached
+varianceThreshold();pca(0.7737730713033023,False);extraTreesClassifier(23,'entropy','sqrt',11,14,False,'None')	0.5	cached
+robustScaler(True,False);maxAbsScaler();minMaxScaler();fastICA(75,'deflation','arbitrary-variance','logcosh');multinomialNB(1.5967427846639362,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+varianceThreshold();minMaxScaler();multinomialNB(0.9277954867081649,False)	0.7877206699880928	1.2659893035888672
+varianceThreshold();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7911337455611209	10.162574768066406
+qda(0.908928149123928)	0.6598419806898741	1.4514813423156738
+maxAbsScaler();gaussianNB(0.005304815309714867)	0.5820448779735388	1.0821280479431152
+minMaxScaler();adaBoost(decisionTree('entropy',30,6,0.4777366662052569,8,'None'),29,0.8821870662618138,'SAMME')	0.7177007662271722	1.5572023391723633
+maxAbsScaler();decisionTree('entropy',14,4,0.1565061957205034,18,'balanced')	0.774742051718382	1.673922061920166
+maxAbsScaler();fastICA(52,'deflation','unit-variance','logcosh');minMaxScaler();robustScaler(True,False);gaussianNB(0.005888656834712672)	0.6772311730378585	47.415905714035034
+maxAbsScaler();minMaxScaler();pca(0.9829158088716685,False);robustScaler(True,True);gaussianNB(0.0027090860173281514)	0.6388984124891028	0.7341554164886475
+minMaxScaler();maxAbsScaler();qda(0.24809806734772877)	0.5	0.6121366024017334
+minMaxScaler();selectFwe(0.0059893322213879505);fastICA(15,'parallel','unit-variance','exp');kNN(2,'distance',2)	0.6651930445033893	0.7704665660858154
+minMaxScaler();minMaxScaler();pca(0.7080645635431918,False);mlpClassifier((71, 17),0.06185621557838577,0.11456865849772284,'adam','logistic')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();fastICA(37,'deflation','unit-variance','logcosh');adaBoost(decisionTree('entropy',11,19,0.7760043714271633,17,'balanced'),12,1.261948025336331,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+pca(0.5542482905583985,False);maxAbsScaler();lda(0.5080103661779392,192,0.05654901820626112)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+selectPercentile(1.487183243184026);varianceThreshold();gaussianNB(0.0033105663410356767)	0.4977011494252873	cached
+decisionTree('gini',3,4,0.5015662269224964,6,'None')	0.6642362889742068	0.9661099910736084
+multinomialNB(41.902024025014086,True)	0.6823184097793448	0.8943517208099365
+varianceThreshold();randomForest(88,'gini','log2',4,19,True,'balanced')	0.8159293121843396	2.2774388790130615
+maxAbsScaler();varianceThreshold();maxAbsScaler();selectFwe(0.0438793612648037);bernoulliNB(2.1518041649333837,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();maxAbsScaler();lda(0.09377148681741465,100,0.011108228899766755)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+nystroem('sigmoid',1.1589249297494142,41,5,-0.8507375815660461);maxAbsScaler();extraTreesClassifier(83,'entropy','log2',17,3,False,'balanced')	0.5	2.500600814819336
+lda(0.4896232779125115,217,0.001112722629739165)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	0.7328599669306467	1.5952210426330566
+maxAbsScaler();randomForest(77,'entropy',0.968975331283085,6,7,False,'balanced')	0.7832873978618029	2.9659721851348877
+robustScaler(False,False);decisionTree('entropy',30,4,0.9764080124619022,11,'None')	0.7005942106654179	1.2629420757293701
+pca(0.5949045601929107,True);multinomialNB(4.653580718215118,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	167.3216474056244
+selectPercentile(24.066554442338795);varianceThreshold();selectFwe(0.018197547794541632);kNN(16,'uniform',1)	0.5807439686750031	1.3119750022888184
+varianceThreshold();varianceThreshold();pca(0.8457970416233583,False);qda(0.21865213452321364)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();varianceThreshold();varianceThreshold();decisionTree('gini',6,11,0.7170229596498487,6,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+bernoulliNB(8.08179739240647,True)	0.5	cached
+maxAbsScaler();qda(0.23192586359637068)	0.5	1.339111328125
+maxAbsScaler();minMaxScaler();maxAbsScaler();extraTreesClassifier(78,'gini','log2',9,12,True,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(20.154240853980127);minMaxScaler();randomForest(47,'gini','log2',4,17,True,'balanced_subsample')	0.6976434402721737	cached
+minMaxScaler();minMaxScaler();pca(0.7080645635431918,False);mlpClassifier((71, 17),0.06185621557838577,0.11456865849772284,'adam','logistic')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);maxAbsScaler();nystroem('poly',0.5881817147723083,26,5,0.08456352275775303);multinomialNB(0.6804727733663464,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+lda(0.9889843833045608,121,0.05304447353198557)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+qda(0.8915021188845426)	0.6613738151550507	cached
+varianceThreshold();pca(0.7737730713033023,False);extraTreesClassifier(23,'entropy','sqrt',11,14,False,'None')	0.5	cached
+varianceThreshold();minMaxScaler();varianceThreshold();minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(2,'deflation','unit-variance','cube');fastICA(88,'deflation','arbitrary-variance','cube');maxAbsScaler();randomForest(49,'gini',0.9299733179526174,17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();varianceThreshold();nystroem('sigmoid',0.2462148967885159,20,4,0.43615929224283545);robustScaler(True,False);kNN(2,'uniform',2)	0.6951967243323477	cached
+selectPercentile(93.8714850736751);maxAbsScaler();minMaxScaler();maxAbsScaler();extraTreesClassifier(53,'entropy','log2',17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();logisticRegression('None','liblinear',1000,0.01277929367718808,'None')	eval_error (penalty=None is not supported for the liblinear solver)	eval_error (penalty=None is not supported for the liblinear solver)
+multinomialNB(11.145114699745069,True)	0.6890550608194177	1.6614768505096436
+selectFwe(0.0025141354155604873);nystroem('sigmoid',0.18140645336368708,66,2,-0.061536526024176474);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	4.51984977722168
+selectFwe(0.013951266168905173);maxAbsScaler();robustScaler(True,False);mlpClassifier((65, 12),0.06948188619589625,0.8410851852196947,'sgd','tanh')	0.5	5.275098562240601
+minMaxScaler();mlpClassifier((60, 10),0.057791228780402895,0.051935881333576295,'lbfgs','logistic')	0.7166003999590075	97.60030436515808
+maxAbsScaler();varianceThreshold();qda(0.11030073361599846)	0.5	1.2066335678100586
+varianceThreshold();extraTreesClassifier(30,'entropy','sqrt',16,15,False,'None')	0.5	1.1006386280059814
+varianceThreshold();robustScaler(True,True);minMaxScaler();selectFwe(0.026691403294372605);decisionTree('gini',12,5,0.26099635215507666,18,'balanced')	0.710905391686034	0.8534913063049316
+maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',13,15,False,'balanced_subsample')	0.8492253159029713	0.8573219776153564
+randomForest(77,'entropy',0.968975331283085,6,7,False,'balanced')	0.7832873978618029	1.778925895690918
+minMaxScaler();minMaxScaler();pca(0.6148691055928839,False);qda(0.4038033794576291)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();adaBoost(decisionTree('entropy',13,8,0.4799802786928311,1,'None'),100,0.9934852637173633,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();extraTreesClassifier(93,'entropy','sqrt',2,6,True,'balanced_subsample')	0.8422975407777938	1.9643244743347168
+decisionTree('entropy',22,11,0.35569965853419894,14,'None')	0.6706132288844756	0.9607975482940674
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+varianceThreshold();adaBoost(decisionTree('entropy',4,2,0.694119725005362,20,'None'),83,0.09993503467306088,'SAMME')	0.6803864552990946	cached
+nystroem('cosine',1.102884177087294,20,5,-0.8732430211852462);maxAbsScaler();fastICA(17,'parallel','arbitrary-variance','logcosh');gaussianNB(0.009000448740319272)	0.5336316361601521	9.335176467895508
+maxAbsScaler();selectPercentile(65.62297682980338);selectFwe(0.04819870299666892);qda(0.8898246054465815)	0.5	0.6416347026824951
+selectFwe(0.030157845680910688);varianceThreshold();bernoulliNB(0.04727601220742924,False)	0.5768000590575919	cached
+minMaxScaler();extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	0.8422975407777938	cached
+selectFwe(0.0025141354155604873);nystroem('poly',6.7896474205363875,66,4,-0.0663480717125382);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();nystroem('sigmoid',0.18140645336368708,46,2,-0.061536526024176474);adaBoost(decisionTree('entropy',10,11,0.25686745591920024,12,'None'),62,1.2194770853196386,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+varianceThreshold();minMaxScaler();multinomialNB(1.5967427846639362,False)	0.786381138988774	0.7192084789276123
+selectFwe(0.030157845680910688);varianceThreshold();bernoulliNB(0.04727601220742924,False)	0.5768000590575919	1.0187814235687256
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();robustScaler(True,True);fastICA(11,'parallel','arbitrary-variance','exp');adaBoost(decisionTree('gini',29,8,0.8691851172496176,9,'None'),53,1.286593866877256,'SAMME')	0.7092410761330126	cached
+selectPercentile(58.28758998175094);maxAbsScaler();varianceThreshold();kNN(2,'distance',2)	0.7386956717048363	1.7363948822021484
+fastICA(66,'parallel','unit-variance','cube');randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7691687168973382	3.834578275680542
+fastICA(85,'deflation','arbitrary-variance','logcosh');adaBoost(decisionTree('gini',15,9,0.7284017540321592,16,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();minMaxScaler();maxAbsScaler();adaBoost(decisionTree('entropy',26,20,0.8737785779364751,12,'balanced'),70,0.578014088814875,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();minMaxScaler();selectFwe(0.01174754520574795);mlpClassifier((83, 18),0.06608436060832434,0.8479840436852978,'adam','relu')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.6429548344859308,True);adaBoost(decisionTree('gini',27,9,0.5512908120654102,1,'None'),57,0.874988851857677,'SAMME')	0.676009982632914	cached
+minMaxScaler();selectFwe(0.0059893322213879505);fastICA(15,'parallel','unit-variance','exp');logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.6888768092928441	1.0755822658538818
+robustScaler(True,True);kNN(2,'distance',2)	0.7140638498224046	0.7788064479827881
+maxAbsScaler();qda(0.23192586359637068)	0.5	0.7034294605255127
+selectPercentile(51.0812562886196);maxAbsScaler();maxAbsScaler();decisionTree('gini',17,8,0.5883400736089128,2,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();mlpClassifier((60, 10),0.057791228780402895,0.051935881333576295,'lbfgs','logistic')	0.7166003999590075	69.21068358421326
+varianceThreshold();minMaxScaler();multinomialNB(0.9277954867081649,False)	0.7877206699880928	0.7595229148864746
+minMaxScaler();minMaxScaler();pca(0.5949045601929107,False);qda(0.4038033794576291)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.6148691055928839,True);multinomialNB(4.653580718215118,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+nystroem('cosine',1.102884177087294,20,5,-0.8732430211852462);maxAbsScaler();fastICA(17,'parallel','arbitrary-variance','logcosh');gaussianNB(0.009000448740319272)	0.5336316361601521	6.452328205108643
+qda(0.908928149123928)	0.6598419806898741	1.1242749691009521
+minMaxScaler();nystroem('cosine',1.5832887498268873,56,3,0.858367136016849);adaBoost(decisionTree('entropy',4,8,0.5613868757541819,11,'None'),84,1.4295784621776957,'SAMME')	0.7242681781417193	cached
+varianceThreshold();randomForest(88,'gini','log2',4,19,True,'balanced')	0.8159293121843396	cached
+fastICA(84,'deflation','arbitrary-variance','exp');minMaxScaler();selectFwe(0.01174754520574795);mlpClassifier((83, 18),0.06608436060832434,0.8479840436852978,'adam','relu')	0.5	22.271498680114746
+minMaxScaler();adaBoost(decisionTree('entropy',13,20,0.8067400693093005,10,'balanced'),18,0.7939036446550196,'SAMME')	0.7315531808542952	1.656184196472168
+minMaxScaler();selectFwe(0.0059893322213879505);fastICA(15,'deflation','unit-variance','exp');logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.6473554499828648	1.1029658317565918
+fastICA(85,'parallel','arbitrary-variance','logcosh');adaBoost(decisionTree('gini',15,9,0.7284017540321592,16,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+robustScaler(True,True);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	0.899116039276123
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	cached
+minMaxScaler();extraTreesClassifier(93,'entropy','sqrt',2,6,True,'balanced_subsample')	0.8422975407777938	cached
+robustScaler(True,True);maxAbsScaler();nystroem('poly',0.5881817147723083,26,5,0.08456352275775303);multinomialNB(0.6804727733663464,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+maxAbsScaler();maxAbsScaler();varianceThreshold();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();maxAbsScaler();pca(0.9220881454677948,True);decisionTree('entropy',18,17,0.6570978700911487,12,'None')	0.7233363184144486	0.722036600112915
+maxAbsScaler();fastICA(7,'parallel','unit-variance','logcosh');adaBoost(decisionTree('gini',4,19,0.14741933352810044,14,'None'),18,0.6977441370837303,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+varianceThreshold();varianceThreshold();pca(0.5949045601929107,False);qda(0.21865213452321364)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(43,'parallel','unit-variance','logcosh');decisionTree('entropy',19,5,0.4144420429221001,8,'None')	0.6636615763305287	2.469414710998535
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	143.7865433692932
+minMaxScaler();adaBoost(decisionTree('entropy',30,6,0.4777366662052569,8,'None'),29,0.8821870662618138,'SAMME')	0.7177007662271722	2.6846060752868652
+maxAbsScaler();minMaxScaler();pca(0.9829158088716685,False);robustScaler(True,True);gaussianNB(0.0027090860173281514)	0.6388984124891028	cached
+maxAbsScaler();minMaxScaler();varianceThreshold();adaBoost(decisionTree('gini',20,16,0.531780841855169,11,'None'),29,1.6623848756280022,'SAMME')	0.7023150519656092	cached
+varianceThreshold();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7911337455611209	8.3587327003479
+robustScaler(True,True);maxAbsScaler();nystroem('poly',0.5881817147723083,26,5,0.08456352275775303);multinomialNB(0.6804727733663464,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+fastICA(28,'parallel','arbitrary-variance','exp');extraTreesClassifier(33,'entropy','log2',4,10,True,'balanced_subsample')	0.8014116704596035	1.9860687255859375
+selectPercentile(55.59511743904313);minMaxScaler();fastICA(29,'deflation','arbitrary-variance','logcosh');mlpClassifier((78, 7),0.08486117379021828,0.1009015787497452,'sgd','relu')	0.5	3.7166666984558105
+maxAbsScaler();mlpClassifier((15, 1),0.0809027254514435,0.16983643311105376,'lbfgs','tanh')	0.7391282387787959	cached
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(2,'deflation','unit-variance','cube');fastICA(88,'deflation','arbitrary-variance','cube');maxAbsScaler();randomForest(49,'gini',0.9299733179526174,17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();maxAbsScaler();varianceThreshold();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',4,2,0.694119725005362,20,'None'),83,0.09993503467306088,'SAMME')	0.6803864552990946	cached
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	cached
+minMaxScaler();minMaxScaler();maxAbsScaler();adaBoost(decisionTree('entropy',26,20,0.8737785779364751,12,'balanced'),70,0.578014088814875,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+bernoulliNB(8.08179739240647,True)	0.5	1.0560591220855713
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	0.7328599669306467	2.4206080436706543
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	3.710157632827759
+selectFwe(0.0025141354155604873);nystroem('poly',6.7896474205363875,66,4,-0.0663480717125382);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	0.7328599669306467	cached
+maxAbsScaler();minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+selectPercentile(20.154240853980127);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7183645804829956	1.8696799278259277
+robustScaler(True,True);maxAbsScaler();nystroem('poly',2.3242835260334958,26,4,0.6370609841942945);multinomialNB(0.6804727733663464,False)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',0.5881817147723083,51,5,0.08456352275775303);kNN(10,'uniform',2)	0.6645949012270631	7.22041654586792
+maxAbsScaler();randomForest(77,'entropy',0.968975331283085,6,7,False,'balanced')	0.7832873978618029	cached
+maxAbsScaler();decisionTree('entropy',17,3,0.9600753160876888,19,'balanced')	0.8166749344075118	cached
+minMaxScaler();minMaxScaler();pca(0.6148691055928839,False);qda(0.4038033794576291)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7911337455611209	cached
+bernoulliNB(0.2046665702059624,False)	0.6583578004524797	0.9339091777801514
+minMaxScaler();decisionTree('gini',25,3,0.5819162245704291,5,'None')	0.693665988744119	1.066462516784668
+maxAbsScaler();maxAbsScaler();varianceThreshold();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);multinomialNB(0.1261018807497812,True)	0.6972882132043469	1.1721715927124023
+varianceThreshold();pca(0.7737730713033023,False);extraTreesClassifier(23,'entropy','sqrt',11,14,False,'None')	0.5	cached
+varianceThreshold();maxAbsScaler();maxAbsScaler();pca(0.7551384308989475,True);extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(97.6537950677149);varianceThreshold();multinomialNB(4.653580718215118,False)	0.6872125822940092	1.669914960861206
+varianceThreshold();maxAbsScaler();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.836525623194048	1.7079617977142334
+fastICA(84,'deflation','unit-variance','exp');selectPercentile(77.70738072320933);maxAbsScaler();minMaxScaler();qda(0.2705821588914955)	0.5	3.1130683422088623
+varianceThreshold();robustScaler(True,True);bernoulliNB(0.40389289031833264,False)	0.7454143261191458	1.5949907302856445
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7215894824353979	2.280952215194702
+selectFwe(0.0025141354155604873);nystroem('poly',6.7896474205363875,66,4,-0.0663480717125382);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);kNN(2,'distance',2)	0.7140638498224046	cached
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+robustScaler(False,False);randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8090378885526246	3.981637716293335
+varianceThreshold();minMaxScaler();multinomialNB(0.9277954867081649,False)	0.7877206699880928	1.055110216140747
+varianceThreshold();pca(0.7737730713033023,False);lda(0.9620912667469511,199,0.002412799488099349)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+extraTreesClassifier(23,'entropy','sqrt',11,14,False,'None')	0.5	1.697526216506958
+varianceThreshold();maxAbsScaler();maxAbsScaler();pca(0.7551384308989475,True);extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	cached
+varianceThreshold();adaBoost(decisionTree('entropy',4,2,0.694119725005362,20,'None'),83,0.09993503467306088,'SAMME')	0.6803864552990946	2.9265518188476562
+kNN(1,'distance',1)	0.7081180118168315	1.0558922290802002
+pca(0.5571659319866661,False);maxAbsScaler();adaBoost(decisionTree('entropy',15,19,0.46557324685667756,6,'None'),75,0.7889294230443228,'SAMME')	0.676009616340598	cached
+selectPercentile(93.8714850736751);maxAbsScaler();minMaxScaler();maxAbsScaler();extraTreesClassifier(53,'entropy','log2',17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(20.154240853980127);minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+varianceThreshold();randomForest(23,'gini','log2',19,16,False,'balanced_subsample')	0.8267191567580572	1.3514842987060547
+selectFwe(0.030157845680910688);maxAbsScaler();bernoulliNB(0.04727601220742924,False)	0.5768000590575919	1.1781275272369385
+varianceThreshold();randomForest(77,'gini',0.968975331283085,6,7,False,'balanced')	0.7641756132558533	2.4116616249084473
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	2.3777518272399902
+varianceThreshold();randomForest(23,'gini','log2',19,16,False,'balanced_subsample')	0.8267191567580572	0.8039495944976807
+selectPercentile(95.5641929319348);varianceThreshold();decisionTree('gini',6,11,0.7170229596498487,6,'balanced')	0.7873991699896624	0.7082672119140625
+varianceThreshold();varianceThreshold();varianceThreshold();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();varianceThreshold();adaBoost(decisionTree('entropy',6,13,0.9319429910315697,1,'None'),55,0.4843088575644773,'SAMME')	0.7101992968314589	1.8961153030395508
+extraTreesClassifier(11,'gini','log2',20,1,True,'balanced')	0.8241959662280095	0.9388687610626221
+robustScaler(True,True);adaBoost(decisionTree('gini',5,7,0.40709373769605095,2,'None'),82,0.4345099435912581,'SAMME')	0.702315418257925	1.6998908519744873
+nystroem('rbf',5.154928731621999,56,5,0.28655521670848483);maxAbsScaler();maxAbsScaler();logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+multinomialNB(41.902024025014086,True)	0.6823184097793448	0.5623397827148438
+robustScaler(True,True);extraTreesClassifier(38,'gini','log2',16,8,False,'balanced')	0.8644534077381707	0.9143176078796387
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);mlpClassifier((60, 10),0.057791228780402895,0.051935881333576295,'lbfgs','logistic')	0.6651934107957053	cached
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	cached
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	cached
+selectFwe(0.03826000408142484);pca(0.656372797600541,False);minMaxScaler();maxAbsScaler();decisionTree('gini',6,6,0.7135091683366578,6,'None')	0.6270893857100754	0.6837749481201172
+varianceThreshold();varianceThreshold();varianceThreshold();extraTreesClassifier(11,'entropy','log2',2,6,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();minMaxScaler();pca(0.9829158088716685,False);robustScaler(True,True);gaussianNB(0.0027090860173281514)	0.6388984124891028	0.7988264560699463
+bernoulliNB(48.271270176622956,True)	0.5	0.6058833599090576
+robustScaler(False,False);randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8090378885526246	1.3652515411376953
+minMaxScaler();adaBoost(decisionTree('entropy',30,6,0.4777366662052569,8,'None'),29,0.8821870662618138,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+varianceThreshold();robustScaler(True,True);bernoulliNB(0.40389289031833264,False)	0.7454143261191458	0.7454814910888672
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	0.8516273498535156
+selectFwe(0.030157845680910688);varianceThreshold();bernoulliNB(0.04727601220742924,False)	0.5768000590575919	0.9823594093322754
+kNN(1,'distance',1)	0.7081180118168315	cached
+robustScaler(True,True);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	cached
+qda(0.908928149123928)	0.6598419806898741	0.834420919418335
+robustScaler(True,True);nystroem('rbf',3.2316652153826353,79,5,-0.5671792571254342);maxAbsScaler();adaBoost(decisionTree('gini',20,11,0.0670995002390361,5,'balanced'),56,0.3406677395419655,'SAMME')	0.7132975662975003	2.8816232681274414
+varianceThreshold();minMaxScaler();bernoulliNB(8.08179739240647,True)	0.5	1.0532853603363037
+logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.8015191551157794	84.50820398330688
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();selectFwe(0.008240986533720554);varianceThreshold();adaBoost(decisionTree('gini',23,11,0.7248680556867526,19,'balanced'),15,0.35795167673821526,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();selectPercentile(7.240327322219754);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.576543936199768	cached
+maxAbsScaler();varianceThreshold();selectPercentile(85.42690827571663);maxAbsScaler();mlpClassifier((82, 9),0.07957942637449097,0.06937328562933401,'sgd','logistic')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();varianceThreshold();extraTreesClassifier(94,'gini','log2',20,1,True,'balanced')	0.8182263312974726	1.2993314266204834
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6627062859706098	cached
+robustScaler(False,False);decisionTree('entropy',30,4,0.9764080124619022,11,'None')	0.7005942106654179	0.6578726768493652
+bernoulliNB(8.08179739240647,True)	0.5	1.013667106628418
+minMaxScaler();maxAbsScaler();pca(0.9220881454677948,True);decisionTree('gini',18,17,0.6570978700911487,12,'None')	0.6878875584024922	0.7805845737457275
+maxAbsScaler();selectFwe(0.017809993107497507);multinomialNB(0.4918315175735083,False)	0.7448792897761052	0.9259316921234131
+varianceThreshold();minMaxScaler();logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.810709429322207	2.9912240505218506
+bernoulliNB(48.271270176622956,False)	0.6208299813561237	0.7010703086853027
+varianceThreshold();maxAbsScaler();maxAbsScaler();qda(0.15307288707533862)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();nystroem('poly',1.1586526013771086,50,4,0.903249430760729);qda(0.841813281778146)	0.5980410042914164	1.675724744796753
+minMaxScaler();selectPercentile(7.240327322219754);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.576543936199768	1.449899435043335
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+selectFwe(0.009509185975927925);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7183645804829956	1.0093071460723877
+fastICA(66,'parallel','unit-variance','cube');pca(0.656372797600541,False);minMaxScaler();maxAbsScaler();extraTreesClassifier(11,'entropy','log2',2,6,False,'None')	0.5686813186813187	2.5272085666656494
+varianceThreshold();qda(0.24809806734772877)	0.6724073004715189	0.7788083553314209
+minMaxScaler();maxAbsScaler();varianceThreshold();pca(0.8457970416233583,False);qda(0.21865213452321364)	0.5	0.9011099338531494
+maxAbsScaler();logisticRegression('None','liblinear',1000,0.01277929367718808,'balanced')	eval_error (penalty=None is not supported for the liblinear solver)	eval_error (penalty=None is not supported for the liblinear solver)
+minMaxScaler();selectPercentile(80.89344230473203);extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.836951045555252	0.9808084964752197
+maxAbsScaler();minMaxScaler();pca(0.9829158088716685,False);robustScaler(True,True);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);gaussianNB(0.0027090860173281514)	0.7562636267785605	1.4807326793670654
+minMaxScaler();minMaxScaler();robustScaler(False,False);qda(0.22950420231994728)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9261918998383935,False);decisionTree('entropy',30,4,0.9764080124619022,11,'None')	0.5506161761288022	0.7560684680938721
+minMaxScaler();extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	0.8422975407777938	1.538132667541504
+pca(0.6429548344859308,True);adaBoost(decisionTree('gini',27,9,0.5512908120654102,1,'None'),57,0.874988851857677,'SAMME')	0.676009982632914	1.6635265350341797
+fastICA(75,'parallel','arbitrary-variance','cube');selectPercentile(77.70738072320933);maxAbsScaler();minMaxScaler();qda(0.2705821588914955)	0.5	1.9920597076416016
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();minMaxScaler();maxAbsScaler();qda(0.5649230059460494)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9261918998383935,False);extraTreesClassifier(50,'gini','sqrt',13,15,False,'balanced_subsample')	0.6774564790388619	0.9955472946166992
+maxAbsScaler();maxAbsScaler();nystroem('cosine',7.540831190657452,44,2,0.43750193167164375);selectPercentile(71.07697447836384);qda(0.8896005566971521)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	0.8422975407777938	1.7450459003448486
+adaBoost(decisionTree('gini',27,20,0.2450623703127689,7,'None'),57,0.874988851857677,'SAMME')	0.7182740137015868	1.3645198345184326
+minMaxScaler();varianceThreshold();bernoulliNB(48.271270176622956,True)	0.5	0.6370563507080078
+minMaxScaler();selectPercentile(93.46341552508365);adaBoost(decisionTree('gini',29,8,0.8691851172496176,9,'None'),53,1.2557669523714414,'SAMME')	0.7026985600203771	1.5221049785614014
+minMaxScaler();maxAbsScaler();minMaxScaler();minMaxScaler();minMaxScaler();multinomialNB(0.9277954867081649,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();maxAbsScaler();selectFwe(0.030157845680910688);decisionTree('gini',18,17,0.6570978700911487,12,'None')	0.6342084459279687	0.9593141078948975
+pca(0.9220881454677948,True);varianceThreshold();bernoulliNB(0.04727601220742924,False)	0.4496598633705511	1.2447893619537354
+varianceThreshold();adaBoost(decisionTree('entropy',4,2,0.694119725005362,20,'None'),83,0.09993503467306088,'SAMME')	0.6803864552990946	2.0041117668151855
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced')	0.8215205671525313	3.7735862731933594
+robustScaler(False,False);randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced_subsample')	0.8090378885526246	1.7459094524383545
+minMaxScaler();selectPercentile(82.06822843013279);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced_subsample')	0.8492978941089973	0.8452816009521484
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(28,'deflation','arbitrary-variance','logcosh');extraTreesClassifier(33,'entropy','log2',4,10,True,'balanced_subsample')	0.8277480436971437	5.618988752365112
+pca(0.6429548344859308,True);adaBoost(decisionTree('gini',27,9,0.5512908120654102,1,'None'),57,0.874988851857677,'SAMME')	0.676009982632914	1.9964637756347656
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',2.3242835260334958,51,4,0.6370609841942945);extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.6249806569480862	6.350892543792725
+selectPercentile(40.48328763965227);varianceThreshold();kNN(8,'distance',2)	0.6707806365484219	0.9341835975646973
+maxAbsScaler();fastICA(52,'deflation','unit-variance','logcosh');minMaxScaler();robustScaler(True,False);gaussianNB(0.006381957506426923)	0.6774223776267687	27.37380051612854
+robustScaler(True,True);kNN(2,'distance',2)	0.7140638498224046	cached
+selectPercentile(20.154240853980127);minMaxScaler();randomForest(47,'gini','log2',4,17,True,'balanced_subsample')	0.6976434402721737	cached
+minMaxScaler();minMaxScaler();selectFwe(0.018344638570826213);decisionTree('gini',19,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6627062859706098	cached
+minMaxScaler();maxAbsScaler();pca(0.9220881454677948,True);decisionTree('gini',18,17,0.6570978700911487,12,'None')	0.6878875584024922	cached
+varianceThreshold();maxAbsScaler();maxAbsScaler();pca(0.7551384308989475,True);extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+multinomialNB(11.145114699745069,True)	0.6890550608194177	0.5146400928497314
+maxAbsScaler();fastICA(86,'parallel','arbitrary-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7878770405802779	3.4499406814575195
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	2.2398598194122314
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),91,0.8407380501436125,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();minMaxScaler();adaBoost(decisionTree('entropy',2,16,0.772397954569202,6,'None'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();robustScaler(True,True);fastICA(11,'parallel','arbitrary-variance','exp');adaBoost(decisionTree('gini',29,8,0.8691851172496176,9,'None'),53,1.286593866877256,'SAMME')	0.7092410761330126	3.300563097000122
+randomForest(46,'gini','None',16,16,True,'balanced')	0.815388101199402	1.124845027923584
+maxAbsScaler();logisticRegression('None','liblinear',1000,0.01277929367718808,'balanced')	eval_error (penalty=None is not supported for the liblinear solver)	eval_error (penalty=None is not supported for the liblinear solver)
+minMaxScaler();adaBoost(decisionTree('entropy',13,8,0.4799802786928311,1,'None'),100,0.9934852637173633,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+varianceThreshold();minMaxScaler();multinomialNB(1.5967427846639362,False)	0.786381138988774	cached
+qda(0.5744941148619029)	0.6664737312459341	0.7262225151062012
+minMaxScaler();maxAbsScaler();multinomialNB(1.5967427846639362,False)	0.786381138988774	0.5829741954803467
+varianceThreshold();minMaxScaler();adaBoost(decisionTree('gini',15,9,0.7284017540321592,16,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+robustScaler(False,False);randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8090378885526246	cached
+minMaxScaler();nystroem('poly',1.1586526013771086,50,4,0.903249430760729);adaBoost(decisionTree('gini',7,9,0.46134770254563384,4,'None'),91,1.8226495329183878,'SAMME')	0.7100318891675126	cached
+minMaxScaler();selectPercentile(7.240327322219754);logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.6945750417432357	1.5480098724365234
+varianceThreshold();minMaxScaler();extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	1.190652847290039
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7283221042599959	1.6376867294311523
+maxAbsScaler();decisionTree('gini',14,4,0.1565061957205034,18,'balanced')	0.7747155096136437	0.9562456607818604
+selectFwe(0.030157845680910688);varianceThreshold();bernoulliNB(0.04727601220742924,False)	0.5768000590575919	cached
+randomForest(77,'entropy',0.968975331283085,6,7,False,'balanced')	0.7832873978618029	cached
+selectPercentile(93.8714850736751);maxAbsScaler();varianceThreshold();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8363628726752614	2.5596232414245605
+maxAbsScaler();maxAbsScaler();minMaxScaler();selectPercentile(8.239806338261246);extraTreesClassifier(53,'entropy','log2',17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();selectPercentile(80.89344230473203);adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),18,0.7939036446550196,'SAMME')	0.7866911832956536	1.6443963050842285
+fastICA(67,'deflation','arbitrary-variance','cube');adaBoost(decisionTree('gini',13,20,0.8067400693093005,10,'balanced'),24,1.2289606611821253,'SAMME')	0.7077348700543794	6.210840225219727
+pca(0.6429548344859308,True);kNN(2,'distance',2)	0.6762011872218241	1.2659540176391602
+robustScaler(True,True);adaBoost(decisionTree('gini',27,9,0.5512908120654102,1,'None'),57,0.874988851857677,'SAMME')	0.7028897646092872	2.4966917037963867
+minMaxScaler();maxAbsScaler();extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.8584181541556104	1.7608976364135742
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	1.8291449546813965
+maxAbsScaler();maxAbsScaler();nystroem('cosine',7.540831190657452,92,2,0.43750193167164375);selectPercentile(71.07697447836384);qda(0.5009791823591049)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.5542482905583985,False);maxAbsScaler();qda(0.6857068887977663)	0.5	cached
+varianceThreshold();minMaxScaler();adaBoost(decisionTree('gini',20,16,0.531780841855169,11,'None'),29,1.6623848756280022,'SAMME')	0.7023150519656092	2.7936577796936035
+maxAbsScaler();minMaxScaler();varianceThreshold();multinomialNB(0.9277954867081649,False)	0.7877206699880928	1.068490982055664
+maxAbsScaler();varianceThreshold();adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'None'),24,1.2289606611821253,'SAMME')	0.725392707627164	1.500396966934204
+minMaxScaler();decisionTree('entropy',25,3,0.5819162245704291,5,'balanced')	0.7694119188943478	1.0242061614990234
+robustScaler(False,False);adaBoost(decisionTree('entropy',17,13,0.23289219190249422,19,'None'),93,0.07795440667766683,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();randomForest(77,'gini',0.6140469483122213,6,7,False,'balanced')	0.7879834867373604	2.5668022632598877
+robustScaler(False,True);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.8109006339111172	1.2075674533843994
+varianceThreshold();varianceThreshold();extraTreesClassifier(11,'entropy','log2',2,6,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();randomForest(77,'gini',0.968975331283085,6,7,False,'balanced')	0.763601266904491	2.4766740798950195
+varianceThreshold();multinomialNB(0.9277954867081649,False)	0.6791374991315651	1.2072556018829346
+pca(0.6429548344859308,True);kNN(2,'distance',2)	0.6762011872218241	cached
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+maxAbsScaler();decisionTree('gini',11,10,0.24069642979248318,3,'balanced')	0.7730519467712058	1.3914587497711182
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	cached
+varianceThreshold();varianceThreshold();maxAbsScaler();pca(0.7551384308989475,True);extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(95.5641929319348);varianceThreshold();adaBoost(decisionTree('gini',10,16,0.57693567329446,20,'balanced'),34,0.010685263036631587,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7215894824353979	2.14666748046875
+selectPercentile(97.6537950677149);varianceThreshold();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.8401504519523904	1.5121843814849854
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	3.7343311309814453
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);multinomialNB(0.1261018807497812,True)	0.6972882132043469	1.011357307434082
+maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',13,15,False,'balanced_subsample')	0.8492253159029713	3.198442220687866
+robustScaler(False,False);gaussianNB(0.006713017733269129)	0.5	1.1554028987884521
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.7789765438476456	26.022780418395996
+minMaxScaler();extraTreesClassifier(93,'entropy','sqrt',2,6,True,'balanced_subsample')	0.8422975407777938	1.841646671295166
+selectPercentile(20.154240853980127);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7183645804829956	1.4967029094696045
+minMaxScaler();maxAbsScaler();pca(0.9220881454677948,True);adaBoost(decisionTree('gini',17,4,0.8052352943318118,9,'None'),76,1.8610794670990036,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',18,9,0.6570978700911487,12,'None'),37,0.594072497339047,'SAMME')	0.7615817564851651	2.6790719032287598
+varianceThreshold();robustScaler(True,True);bernoulliNB(0.40389289031833264,False)	0.7454143261191458	0.6825406551361084
+varianceThreshold();maxAbsScaler();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.836525623194048	0.8935112953186035
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',2.897775974300684,51,5,0.08456352275775303);kNN(3,'uniform',2)	0.7080938485995517	9.675817251205444
+extraTreesClassifier(98,'gini','sqrt',18,11,False,'balanced')	0.8533778149061331	2.007179021835327
+varianceThreshold();maxAbsScaler();fastICA(86,'parallel','arbitrary-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7742172957113288	6.568705320358276
+maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7741953302479445	6.933148145675659
+maxAbsScaler();fastICA(86,'parallel','arbitrary-variance','cube');extraTreesClassifier(11,'gini','log2',20,1,True,'balanced')	0.7842025933012945	3.0305404663085938
+randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.8372846613764395	2.403146266937256
+selectFwe(0.030157845680910688);varianceThreshold();bernoulliNB(0.04727601220742924,False)	0.5768000590575919	1.0862572193145752
+robustScaler(False,False);extraTreesClassifier(80,'gini','log2',20,15,False,'balanced_subsample')	0.8496146846347941	1.846198320388794
+robustScaler(True,True);extraTreesClassifier(38,'gini','log2',16,8,False,'balanced')	0.8644534077381707	1.309718370437622
+varianceThreshold();randomForest(23,'gini','log2',19,16,False,'balanced_subsample')	0.8267191567580572	1.2145867347717285
+minMaxScaler();decisionTree('gini',25,3,0.5819162245704291,5,'None')	0.693665988744119	1.0989453792572021
+randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8442474838334271	3.3293540477752686
+robustScaler(True,True);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	1.9682104587554932
+maxAbsScaler();selectFwe(0.017809993107497507);multinomialNB(0.4918315175735083,False)	0.7448792897761052	1.3854262828826904
+minMaxScaler();selectPercentile(82.06822843013279);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced_subsample')	0.8492978941089973	1.5572905540466309
+robustScaler(True,True);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.8109006339111172	1.5880460739135742
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,0.43750193167164375);varianceThreshold();gaussianNB(0.006713017733269129)	0.7616387089025054	4.526185035705566
+maxAbsScaler();maxAbsScaler();nystroem('cosine',7.540831190657452,44,2,-0.7566378503939486);selectPercentile(71.07697447836384);qda(0.8896005566971521)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);selectPercentile(7.240327322219754);logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.6945750417432357	1.3536534309387207
+minMaxScaler();extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	1.7538189888000488
+maxAbsScaler();logisticRegression('None','liblinear',1000,0.01277929367718808,'balanced')	eval_error (penalty=None is not supported for the liblinear solver)	eval_error (penalty=None is not supported for the liblinear solver)
+randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.8372846613764395	3.511762857437134
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('sigmoid',5.847005513806611,42,5,0.4031294229323248);logisticRegression('None','saga',1000,0.8852310721651445,'balanced')	0.8263023523292528	10.74081301689148
+minMaxScaler();selectFwe(0.0059893322213879505);fastICA(15,'deflation','unit-variance','exp');multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+robustScaler(False,False);extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.8584181541556104	1.9755475521087646
+minMaxScaler();maxAbsScaler();randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8088463176713985	2.279142141342163
+varianceThreshold();minMaxScaler();multinomialNB(0.9277954867081649,False)	0.7877206699880928	cached
+selectPercentile(40.48328763965227);varianceThreshold();kNN(8,'distance',2)	0.6707806365484219	cached
+maxAbsScaler();logisticRegression('l1','sag',1000,18.368087749884857,'None')	eval_error (Solver sag supports only 'l2' or None penalties, got l1 penalty.)	eval_error (Solver sag supports only 'l2' or None penalties, got l1 penalty.)
+maxAbsScaler();maxAbsScaler();varianceThreshold();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.030157845680910688);varianceThreshold();extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.7337204439334063	1.9505722522735596
+minMaxScaler();maxAbsScaler();bernoulliNB(0.04727601220742924,False)	0.6604621498074389	0.8648204803466797
+varianceThreshold();maxAbsScaler();maxAbsScaler();pca(0.7551384308989475,True);extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();decisionTree('gini',14,4,0.1565061957205034,18,'balanced')	0.7747155096136437	1.5597021579742432
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,5,0.08456352275775303);varianceThreshold();gaussianNB(0.006713017733269129)	0.7604499212793536	4.081491231918335
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',0.5881817147723083,51,2,-0.7566378503939486);kNN(10,'uniform',2)	0.6713549828997841	9.709584951400757
+robustScaler(False,False);randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8090378885526246	cached
+minMaxScaler();minMaxScaler();robustScaler(False,False);qda(0.22950420231994728)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.5107478021770141,False);randomForest(57,'entropy',0.6667682616266237,20,17,False,'balanced')	0.7090020361827575	2.543675422668457
+maxAbsScaler();maxAbsScaler();varianceThreshold();randomForest(85,'gini',0.6140469483122213,4,13,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();selectPercentile(93.46341552508365);adaBoost(decisionTree('gini',29,8,0.8691851172496176,9,'None'),53,1.2557669523714414,'SAMME')	0.7026985600203771	3.5114753246307373
+varianceThreshold();minMaxScaler();logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.810709429322207	5.610018253326416
+varianceThreshold();minMaxScaler();logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.810709429322207	cached
+selectPercentile(65.67352125835242);varianceThreshold();decisionTree('gini',6,11,0.7170229596498487,6,'balanced')	0.8222649858438082	0.9168622493743896
+minMaxScaler();selectFwe(0.008240986533720554);varianceThreshold();adaBoost(decisionTree('gini',23,11,0.7248680556867526,19,'balanced'),15,0.35795167673821526,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7283221042599959	cached
+minMaxScaler();nystroem('rbf',5.623211545961776,19,3,-0.14737647267421683);selectPercentile(69.87522998444665);randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.782483217170367	2.516741991043091
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6627062859706098	cached
+selectPercentile(97.6537950677149);varianceThreshold();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.8401504519523904	cached
+selectPercentile(20.154240853980127);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7183645804829956	cached
+fastICA(75,'parallel','arbitrary-variance','cube');selectPercentile(77.70738072320933);maxAbsScaler();minMaxScaler();qda(0.2705821588914955)	0.5	1.8163528442382812
+minMaxScaler();selectFwe(0.008240986533720554);varianceThreshold();adaBoost(decisionTree('gini',23,11,0.7248680556867526,19,'balanced'),15,0.35795167673821526,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+maxAbsScaler();varianceThreshold();maxAbsScaler();maxAbsScaler();mlpClassifier((82, 9),0.07957942637449097,0.06937328562933401,'sgd','logistic')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(85.42690827571663);randomForest(77,'entropy',0.968975331283085,6,7,False,'balanced')	0.7774339138221251	1.715019702911377
+robustScaler(False,False);extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.8584181541556104	1.1867504119873047
+minMaxScaler();maxAbsScaler();randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8088463176713985	1.1740796566009521
+maxAbsScaler();minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	113.01144599914551
+varianceThreshold();minMaxScaler();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8444390547146531	3.726658344268799
+multinomialNB(1.5967427846639362,False)	0.6791374991315651	1.0184531211853027
+robustScaler(True,True);kNN(10,'uniform',2)	0.6730769230769231	1.2910172939300537
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',0.5881817147723083,51,5,0.08456352275775303);randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.7368449536149146	18.457653760910034
+varianceThreshold();fastICA(98,'parallel','arbitrary-variance','cube');varianceThreshold();adaBoost(decisionTree('entropy',30,6,0.4777366662052569,8,'None'),29,0.8821870662618138,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();qda(0.4038033794576291)	0.5	1.1194324493408203
+minMaxScaler();maxAbsScaler();varianceThreshold();decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6640450843852966	1.4708330631256104
+selectPercentile(40.48328763965227);fastICA(89,'deflation','unit-variance','cube');kNN(8,'distance',2)	0.6942399688031651	1.3922152519226074
+maxAbsScaler();maxAbsScaler();minMaxScaler();pca(0.6429548344859308,True);gaussianNB(0.009285364583223717)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();maxAbsScaler();kNN(2,'distance',2)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);gaussianNB(0.0027090860173281514)	0.7562636267785605	2.1124961376190186
+selectFwe(0.009509185975927925);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7183645804829956	1.6437444686889648
+kNN(1,'distance',1)	0.7081180118168315	0.9550230503082275
+minMaxScaler();maxAbsScaler();extraTreesClassifier(78,'gini','log2',9,12,True,'balanced_subsample')	0.8399349030126375	2.2462875843048096
+maxAbsScaler();nystroem('poly',6.7896474205363875,66,4,-0.0663480717125382);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();adaBoost(decisionTree('gini',15,9,0.7284017540321592,16,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();maxAbsScaler();pca(0.9220881454677948,True);decisionTree('entropy',18,17,0.6570978700911487,12,'None')	0.7233363184144486	1.119123935699463
+logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.8015191551157794	181.42874574661255
+maxAbsScaler();fastICA(86,'parallel','arbitrary-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7878770405802779	7.870823621749878
+varianceThreshold();maxAbsScaler();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.836525623194048	2.7380614280700684
+selectPercentile(40.48328763965227);varianceThreshold();kNN(8,'distance',2)	0.6707806365484219	2.9175078868865967
+selectFwe(0.009509185975927925);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7183645804829956	2.6932857036590576
+randomForest(46,'entropy','log2',16,14,False,'balanced_subsample')	0.8365198430207992	1.6967957019805908
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'gini',0.6667682616266237,15,17,False,'balanced')	0.8329222889518269	9.05689549446106
+randomForest(45,'entropy','sqrt',8,5,True,'balanced')	0.778391393885559	1.9654548168182373
+bernoulliNB(8.08179739240647,True)	0.5	0.9018609523773193
+selectPercentile(93.8714850736751);maxAbsScaler();minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+selectPercentile(20.154240853980127);minMaxScaler();maxAbsScaler();extraTreesClassifier(53,'entropy','log2',17,16,False,'None')	0.5	1.4521772861480713
+pca(0.9220881454677948,True);varianceThreshold();extraTreesClassifier(50,'gini','sqrt',13,15,False,'balanced_subsample')	0.6774564790388619	1.405468225479126
+bernoulliNB(0.04727601220742924,False)	0.6583578004524797	0.9201400279998779
+maxAbsScaler();mlpClassifier((15, 1),0.0809027254514435,0.16983643311105376,'lbfgs','tanh')	0.7391282387787959	cached
+varianceThreshold();robustScaler(True,False);logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.801520986577359	146.6467638015747
+minMaxScaler();maxAbsScaler();extraTreesClassifier(91,'entropy','sqrt',14,12,True,'balanced')	0.8223586157950237	1.9131581783294678
+selectPercentile(3.3770488137959926);varianceThreshold();extraTreesClassifier(26,'gini','log2',4,18,False,'balanced')	0.7043414937626054	1.2544422149658203
+gaussianNB(0.006713017733269129)	0.5	1.2186636924743652
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();bernoulliNB(8.08179739240647,True)	0.6718173162559001	3.8347182273864746
+varianceThreshold();minMaxScaler();extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	1.2901279926300049
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	119.33169317245483
+varianceThreshold();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.836525623194048	0.9800031185150146
+minMaxScaler();selectPercentile(80.89344230473203);randomForest(88,'gini','log2',4,19,True,'balanced')	0.8384307900329526	1.47711181640625
+minMaxScaler();selectPercentile(47.610649986694085);adaBoost(decisionTree('gini',27,17,0.25060762000575865,17,'None'),57,0.874988851857677,'SAMME')	0.6936648898671711	1.1419861316680908
+adaBoost(decisionTree('gini',22,20,0.2450623703127689,7,'balanced'),18,0.7939036446550196,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+randomForest(13,'entropy','log2',2,13,True,'balanced_subsample')	0.8157388401800614	0.9262504577636719
+minMaxScaler();selectPercentile(7.240327322219754);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.576543936199768	cached
+varianceThreshold();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	0.6401671242905501	1.803809404373169
+maxAbsScaler();varianceThreshold();nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+varianceThreshold();pca(0.7377141434448418,False);logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.555408986301714	1.5059785842895508
+lda(0.9620912667469511,199,0.002412799488099349)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+robustScaler(True,True);nystroem('rbf',3.2316652153826353,79,5,-0.5671792571254342);maxAbsScaler();adaBoost(decisionTree('gini',20,11,0.0670995002390361,5,'balanced'),56,0.3406677395419655,'SAMME')	0.7132975662975003	2.793713331222534
+minMaxScaler();selectPercentile(7.240327322219754);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.576543936199768	1.3200149536132812
+selectPercentile(55.59511743904313);minMaxScaler();maxAbsScaler();mlpClassifier((78, 7),0.08486117379021828,0.1009015787497452,'sgd','relu')	0.5	4.677542209625244
+fastICA(29,'deflation','arbitrary-variance','logcosh');selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.8040084776947702	cached
+minMaxScaler();varianceThreshold();extraTreesClassifier(94,'gini','log2',20,1,True,'balanced')	0.8182263312974726	cached
+maxAbsScaler();maxAbsScaler();varianceThreshold();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();selectPercentile(93.99186183712084);adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),18,0.7939036446550196,'SAMME')	0.7523349162796646	1.2301249504089355
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	cached
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	cached
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+fastICA(35,'deflation','arbitrary-variance','exp');extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.7941367387731204	3.6940927505493164
+randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8442474838334271	3.1589841842651367
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	0.7328599669306467	2.3431806564331055
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');qda(0.7883997338824106)	0.6745142138726895	6.416120767593384
+minMaxScaler();minMaxScaler();robustScaler(False,False);decisionTree('gini',22,11,0.35569965853419894,14,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();decisionTree('gini',25,3,0.5819162245704291,5,'balanced')	0.75518423577697	1.580742597579956
+selectPercentile(71.3660639338197);minMaxScaler();adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'None'),24,1.2289606611821253,'SAMME')	0.7163842995681857	1.5741527080535889
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');extraTreesClassifier(53,'entropy','log2',17,16,False,'None')	0.5	6.0051069259643555
+maxAbsScaler();maxAbsScaler();maxAbsScaler();selectPercentile(8.239806338261246);randomForest(97,'entropy','log2',15,14,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();adaBoost(decisionTree('gini',15,9,0.7284017540321592,16,'balanced'),24,1.2289606611821253,'SAMME')	0.7315531808542952	1.276578664779663
+fastICA(67,'deflation','arbitrary-variance','cube');adaBoost(decisionTree('gini',13,20,0.8067400693093005,10,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+robustScaler(False,True);kNN(2,'distance',2)	0.7140638498224046	0.7818264961242676
+multinomialNB(41.902024025014086,True)	0.6823184097793448	0.5860795974731445
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6627062859706098	cached
+selectPercentile(93.8714850736751);maxAbsScaler();minMaxScaler();maxAbsScaler();extraTreesClassifier(53,'entropy','log2',17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();minMaxScaler();pca(0.6148691055928839,False);bernoulliNB(48.271270176622956,True)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+qda(0.4038033794576291)	0.6699187104771598	0.548792839050293
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	3.203261613845825
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	0.8422975407777938	1.7481799125671387
+minMaxScaler();logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.7538694274963808	2.199544668197632
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',0.26858509625773763,42,3,0.4031294229323248);gaussianNB(0.007621598455005987)	0.8107083304452593	1.974656343460083
+robustScaler(False,False);decisionTree('entropy',30,4,0.9764080124619022,11,'None')	0.7005942106654179	cached
+selectPercentile(97.6537950677149);varianceThreshold();multinomialNB(4.653580718215118,False)	0.6872125822940092	cached
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	cached
+varianceThreshold();qda(0.24809806734772877)	0.6724073004715189	cached
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7283221042599959	cached
+varianceThreshold();minMaxScaler();multinomialNB(0.9277954867081649,False)	0.7877206699880928	1.1697158813476562
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	1.6021695137023926
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6627062859706098	3.0325026512145996
+extraTreesClassifier(11,'gini','log2',20,1,True,'balanced')	0.8241959662280095	1.8019464015960693
+robustScaler(True,True);maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	0.8223185208745966	2.012866497039795
+maxAbsScaler();minMaxScaler();pca(0.9829158088716685,False);maxAbsScaler();multinomialNB(0.08381897600818744,True)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);randomForest(57,'gini','log2',4,16,False,'balanced_subsample')	0.8336462798024084	1.81097412109375
+varianceThreshold();randomForest(23,'gini',0.6140469483122213,19,13,False,'balanced')	0.8109528647802533	1.1647398471832275
+bernoulliNB(0.2046665702059624,False)	0.6583578004524797	cached
+adaBoost(decisionTree('gini',27,20,0.2450623703127689,7,'None'),57,0.874988851857677,'SAMME')	0.7182740137015868	cached
+robustScaler(False,False);decisionTree('entropy',30,4,0.9764080124619022,11,'None')	0.7005942106654179	1.2732796669006348
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();minMaxScaler();qda(0.4038033794576291)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();minMaxScaler();pca(0.6148691055928839,False);robustScaler(False,False);qda(0.22950420231994728)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();maxAbsScaler();maxAbsScaler();pca(0.7551384308989475,True);decisionTree('entropy',17,3,0.9600753160876888,19,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	0.8524203267923187	0.7783350944519043
+robustScaler(True,True);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	0.9265923500061035
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();extraTreesClassifier(33,'entropy','log2',17,18,False,'None')	0.5	1.3323688507080078
+minMaxScaler();maxAbsScaler();multinomialNB(1.5967427846639362,False)	0.786381138988774	cached
+varianceThreshold();adaBoost(decisionTree('entropy',21,6,0.29227963010650004,20,'balanced'),24,1.1565906187958774,'SAMME')	0.7446656729276891	0.8961868286132812
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7719619373176438	2.9920763969421387
+varianceThreshold();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+qda(0.5744941148619029)	0.6664737312459341	1.0893573760986328
+robustScaler(False,False);multinomialNB(0.1261018807497812,True)	0.6972882132043469	1.060321569442749
+randomForest(85,'entropy','log2',20,17,False,'balanced_subsample')	0.8342198935691387	2.230504035949707
+varianceThreshold();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy',0.6667682616266237,15,14,False,'balanced')	0.7761672387669619	4.381866931915283
+robustScaler(False,True);extraTreesClassifier(38,'gini','log2',16,8,False,'balanced')	0.8644534077381707	1.3889174461364746
+robustScaler(True,False);multinomialNB(0.1261018807497812,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+selectPercentile(74.57882485905533);fastICA(57,'deflation','unit-variance','exp');kNN(47,'distance',1)	0.6382699675803123	3.234794855117798
+varianceThreshold();maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	0.8223185208745966	1.7705979347229004
+bernoulliNB(0.04727601220742924,False)	0.6583578004524797	1.3906404972076416
+minMaxScaler();varianceThreshold();extraTreesClassifier(94,'gini','log2',20,1,True,'balanced')	0.8182263312974726	cached
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',0.5881817147723083,51,5,0.08456352275775303);randomForest(79,'gini',0.7910938221043269,8,4,False,'None')	0.6869635719474185	54.62984251976013
+fastICA(67,'deflation','arbitrary-variance','cube');adaBoost(decisionTree('gini',13,20,0.8067400693093005,10,'None'),43,0.3135670110361722,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+minMaxScaler();maxAbsScaler();extraTreesClassifier(78,'gini','log2',9,12,True,'balanced_subsample')	0.8399349030126375	3.066155433654785
+minMaxScaler();bernoulliNB(48.271270176622956,True)	0.5	1.21586012840271
+minMaxScaler();minMaxScaler();pca(0.6148691055928839,False);selectPercentile(82.06822843013279);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+robustScaler(False,False);multinomialNB(0.1261018807497812,True)	0.6972882132043469	cached
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	0.7588201539345472	1.6596717834472656
+bernoulliNB(33.56805506497355,False)	0.5916327926778246	1.3389801979064941
+selectPercentile(92.4483738801287);maxAbsScaler();minMaxScaler();maxAbsScaler();extraTreesClassifier(11,'entropy','log2',17,16,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+extraTreesClassifier(11,'gini','log2',20,1,True,'balanced')	0.8241959662280095	1.6297333240509033
+varianceThreshold();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy',0.6667682616266237,15,14,False,'balanced')	0.7761672387669619	13.277133703231812
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	0.7328599669306467	2.9730451107025146
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	1.9765450954437256
+maxAbsScaler();randomForest(77,'gini',0.5491234618562355,6,7,False,'balanced')	0.7954834909638102	2.257390260696411
+minMaxScaler();maxAbsScaler();extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.8584181541556104	1.5101308822631836
+robustScaler(True,True);extraTreesClassifier(38,'gini','log2',16,8,False,'balanced')	0.8644534077381707	0.9887385368347168
+varianceThreshold();minMaxScaler();multinomialNB(0.9277954867081649,False)	0.7877206699880928	0.7119719982147217
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),18,0.7939036446550196,'SAMME')	0.7523349162796646	0.9093198776245117
+minMaxScaler();selectPercentile(93.99186183712084);adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7283221042599959	1.0978293418884277
+fastICA(79,'deflation','arbitrary-variance','exp');extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.7941367387731204	2.221630811691284
+fastICA(35,'deflation','arbitrary-variance','exp');extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.7941367387731204	cached
+robustScaler(True,True);maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	0.8223185208745966	1.3152525424957275
+maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',13,15,False,'balanced_subsample')	0.8492253159029713	0.9714052677154541
+robustScaler(True,True);decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6640450843852966	0.7526624202728271
+minMaxScaler();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.7768494360668159	8.047982454299927
+minMaxScaler();varianceThreshold();multinomialNB(4.653580718215118,False)	0.766181075761085	1.0347332954406738
+selectPercentile(97.6537950677149);decisionTree('entropy',25,3,0.5819162245704291,5,'balanced')	0.775375326855514	0.9129164218902588
+minMaxScaler();randomForest(77,'gini',0.6140469483122213,6,7,False,'balanced')	0.7879834867373604	2.2824392318725586
+maxAbsScaler();decisionTree('gini',25,3,0.5819162245704291,5,'None')	0.693665988744119	1.0817210674285889
+maxAbsScaler();nystroem('poly',6.7896474205363875,66,4,-0.0663480717125382);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();lda(0.4130668063717794,241,0.09367236788253928)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+robustScaler(False,False);extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.8584181541556104	cached
+varianceThreshold();minMaxScaler();extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	cached
+maxAbsScaler();nystroem('poly',5.623211545961776,66,3,-0.14737647267421683);nystroem('sigmoid',2.098801394087192,43,4,0.4538383908092829);lda(0.4130668063717794,241,0.09367236788253928)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();nystroem('rbf',6.7896474205363875,19,4,-0.0663480717125382);selectPercentile(69.87522998444665);randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7757480312995576	3.1745071411132812
+logisticRegression('l1','newton-cg',1000,3.442474686270906,'balanced')	eval_error (Solver newton-cg supports only 'l2' or None penalties, got l1 penalty.)	eval_error (Solver newton-cg supports only 'l2' or None penalties, got l1 penalty.)
+robustScaler(True,True);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.8109006339111172	cached
+randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8442474838334271	1.9885382652282715
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,4,0.4031294229323248);gaussianNB(0.0003193234124527656)	0.6938393577148769	2.0961592197418213
+selectFwe(0.009509185975927925);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7183645804829956	cached
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.042917173752943016);varianceThreshold();gaussianNB(0.009638119093277291)	0.7332142722298982	4.13675856590271
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	cached
+minMaxScaler();maxAbsScaler();varianceThreshold();decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6640450843852966	cached
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7283221042599959	cached
+varianceThreshold();maxAbsScaler();fastICA(86,'parallel','arbitrary-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7742172957113288	7.3796067237854
+robustScaler(False,True);extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.8584181541556104	2.0903608798980713
+varianceThreshold();pca(0.7377141434448418,False);logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.555408986301714	2.326885223388672
+maxAbsScaler();varianceThreshold();adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'None'),24,1.2289606611821253,'SAMME')	0.725392707627164	1.543243646621704
+selectPercentile(65.67352125835242);varianceThreshold();decisionTree('gini',6,11,0.7170229596498487,6,'balanced')	0.8222649858438082	1.5688602924346924
+selectPercentile(97.6537950677149);varianceThreshold();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.8401504519523904	2.0515084266662598
+minMaxScaler();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',18,9,0.6570978700911487,12,'None'),37,0.594072497339047,'SAMME')	0.7615817564851651	2.450944423675537
+robustScaler(False,False);randomForest(57,'gini','log2',4,16,False,'balanced_subsample')	0.8336462798024084	1.2295923233032227
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,2,-0.7566378503939486);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,3,0.4031294229323248);varianceThreshold();gaussianNB(0.00604123754502794)	0.7641838648959371	2.582491397857666
+maxAbsScaler();selectFwe(0.017809993107497507);logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	0.7406882294500148	0.8564705848693848
+multinomialNB(0.4918315175735083,False)	0.6791374991315652	0.7550718784332275
+selectPercentile(93.8714850736751);maxAbsScaler();varianceThreshold();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8363628726752614	cached
+lda(0.9620912667469511,199,0.002412799488099349)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();bernoulliNB(8.08179739240647,True)	0.6718173162559001	cached
+pca(0.6429548344859308,False);kNN(2,'distance',2)	0.6762011872218241	1.0011570453643799
+minMaxScaler();robustScaler(False,False);varianceThreshold();gaussianNB(0.006713017733269129)	0.5591595257778419	1.1650798320770264
+fastICA(13,'parallel','unit-variance','exp');robustScaler(True,True);gaussianNB(0.006713017733269129)	0.6601643461042156	2.3058881759643555
+robustScaler(False,True);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.8109006339111172	cached
+robustScaler(False,True);kNN(2,'distance',2)	0.7140638498224046	cached
+maxAbsScaler();varianceThreshold();adaBoost(decisionTree('gini',22,15,0.25060762000575865,17,'None'),24,1.2289606611821253,'SAMME')	0.725392707627164	1.6154968738555908
+randomForest(13,'entropy','log2',2,13,True,'balanced_subsample')	0.8157388401800614	1.2293977737426758
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	2.306039810180664
+selectPercentile(40.48328763965227);varianceThreshold();kNN(8,'distance',2)	0.6707806365484219	0.8005096912384033
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);randomForest(42,'gini',0.8007821701373612,3,17,False,'balanced')	0.7872148444509491	5.291957139968872
+varianceThreshold();minMaxScaler();extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	1.474628210067749
+selectPercentile(93.8714850736751);robustScaler(True,True);minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+maxAbsScaler();maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();randomForest(23,'gini',0.6140469483122213,19,13,False,'balanced')	0.8109528647802533	1.709127426147461
+minMaxScaler();maxAbsScaler();extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.8584181541556104	1.7566652297973633
+varianceThreshold();extraTreesClassifier(26,'gini','log2',4,18,True,'balanced')	0.8269223684895868	1.1699450016021729
+extraTreesClassifier(11,'entropy','log2',20,1,True,'balanced')	0.8149721903628411	1.587963342666626
+fastICA(29,'deflation','arbitrary-variance','logcosh');selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('poly',0.5881817147723083,51,2,-0.7566378503939486);kNN(10,'uniform',2)	0.6713549828997841	cached
+minMaxScaler();minMaxScaler();robustScaler(True,False);decisionTree('gini',22,11,0.35569965853419894,14,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,True);extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	0.8422975407777938	2.3207154273986816
+minMaxScaler();selectPercentile(80.89344230473203);extraTreesClassifier(26,'gini','log2',4,18,True,'balanced')	0.8365682700851158	1.149322271347046
+maxAbsScaler();fastICA(86,'parallel','arbitrary-variance','cube');extraTreesClassifier(74,'entropy','log2',20,1,True,'balanced')	0.8022681021461269	2.9724066257476807
+minMaxScaler();selectPercentile(7.240327322219754);gaussianNB(0.009285364583223717)	0.4977011494252873	0.7995700836181641
+maxAbsScaler();maxAbsScaler();minMaxScaler();pca(0.6429548344859308,True);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(True,True);extraTreesClassifier(38,'gini','log2',16,8,False,'balanced')	0.8644534077381707	0.7796211242675781
+maxAbsScaler();decisionTree('gini',14,4,0.1565061957205034,18,'balanced')	0.7747155096136437	0.6741626262664795
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();maxAbsScaler();bernoulliNB(0.04727601220742924,False)	0.6604621498074389	cached
+varianceThreshold();selectFwe(0.0024456479595313207);fastICA(9,'deflation','unit-variance','exp');extraTreesClassifier(30,'entropy','log2',19,2,True,'balanced_subsample')	0.7029406027625846	1.0015497207641602
+nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);adaBoost(decisionTree('gini',5,18,0.11564101661491111,2,'balanced'),13,0.12441217327369125,'SAMME.R')	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)	eval_error (The 'algorithm' parameter of AdaBoostClassifier must be a str among {'SAMME'}. Got 'SAMME.R' instead.)
+robustScaler(True,True);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	0.8475391556422742	cached
+robustScaler(True,True);maxAbsScaler();adaBoost(decisionTree('entropy',16,9,0.7710111106013254,18,'balanced'),40,0.05274142654176981,'SAMME')	0.8223185208745966	cached
+minMaxScaler();minMaxScaler();qda(0.4038033794576291)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+extraTreesClassifier(98,'gini','sqrt',18,11,False,'balanced')	0.8533778149061331	cached
+minMaxScaler();decisionTree('gini',25,3,0.5819162245704291,5,'balanced')	0.75518423577697	cached
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	cached
+selectFwe(0.030157845680910688);varianceThreshold();extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.7337204439334063	1.7078864574432373
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	5.034248352050781
+maxAbsScaler();bernoulliNB(14.210093921233183,False)	0.6242581835942421	1.6166670322418213
+extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	0.8524203267923187	1.629148244857788
+selectPercentile(55.59511743904313);minMaxScaler();fastICA(29,'deflation','arbitrary-variance','logcosh');mlpClassifier((78, 7),0.08486117379021828,0.1009015787497452,'sgd','relu')	0.5	6.344505548477173
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+selectPercentile(20.154240853980127);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	0.7183645804829956	cached
+varianceThreshold();maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');multinomialNB(0.08381897600818744,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.8372846613764395	cached
+robustScaler(False,False);decisionTree('entropy',30,4,0.9764080124619022,11,'None')	0.7005942106654179	cached
+minMaxScaler();minMaxScaler();robustScaler(False,False);logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+decisionTree('gini',22,11,0.35569965853419894,14,'None')	0.6640450843852966	0.7185792922973633
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	0.7779615961425153	3.320108413696289
+randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8442474838334271	2.1018035411834717
+varianceThreshold();maxAbsScaler();logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.8107090630298911	3.573716163635254
+varianceThreshold();robustScaler(True,False);extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.836525623194048	1.5762391090393066
+gaussianNB(0.006713017733269129)	0.5	0.8229897022247314
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();randomForest(13,'entropy','log2',2,13,True,'balanced_subsample')	0.7372006355292436	3.2867071628570557
+robustScaler(True,True);extraTreesClassifier(24,'gini','log2',12,8,False,'None')	0.65	0.9370670318603516
+randomForest(46,'entropy',0.6667682616266237,16,17,False,'balanced')	0.8367460144377136	1.416757583618164
+varianceThreshold();maxAbsScaler();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.836525623194048	cached
+maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',13,15,False,'balanced_subsample')	0.8492253159029713	cached
+randomForest(85,'gini','log2',19,16,False,'balanced_subsample')	0.8347953387974487	1.4298486709594727
+varianceThreshold();randomForest(23,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8367460144377133	1.5477304458618164
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	0.7283221042599959	1.4627459049224854
+randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	0.8442474838334271	3.4798762798309326
+maxAbsScaler();fastICA(86,'parallel','arbitrary-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7878770405802779	cached
+minMaxScaler();maxAbsScaler();extraTreesClassifier(88,'gini','sqrt',14,12,False,'balanced')	0.8595657479813873	1.7701969146728516
+maxAbsScaler();extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	0.8524203267923187	cached
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.7789765438476456	cached
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.7789765438476456	cached
+robustScaler(True,True);selectPercentile(7.240327322219754);logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.6945750417432357	cached
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.7719619373176438	3.6127688884735107
+multinomialNB(0.08381897600818744,True)	0.6972882132043469	1.1759419441223145
+minMaxScaler();maxAbsScaler();pca(0.6148691055928839,False);bernoulliNB(48.271270176622956,True)	0.5	1.2186782360076904
+selectPercentile(93.8714850736751);minMaxScaler();minMaxScaler();lda(0.8175884646968182,202,0.055443707465345084)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();varianceThreshold();randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	0.8090378885526246	2.1035616397857666
+maxAbsScaler();extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	0.8524203267923187	1.1373109817504883
+selectPercentile(40.48328763965227);varianceThreshold();kNN(8,'distance',2)	0.6707806365484219	cached
+varianceThreshold();fastICA(4,'deflation','arbitrary-variance','cube');maxAbsScaler();adaBoost(decisionTree('gini',2,9,0.18665672880146833,17,'balanced'),37,0.594072497339047,'SAMME')	0.6401671242905501	cached
+minMaxScaler();minMaxScaler();selectFwe(0.023744557795262092);decisionTree('gini',7,20,0.30000546089284574,13,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.030157845680910688);varianceThreshold();extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	0.7337204439334063	2.124842643737793
+pca(0.6429548344859308,True);kNN(2,'distance',2)	0.6762011872218241	0.9335713386535645
+varianceThreshold();robustScaler(True,False);logisticRegression('l2','lbfgs',1000,18.263404363750347,'balanced')	0.801520986577359	128.5529329776764
+varianceThreshold();robustScaler(False,False);randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	timeout_error	timeout_error
+minMaxScaler();extraTreesClassifier(91,'gini','sqrt',2,12,True,'balanced')	timeout_error	timeout_error
+minMaxScaler();extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	timeout_error	timeout_error
+bernoulliNB(44.40374061492615,True)	timeout_error	timeout_error
+randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	timeout_error	timeout_error
+robustScaler(False,False);extraTreesClassifier(91,'gini','sqrt',14,12,False,'balanced')	timeout_error	timeout_error
+minMaxScaler();minMaxScaler();qda(0.4038033794576291)	timeout_error	timeout_error
+minMaxScaler();minMaxScaler();pca(0.6148691055928839,False);bernoulliNB(48.271270176622956,True)	timeout_error	timeout_error
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	timeout_error	timeout_error
+selectPercentile(97.6537950677149);varianceThreshold();adaBoost(decisionTree('entropy',22,15,0.25060762000575865,17,'balanced'),24,1.2289606611821253,'SAMME')	timeout_error	timeout_error
+minMaxScaler();randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	timeout_error	timeout_error
+extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	timeout_error	timeout_error
+minMaxScaler();extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced')	timeout_error	timeout_error
+selectPercentile(97.6537950677149);varianceThreshold();extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced_subsample')	timeout_error	timeout_error
+varianceThreshold();fastICA(86,'deflation','unit-variance','cube');nystroem('sigmoid',6.200313133107726,51,2,-0.7566378503939486);kNN(10,'uniform',2)	timeout_error	timeout_error
+minMaxScaler();nystroem('poly',0.5881817147723083,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	timeout_error	timeout_error
+kNN(41,'distance',2)	timeout_error	timeout_error
+minMaxScaler();maxAbsScaler();pca(0.9220881454677948,True);decisionTree('entropy',18,17,0.6570978700911487,12,'None')	timeout_error	timeout_error
+minMaxScaler();nystroem('rbf',5.623211545961776,19,3,-0.14737647267421683);selectPercentile(69.87522998444665);randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	0.782483217170367	cached
+minMaxScaler();selectFwe(0.008240986533720554);varianceThreshold();adaBoost(decisionTree('gini',23,11,0.7248680556867526,19,'balanced'),15,0.35795167673821526,'SAMME.R')	timeout_error	timeout_error
+selectPercentile(40.48328763965227);robustScaler(False,False);kNN(8,'distance',2)	timeout_error	timeout_error
+varianceThreshold();adaBoost(decisionTree('entropy',5,9,0.9503109557969067,2,'None'),74,0.30518349037159725,'SAMME')	timeout_error	timeout_error
+robustScaler(True,True);randomForest(77,'entropy','sqrt',6,7,False,'balanced')	timeout_error	timeout_error
+selectPercentile(20.154240853980127);extraTreesClassifier(24,'gini','log2',16,8,False,'balanced')	timeout_error	timeout_error
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('sigmoid',5.847005513806611,42,5,0.4031294229323248);logisticRegression('None','saga',1000,0.8852310721651445,'balanced')	timeout_error	timeout_error
+minMaxScaler();extraTreesClassifier(93,'entropy','log2',2,3,True,'balanced_subsample')	timeout_error	timeout_error
+robustScaler(False,False);extraTreesClassifier(80,'gini','log2',20,15,False,'balanced_subsample')	timeout_error	timeout_error
+minMaxScaler();maxAbsScaler();randomForest(57,'gini',0.6140469483122213,4,13,False,'balanced')	timeout_error	timeout_error
+robustScaler(True,True);extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	0.8422975407777938	cached
+robustScaler(True,True);logisticRegression('None','sag',1000,0.8852310721651445,'balanced')	0.8109006339111172	cached
+maxAbsScaler();fastICA(86,'parallel','arbitrary-variance','cube');extraTreesClassifier(11,'gini','log2',20,1,True,'balanced')	timeout_error	timeout_error
+logisticRegression('l2','lbfgs',1000,13.792299116343003,'balanced')	timeout_error	timeout_error
+minMaxScaler();nystroem('sigmoid',6.200313133107726,94,2,-0.7566378503939486);varianceThreshold();gaussianNB(0.006713017733269129)	timeout_error	timeout_error
+maxAbsScaler();extraTreesClassifier(22,'gini','log2',4,14,False,'balanced')	timeout_error	timeout_error
+varianceThreshold();maxAbsScaler();maxAbsScaler();pca(0.7551384308989475,True);decisionTree('entropy',17,3,0.9600753160876888,19,'balanced')	timeout_error	timeout_error
+randomForest(85,'entropy',0.6667682616266237,20,17,False,'balanced')	timeout_error	timeout_error
+maxAbsScaler();fastICA(89,'deflation','unit-variance','cube');randomForest(97,'entropy','log2',15,14,False,'balanced_subsample')	timeout_error	timeout_error
+maxAbsScaler();selectPercentile(30.356561017386717);nystroem('poly',4.732314036297443,42,3,0.4031294229323248);multinomialNB(0.08381897600818744,True)	timeout_error	timeout_error
+maxAbsScaler();varianceThreshold();nystroem('poly',4.732314036297443,42,3,0.4031294229323248);adaBoost(decisionTree('gini',20,16,0.531780841855169,11,'None'),29,1.6623848756280022,'SAMME')	timeout_error	timeout_error
+varianceThreshold();minMaxScaler();multinomialNB(18.07822100677263,False)	timeout_error	timeout_error
+multinomialNB(0.08381897600818744,True)	timeout_error	timeout_error
+fastICA(29,'deflation','arbitrary-variance','logcosh');selectPercentile(30.356561017386717);nystroem('sigmoid',1.843515103478096,38,5,-0.981025792326039);multinomialNB(41.902024025014086,True)	timeout_error	timeout_error
+minMaxScaler();nystroem('sigmoid',0.6760198407455137,94,5,0.08456352275775303);varianceThreshold();gaussianNB(0.007735414162251754)	timeout_error	timeout_error
+selectPercentile(97.6537950677149);varianceThreshold();multinomialNB(4.653580718215118,False)	0.6872125822940092	cached
+robustScaler(True,True);extraTreesClassifier(93,'entropy','log2',2,6,True,'balanced_subsample')	0.8422975407777938	cached
+fastICA(35,'deflation','arbitrary-variance','exp');extraTreesClassifier(26,'entropy','log2',4,18,True,'balanced')	0.7941367387731204	cached

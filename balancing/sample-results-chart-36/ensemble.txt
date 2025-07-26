@@ -1,0 +1,201 @@
+0: Pipeline(
+	0: SelectPercentile(percentile=29.912272382405458)
+	1: MaxAbsScaler()
+	2: SelectFwe(alpha=0.013971710118213944)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+1: Pipeline(
+	0: SelectPercentile(percentile=29.912272382405458)
+	1: MaxAbsScaler()
+	2: SelectFwe(alpha=0.035609852999698384)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+2: Pipeline(
+	0: MaxAbsScaler()
+	1: SelectFwe(alpha=0.029273320283541862)
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=30, max_features=0.08958490270045305,
+                       min_samples_leaf=7, min_samples_split=16,
+                       random_state=36)
+) -> Fitness: 0.8167717086834735
+
+3: Pipeline(
+	0: SelectPercentile(percentile=32.984646056235846)
+	1: VarianceThreshold()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=None, min_samples_leaf=20, n_estimators=60,
+                       random_state=36)
+) -> Fitness: 0.8037114845938376
+
+4: Pipeline(
+	0: SelectPercentile(percentile=29.912272382405458)
+	1: MaxAbsScaler()
+	2: SelectFwe(alpha=0.01053407857396583)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+5: Pipeline(
+	0: SelectPercentile(percentile=32.984646056235846)
+	1: SelectFwe(alpha=0.035609852999698384)
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+6: Pipeline(
+	0: SelectPercentile(percentile=29.912272382405458)
+	1: MaxAbsScaler()
+	2: SelectFwe(alpha=0.029273320283541862)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+7: Pipeline(
+	0: SelectPercentile(percentile=29.912272382405458)
+	1: MaxAbsScaler()
+	2: SelectFwe(alpha=0.02795967173890654)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+8: Pipeline(
+	0: SelectPercentile(percentile=29.912272382405458)
+	1: MaxAbsScaler()
+	2: SelectFwe(alpha=0.017495223628923525)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+9: Pipeline(
+	0: SelectFwe(alpha=0.035609852999698384)
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=30, max_features=0.08958490270045305,
+                       min_samples_leaf=7, min_samples_split=16,
+                       random_state=36)
+) -> Fitness: 0.8167717086834735
+
+10: Pipeline(
+	0: MaxAbsScaler()
+	1: SelectFwe(alpha=0.029273320283541862)
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', max_features='log2',
+                       min_samples_leaf=3, min_samples_split=19,
+                       n_estimators=56, random_state=36)
+) -> Fitness: 0.8230742296918768
+
+11: Pipeline(
+	0: SelectPercentile(percentile=25.57062009294936)
+	1: RobustScaler(with_scaling=False)
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.8568779831593858, min_samples_leaf=19,
+                       min_samples_split=14, n_estimators=92, random_state=36)
+) -> Fitness: 0.8169467787114847
+
+12: Pipeline(
+	0: SelectPercentile(percentile=29.912272382405458)
+	1: MaxAbsScaler()
+	2: SelectFwe(alpha=0.005231968931311993)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+13: Pipeline(
+	0: SelectPercentile(percentile=25.57062009294936)
+	1: RobustScaler(with_scaling=False)
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+14: Pipeline(
+	0: MaxAbsScaler()
+	1: SelectFwe(alpha=0.02144900389709835)
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=30, max_features=0.08958490270045305,
+                       min_samples_leaf=7, min_samples_split=16,
+                       random_state=36)
+) -> Fitness: 0.8167717086834735
+
+15: Pipeline(
+	0: SelectFwe(alpha=0.04692114827026025)
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=11, max_features=0.08958490270045305,
+                       min_samples_leaf=7, min_samples_split=14,
+                       random_state=36)
+) -> Fitness: 0.8182422969187675
+
+16: Pipeline(
+	0: SelectPercentile(percentile=32.984646056235846)
+	1: SelectFwe(alpha=0.03561720513276827)
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+17: Pipeline(
+	0: SelectPercentile(percentile=32.984646056235846)
+	1: SelectFwe(alpha=0.01053407857396583)
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=None, min_samples_leaf=20, n_estimators=60,
+                       random_state=36)
+) -> Fitness: 0.8037114845938376
+
+18: Pipeline(
+	0: SelectPercentile(percentile=83.3208958933513)
+	1: MaxAbsScaler()
+	2: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=17,
+                                                    max_features=0.5569340483134732,
+                                                    min_samples_leaf=16,
+                                                    min_samples_split=7,
+                                                    random_state=36),
+                   learning_rate=0.385035932223208, n_estimators=12,
+                   random_state=36)
+) -> Fitness: 0.817296918767507
+
+19: Pipeline(
+	0: SelectPercentile(percentile=29.912272382405458)
+	1: MaxAbsScaler()
+	2: SelectFwe(alpha=0.02144900389709835)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=3,
+                       min_samples_split=19, n_estimators=60, random_state=36)
+) -> Fitness: 0.8304271708683475
+
+Ensemble fitness: 0.8304271708683475
+Weights: [1.0, 1.0, 0.9835560990007167, 0.9678289834296073, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9835560990007167, 0.9911455917696166, 0.9837669182442973, 1.0, 1.0, 0.9835560990007167, 0.9853269806467932, 1.0, 0.9678289834296073, 0.9841885567314582, 1.0]
+Prediction: [0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 1 0 0 0
+ 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0
+ 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0
+ 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+ 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0
+ 1 0 0 1 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1
+ 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0
+ 1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1
+ 0 0 0 0 0 0 1 0 0]

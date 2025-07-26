@@ -1,0 +1,27 @@
+[1/5] ⚙️  Configuration
+    - Generations: 5, Population Size: 50
+    - Elite Size: 5, Timeout: 90s
+    - Fitness Function: root_mean_squared_error, Maximization: False
+    - Output Directory: /hhome/bpicot25/autoML_uco/evoflow-dev-main/pipegenie/metalearning/sample-results-regression
+    - Random Seed: 9
+--- PipeGenie Run Started ---
+🕒 Start Time: 2025-07-13 17:12:31
+[2/5] 🌱 Initializing evolutionary process...
+    - Using meta-learning to warm-start population...
+    - Seeding population with 5 pipeline(s) from past runs.
+                                       fitness                                            size                                        fitness_elite                                      size_elite              
+                 ----------------------------------------------------    --------------------------------------    ----------------------------------------------------    --------------------------------------
+gen    nevals    min           max           avg           std           min    max    avg           std           min           max           avg           std           min    max    avg           std       
+0      50        52.129        61.048        55.359        2.1354        1      5      2.98          0.42379       52.129        52.396        52.343        0.10687       1      3      2.4           0.8       
+1      34        52.129        335.94        62.758        44.567        1      5      3.06          0.67557       52.129        52.396        52.343        0.10687       1      3      2.4           0.8       
+2      34        52.129        55.876        53.205        1.1875        1      5      3.16          0.83331       52.129        52.396        52.343        0.10679       1      5      2.8           1.3266    
+3      34        52.129        57.123        52.756        1.0122        1      5      3.36          1.0151        52.129        52.396        52.342        0.1067        1      5      3             1.2649    
+4      34        52.129        62.038        52.826        1.6002        1      5      3.22          1.2213        52.129        52.396        52.342        0.10669       1      3      2.6           0.8       
+Timeout of 90s reached. Stopping evolution.
+[3/5] ✅ Evolution finished.
+[4/5] 👑 Generating and evaluating final ensemble...
+    - Ensemble models and weights saved to `ensemble.txt`.
+[5/5] ✨ PipeGenie run complete.
+🕒 End Time: 2025-07-13 17:14:55
+⏱️ Total Elapsed Time: 0:02:24.050160
+--- End of Run ---

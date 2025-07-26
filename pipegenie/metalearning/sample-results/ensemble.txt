@@ -1,0 +1,55 @@
+0: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: MinMaxScaler()
+	2: FastICA(n_components=98, random_state=42, whiten='arbitrary-variance')
+	3: Balancing(strategy='none')
+	4: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=25,
+                                                    max_features=0.21884113681231943,
+                                                    min_samples_leaf=17,
+                                                    min_samples_split=15,
+                                                    random_state=42),
+                   learning_rate=0.8529460165586111, n_estimators=16,
+                   random_state=42)
+) -> Fitness: 0.961904761904762
+
+1: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: Normalizer()
+	2: FeatureAgglomeration(linkage='complete', n_clusters=4)
+	3: Balancing(strategy='weighting')
+	4: ExtraTreesClassifier(max_features='log2', min_samples_leaf=14,
+                     min_samples_split=5, n_estimators=81, random_state=42)
+) -> Fitness: 0.9523809523809523
+
+2: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: Normalizer()
+	2: FeatureAgglomeration(linkage='complete', n_clusters=4)
+	3: Balancing(strategy='none')
+	4: ExtraTreesClassifier(max_features='log2', min_samples_leaf=14,
+                     min_samples_split=5, n_estimators=81, random_state=42)
+) -> Fitness: 0.9523809523809523
+
+3: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: MaxAbsScaler()
+	2: FastICA(n_components=79, random_state=42, whiten='arbitrary-variance')
+	3: Balancing(strategy='none')
+	4: ExtraTreesClassifier(bootstrap=True, criterion='entropy', min_samples_leaf=3,
+                     min_samples_split=18, n_estimators=92, random_state=42)
+) -> Fitness: 0.9523809523809523
+
+4: Pipeline(
+	0: SimpleImputer()
+	1: StandardScaler()
+	2: Balancing(strategy='none')
+	3: GaussianNB(var_smoothing=0.008578007156985902)
+) -> Fitness: 0.9523809523809526
+
+Ensemble fitness: 0.980952380952381
+Weights: [1.0, 0.9900990099009899, 0.9900990099009899, 0.9900990099009899, 0.9900990099009901]
+Prediction: [1 0 2 1 1 0 1 2 1 1 2 0 0 0 0 1 2 1 1 2 0 2 0 2 2 2 2 2 0 0 0 0 1 0 0 2 1
+ 0 0 0 2 1 1 0 0 1 2 2 1 2 1 2 1 0 2 1 0 0 0 1 2 0 0 0 1 0 1 2 0 1 2 0 2 2
+ 1 1 2 1 0 1 2 0 0 1 1 0 2 0 0 2 1 2 1 2 2 1 0 0 2 2 0 0 0 1 2 0 2 2 0 1 1
+ 2]

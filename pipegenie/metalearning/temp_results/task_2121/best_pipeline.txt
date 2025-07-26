@@ -1,0 +1,3 @@
+robustScaler(False,False);selectFwe(0.02409985450722404);Balancing('weighting');adaBoost(decisionTree('gini',20,18,0.7793896233140081,17,'balanced'),78,0.018535270642291685,'SAMME')
+Fitness: 0.24203070279865707
+Prediction: [ 1  1 19 ... 20  1 19]

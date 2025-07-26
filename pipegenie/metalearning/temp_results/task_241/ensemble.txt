@@ -1,0 +1,196 @@
+0: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='cube', n_components=76, random_state=42)
+	2: Balancing(strategy='none')
+	3: MLPClassifier(activation='tanh', alpha=0.05151691612522493,
+              hidden_layer_sizes=(34, 1),
+              learning_rate_init=0.08427950137905656, random_state=42,
+              solver='lbfgs')
+) -> Fitness: 0.9932456140350878
+
+1: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='cube', n_components=76, random_state=42)
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(activation='tanh', alpha=0.05151691612522493,
+              hidden_layer_sizes=(34, 1),
+              learning_rate_init=0.08427950137905656, random_state=42,
+              solver='lbfgs')
+) -> Fitness: 0.9932456140350878
+
+2: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.028518310045731632)
+	2: Balancing(strategy='none')
+	3: MLPClassifier(alpha=0.017691588563449902, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+3: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.007432074509375222)
+	2: Balancing(strategy='none')
+	3: MLPClassifier(alpha=0.027473586404880866, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+4: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.03620955221592918)
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.017691588563449902, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+5: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(activation='logistic', alpha=0.025637777998031835,
+              hidden_layer_sizes=(34, 1), learning_rate_init=0.5269549212341713,
+              random_state=42, solver='lbfgs')
+) -> Fitness: 0.9914912280701754
+
+6: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.017691588563449902, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+7: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(activation='logistic', alpha=0.025637777998031835,
+              hidden_layer_sizes=(34, 1), learning_rate_init=0.2555194354861229,
+              random_state=42, solver='lbfgs')
+) -> Fitness: 0.9914912280701754
+
+8: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.027555389939792205, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+9: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.027555389939792205, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.47064650810656217, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+10: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='none')
+	3: MLPClassifier(alpha=0.017691588563449902, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+11: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='none')
+	3: MLPClassifier(alpha=0.027555389939792205, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+12: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='none')
+	3: MLPClassifier(alpha=0.027555389939792205, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.47064650810656217, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+13: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.03620955221592918)
+	2: Balancing(strategy='none')
+	3: MLPClassifier(alpha=0.026677205277295897, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+14: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.027555389939792205, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+15: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.028518310045731632)
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.027555389939792205, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.47064650810656217, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+16: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: Balancing(strategy='none')
+	3: MLPClassifier(alpha=0.027473586404880866, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+17: Pipeline(
+	0: RobustScaler()
+	1: VarianceThreshold()
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.027473586404880866, hidden_layer_sizes=(33, 8),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9898245614035088
+
+18: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.007432074509375222)
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.017691588563449902, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+19: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.028518310045731632)
+	2: Balancing(strategy='weighting')
+	3: MLPClassifier(alpha=0.017691588563449902, hidden_layer_sizes=(46, 6),
+              learning_rate_init=0.386080858198002, random_state=42,
+              solver='sgd')
+) -> Fitness: 0.9914912280701754
+
+Ensemble fitness: 0.9914912280701754
+Weights: [1.0, 1.0, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9982336836527421, 0.9965556831228473, 0.9982336836527421, 0.9982336836527421]
+Prediction: [2 1 1 1 1 2 1 0 2 1 0 2 2 2 0 0 0 1 1 2 1 2 1 2 2 0 2 1 2 1 1 1 1 1 1 1 1
+ 1 1 1 2 2 1 2 2 0 2 1 2 2 0 0 1 2 2 2 1 1 2 1 1 2 1 1 1 1 2 2 1 2 1 2 0 1
+ 2 2 2 2 2 1 2 2 1 2 0 2 2 2 0 1 1 1 2 2 0 2 1 2 1 2 2 1 2 1 1 1 2 1 1 1 2
+ 2 1 2 2 2 2 2 1 0 1 1 2 2 1 0 1 1 0 2 1 1 2 1 1 2 2 2 2 2 1 1 2 2 2 2 1 1
+ 2 2 1 2 0 1 1 2 2 1 2 2 1 0 2 2 1 2 1 1 2 2 1 2 2 1 1 1 2 1 2 1 2 2 2 2 1
+ 1 2 2 0 1 2 1 2 1 2 1 1 2 1 1 1 1 2 1 1 1 1 1 2 0 1 1 2 2 1 2 1 1 0 2 1 1
+ 2 1 2 1 2 1 1 1 1 2 2 1 2 2 1 2 2 2 2 1 2 2 1 1 1 2 1 1 2 1 2 0 2 2 1 2 2
+ 1 1 1 2 2 2 2 1 1 2 2 2 1 1 2 1 2 2 2 2 2 1 1 2 1 1 1 2 2 1 1 1 2 2 2 2 2
+ 2 2 2 2 1 1 1 1 1 1 2 2 1 1 2 2 2 1 1 2 2 2 2 1 1 1 1 2 1 2 1 1 2 2 1 2 1
+ 0 1 2 2 1 1 1 1 0 1 0 2 1 1 1 2 0 2 1 1 2 0 2 1 2 2 1 1 0 1 1 1 2 1 2 2 1
+ 1 2 1 1 2 0 1 1 1 1 1 1 1 2 1 1 2 1 1 1 0 1 2 1 2 1 2 1 2 2 0 2 1 1 1 2 2
+ 2 2 2 2 1 1 2 2 2 2 1 1]

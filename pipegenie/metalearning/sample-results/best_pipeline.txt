@@ -1,0 +1,2 @@
+standardScaler();selectPercentile(67.2709862625947);Balancing('weighting');extraTreesClassifier(46,'entropy','sqrt',5,5,True,'balanced')
+Fitness: 0.961904761904762

@@ -1,0 +1,148 @@
+0: Pipeline(
+	0: VarianceThreshold()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=16,
+                       max_features=0.3215044488508504, min_samples_leaf=9,
+                       min_samples_split=3, random_state=33)
+) -> Fitness: 0.7673770491803278
+
+1: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: MaxAbsScaler()
+	2: BernoulliNB(alpha=10.094763687065637, fit_prior=False)
+) -> Fitness: 0.7551990632318502
+
+2: Pipeline(
+	0: Nystroem(coef0=-0.28345581955176447, degree=2, gamma=0.08675384773762995,
+         kernel='poly', n_components=41, random_state=33)
+	1: LogisticRegression(C=2.0275382516474614, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=33)
+) -> Fitness: 0.752552693208431
+
+3: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=30, max_features=0.6880283028558967,
+                       min_samples_leaf=17, min_samples_split=17,
+                       random_state=33)
+) -> Fitness: 0.7479391100702577
+
+4: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=30, max_features=0.6880283028558967,
+                       min_samples_leaf=17, min_samples_split=17,
+                       random_state=33)
+) -> Fitness: 0.7479391100702577
+
+5: Pipeline(
+	0: MaxAbsScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=21, max_features=0.36240569826702196,
+                       min_samples_leaf=17, min_samples_split=16,
+                       random_state=33)
+) -> Fitness: 0.7472365339578453
+
+6: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: MaxAbsScaler()
+	2: BernoulliNB(alpha=2.7848343550366006, fit_prior=False)
+) -> Fitness: 0.7370023419203747
+
+7: Pipeline(
+	0: MaxAbsScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=30, max_features=0.6880283028558967,
+                       min_samples_leaf=17, min_samples_split=17,
+                       random_state=33)
+) -> Fitness: 0.7479391100702577
+
+8: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=17, max_features=0.9998303953135304,
+                       min_samples_leaf=12, min_samples_split=11,
+                       random_state=33)
+) -> Fitness: 0.7422248243559719
+
+9: Pipeline(
+	0: RobustScaler()
+	1: BernoulliNB(alpha=2.7848343550366006, fit_prior=False)
+) -> Fitness: 0.7370023419203747
+
+10: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=21, max_features=0.36240569826702196,
+                       min_samples_leaf=17, min_samples_split=16,
+                       random_state=33)
+) -> Fitness: 0.7474707259953159
+
+11: Pipeline(
+	0: Nystroem(coef0=-0.638675990996342, degree=2, gamma=0.08675384773762995,
+         kernel='poly', n_components=41, random_state=33)
+	1: LogisticRegression(C=0.046381893156078956, class_weight='balanced',
+                   max_iter=1000, random_state=33)
+) -> Fitness: 0.7390398126463701
+
+12: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=30, max_features=0.6880283028558967,
+                       min_samples_leaf=17, min_samples_split=16,
+                       random_state=33)
+) -> Fitness: 0.7479391100702577
+
+13: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=7, max_features=0.6880283028558967,
+                       min_samples_leaf=19, min_samples_split=16,
+                       random_state=33)
+) -> Fitness: 0.7506791569086652
+
+14: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=26, max_features=0.35086090298960426,
+                       min_samples_leaf=14, min_samples_split=6,
+                       random_state=33)
+) -> Fitness: 0.7337939110070257
+
+15: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=20, max_features=0.7533940585561792,
+                       min_samples_leaf=10, min_samples_split=4,
+                       random_state=33)
+) -> Fitness: 0.7411241217798595
+
+16: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=21,
+                       max_features=0.6880283028558967, min_samples_leaf=17,
+                       min_samples_split=17, random_state=33)
+) -> Fitness: 0.7555971896955503
+
+17: Pipeline(
+	0: Nystroem(coef0=0.20788653474612984, degree=2, gamma=0.08675384773762995,
+         kernel='poly', n_components=41, random_state=33)
+	1: LogisticRegression(C=0.046381893156078956, class_weight='balanced',
+                   max_iter=1000, random_state=33)
+) -> Fitness: 0.7378688524590165
+
+18: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: DecisionTreeClassifier(class_weight='balanced', max_depth=23,
+                       max_features=0.5066350516436892, min_samples_leaf=11,
+                       min_samples_split=11, random_state=33)
+) -> Fitness: 0.7345667447306792
+
+19: Pipeline(
+	0: MinMaxScaler()
+	1: SelectFwe(alpha=0.015652804876101642)
+	2: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', min_samples_leaf=7,
+                     min_samples_split=14, n_estimators=14, random_state=33)
+) -> Fitness: 0.7226463700234192
+
+Ensemble fitness: 0.796135831381733
+Weights: [1.0, 0.9841303750724816, 0.980681783501694, 0.9746696371349226, 0.9746696371349226, 0.9737540818506423, 0.9604174932096318, 0.9746696371349226, 0.9672231208227792, 0.9604174932096318, 0.9740592669454022, 0.9630726035340436, 0.9746696371349226, 0.9782403027436142, 0.95623645741142, 0.9657887508774073, 0.9846491897335735, 0.9615466780602437, 0.957243568224128, 0.9417096469008456]
+Prediction: [0 0 0 ... 0 0 1]

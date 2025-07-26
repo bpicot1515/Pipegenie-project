@@ -1,0 +1,389 @@
+{
+    "metafeatures": {
+        "NumberOfInstances": 331.0,
+        "NumberOfFeatures": 10.0,
+        "DatasetRatio": 0.030211480362537766,
+        "SkewnessMean": 0.3494819451352803,
+        "KurtosisMean": -0.10948223602271137
+    },
+    "elite_pipelines": [
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;regressor"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocess"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "linearRegression"
+            },
+            {
+                "symbol": "linearRegression",
+                "type": "terminal",
+                "arity": 1,
+                "name": "linearRegression"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "regressor"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "mlpRegressor(mlpRegressor_hp)"
+            },
+            {
+                "symbol": "mlpRegressor",
+                "type": "terminal",
+                "arity": 6,
+                "name": "mlpRegressor"
+            },
+            {
+                "symbol": "mlpRegressor_hp",
+                "type": "nonterminal",
+                "production": "mlp::hidden_layer_sizes;mlp::alpha;mlp::learning_rate_init;mlp::solver;mlp::activation"
+            },
+            {
+                "symbol": "mlp::hidden_layer_sizes",
+                "type": "terminal",
+                "arity": 0,
+                "name": "(62, 18)"
+            },
+            {
+                "symbol": "mlp::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.04856171507892712"
+            },
+            {
+                "symbol": "mlp::learning_rate_init",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.08504291026680227"
+            },
+            {
+                "symbol": "mlp::solver",
+                "type": "terminal",
+                "arity": 0,
+                "name": "adam"
+            },
+            {
+                "symbol": "mlp::activation",
+                "type": "terminal",
+                "arity": 0,
+                "name": "identity"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;regressor"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;preprocess"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocess"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "selectPercentile(selectPercentile_hp)"
+            },
+            {
+                "symbol": "selectPercentile",
+                "type": "terminal",
+                "arity": 2,
+                "name": "selectPercentile"
+            },
+            {
+                "symbol": "selectPercentile_hp",
+                "type": "nonterminal",
+                "production": "sp::percentile"
+            },
+            {
+                "symbol": "sp::percentile",
+                "type": "terminal",
+                "arity": 0,
+                "name": "27.459461870759352"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "fastICA(fastICA_hp)"
+            },
+            {
+                "symbol": "fastICA",
+                "type": "terminal",
+                "arity": 5,
+                "name": "fastICA"
+            },
+            {
+                "symbol": "fastICA_hp",
+                "type": "nonterminal",
+                "production": "ica::n_components;ica::algorithm;ica::whiten;ica::fun"
+            },
+            {
+                "symbol": "ica::n_components",
+                "type": "terminal",
+                "arity": 0,
+                "name": "75"
+            },
+            {
+                "symbol": "ica::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "parallel"
+            },
+            {
+                "symbol": "ica::whiten",
+                "type": "terminal",
+                "arity": 0,
+                "name": "unit-variance"
+            },
+            {
+                "symbol": "ica::fun",
+                "type": "terminal",
+                "arity": 0,
+                "name": "cube"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "kNN(kNN_hp)"
+            },
+            {
+                "symbol": "kNN",
+                "type": "terminal",
+                "arity": 4,
+                "name": "kNN"
+            },
+            {
+                "symbol": "kNN_hp",
+                "type": "nonterminal",
+                "production": "knn::n_neighbors;knn::weights;knn::p"
+            },
+            {
+                "symbol": "knn::n_neighbors",
+                "type": "terminal",
+                "arity": 0,
+                "name": "20"
+            },
+            {
+                "symbol": "knn::weights",
+                "type": "terminal",
+                "arity": 0,
+                "name": "uniform"
+            },
+            {
+                "symbol": "knn::p",
+                "type": "terminal",
+                "arity": 0,
+                "name": "2"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;regressor"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;preprocess"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocess"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "linearRegression"
+            },
+            {
+                "symbol": "linearRegression",
+                "type": "terminal",
+                "arity": 1,
+                "name": "linearRegression"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;regressor"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;preprocess"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;preprocess"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocessingBranch;preprocess"
+            },
+            {
+                "symbol": "preprocessingBranch",
+                "type": "nonterminal",
+                "production": "preprocess"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "varianceThreshold"
+            },
+            {
+                "symbol": "varianceThreshold",
+                "type": "terminal",
+                "arity": 1,
+                "name": "varianceThreshold"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "fastICA(fastICA_hp)"
+            },
+            {
+                "symbol": "fastICA",
+                "type": "terminal",
+                "arity": 5,
+                "name": "fastICA"
+            },
+            {
+                "symbol": "fastICA_hp",
+                "type": "nonterminal",
+                "production": "ica::n_components;ica::algorithm;ica::whiten;ica::fun"
+            },
+            {
+                "symbol": "ica::n_components",
+                "type": "terminal",
+                "arity": 0,
+                "name": "67"
+            },
+            {
+                "symbol": "ica::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "deflation"
+            },
+            {
+                "symbol": "ica::whiten",
+                "type": "terminal",
+                "arity": 0,
+                "name": "arbitrary-variance"
+            },
+            {
+                "symbol": "ica::fun",
+                "type": "terminal",
+                "arity": 0,
+                "name": "cube"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "minMaxScaler"
+            },
+            {
+                "symbol": "minMaxScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "minMaxScaler"
+            },
+            {
+                "symbol": "preprocess",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "linearRegression"
+            },
+            {
+                "symbol": "linearRegression",
+                "type": "terminal",
+                "arity": 1,
+                "name": "linearRegression"
+            }
+        ]
+    ]
+}

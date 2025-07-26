@@ -1,0 +1,214 @@
+0: Pipeline(
+	0: MinMaxScaler()
+	1: FastICA(n_components=59, random_state=41, whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       min_samples_leaf=8, min_samples_split=18,
+                       n_estimators=40, random_state=41)
+) -> Fitness: 0.8715336134453782
+
+1: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=10, min_samples_split=9, n_estimators=49,
+                     random_state=41)
+) -> Fitness: 0.8551820728291316
+
+2: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', min_samples_leaf=20,
+                       min_samples_split=18, n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+3: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', min_samples_leaf=20,
+                       min_samples_split=18, n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+4: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', max_features='log2',
+                       min_samples_leaf=20, min_samples_split=19,
+                       n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+5: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=39, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_scaling=False)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', min_samples_leaf=20,
+                       min_samples_split=18, n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+6: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=10, min_samples_split=9, n_estimators=49,
+                     random_state=41)
+) -> Fitness: 0.8551820728291316
+
+7: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_scaling=False)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', min_samples_leaf=20,
+                       min_samples_split=18, n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+8: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: VarianceThreshold()
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=10, min_samples_split=9, n_estimators=49,
+                     random_state=41)
+) -> Fitness: 0.8551820728291316
+
+9: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=10, min_samples_split=9, n_estimators=76,
+                     random_state=41)
+) -> Fitness: 0.8573879551820729
+
+10: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: MinMaxScaler()
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', min_samples_leaf=20,
+                       min_samples_split=18, n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+11: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', min_samples_leaf=10,
+                     min_samples_split=9, n_estimators=49, random_state=41)
+) -> Fitness: 0.8551820728291316
+
+12: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', min_samples_leaf=10,
+                     min_samples_split=19, n_estimators=49, random_state=41)
+) -> Fitness: 0.8551820728291316
+
+13: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(n_components=59, random_state=41, whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', min_samples_leaf=20,
+                       min_samples_split=18, n_estimators=40, random_state=41)
+) -> Fitness: 0.8546218487394958
+
+14: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='cube', n_components=90, random_state=41,
+        whiten='arbitrary-variance')
+	2: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=10, min_samples_split=9, n_estimators=49,
+                     random_state=41)
+) -> Fitness: 0.8456232492997199
+
+15: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=27, max_features=0.22922036717568395,
+                       min_samples_leaf=5, min_samples_split=14,
+                       random_state=41)
+) -> Fitness: 0.8489145658263306
+
+16: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_scaling=False)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=10, min_samples_split=9, n_estimators=76,
+                     random_state=41)
+) -> Fitness: 0.8573879551820729
+
+17: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_scaling=False)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', min_samples_leaf=20,
+                       min_samples_split=9, n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+18: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=84, random_state=41,
+        whiten='arbitrary-variance')
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', min_samples_leaf=20,
+                       min_samples_split=18, n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+19: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(fun='exp', n_components=59, random_state=41,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', max_features='log2',
+                       min_samples_leaf=20, min_samples_split=11,
+                       n_estimators=40, random_state=41)
+) -> Fitness: 0.8621498599439775
+
+Ensemble fitness: 0.8658263305322128
+Weights: [1.0, 0.981238198545659, 0.9892330561247036, 0.9892330561247036, 0.9892330561247036, 0.9892330561247036, 0.981238198545659, 0.9892330561247036, 0.981238198545659, 0.983769233859628, 0.9892330561247036, 0.981238198545659, 0.981238198545659, 0.9805953959262383, 0.9702703788517938, 0.9740468442408904, 0.983769233859628, 0.9892330561247036, 0.9892330561247036, 0.9892330561247036]
+Prediction: [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 1
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0
+ 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1
+ 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+ 0 0 0 0 1 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0
+ 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0
+ 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0
+ 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1
+ 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 0 0
+ 0 0 0 0 0 0 0 0 0]

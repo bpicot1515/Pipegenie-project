@@ -1,0 +1,239 @@
+0: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='exp', n_components=35, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.6302610000321968
+
+1: Pipeline(
+	0: MaxAbsScaler()
+	1: SelectPercentile(percentile=14.377817769904729)
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.630201680672269
+
+2: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: FastICA(fun='cube', n_components=48, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.6249647895939985
+
+3: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: FastICA(fun='cube', n_components=48, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.6278219324511414
+
+4: Pipeline(
+	0: MaxAbsScaler()
+	1: SelectFwe(alpha=0.011522402226031275)
+	2: Balancing(strategy='none')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.6480529250780773
+
+5: Pipeline(
+	0: MinMaxScaler()
+	1: SelectFwe(alpha=0.026184680642699264)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=14,
+                                                    max_features=0.5632202922076598,
+                                                    min_samples_leaf=13,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.7393695965615525, n_estimators=27,
+                   random_state=42)
+) -> Fitness: 0.6361835216845358
+
+6: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.026184680642699264)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=28,
+                                                    max_features=0.8606694665915507,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.7393695965615525, n_estimators=96,
+                   random_state=42)
+) -> Fitness: 0.6515669532180689
+
+7: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectFwe(alpha=0.019606159660540034)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=28,
+                                                    max_features=0.8606694665915507,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.7393695965615525, n_estimators=96,
+                   random_state=42)
+) -> Fitness: 0.6481344537815127
+
+8: Pipeline(
+	0: RobustScaler()
+	1: SelectFwe(alpha=0.011522402226031275)
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=11.29489758384251, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.6480529250780773
+
+9: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: SelectFwe(alpha=0.011522402226031275)
+	2: Balancing(strategy='none')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.6480529250780773
+
+10: Pipeline(
+	0: MinMaxScaler()
+	1: SelectFwe(alpha=0.026184680642699264)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=14,
+                                                    max_features=0.5632202922076598,
+                                                    min_samples_leaf=13,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.4008398689366833, n_estimators=27,
+                   random_state=42)
+) -> Fitness: 0.6319569786535304
+
+11: Pipeline(
+	0: MaxAbsScaler()
+	1: SelectFwe(alpha=0.02086532051682004)
+	2: Balancing(strategy='weighting')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.6389432370649409
+
+12: Pipeline(
+	0: MaxAbsScaler()
+	1: SelectPercentile(percentile=14.377817769904729)
+	2: Balancing(strategy='none')
+	3: LogisticRegression(C=4.222258863638354, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.630201680672269
+
+13: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectFwe(alpha=0.011522402226031275)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=28,
+                                                    max_features=0.8606694665915507,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.7393695965615525, n_estimators=96,
+                   random_state=42)
+) -> Fitness: 0.6473337840883481
+
+14: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectFwe(alpha=0.026184680642699264)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=28,
+                                                    max_features=0.8606694665915507,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.7393695965615525, n_estimators=96,
+                   random_state=42)
+) -> Fitness: 0.6530447857303842
+
+15: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectFwe(alpha=0.026184680642699264)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=28,
+                                                    max_features=0.8606694665915507,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.7393695965615525, n_estimators=96,
+                   random_state=42)
+) -> Fitness: 0.6515669532180689
+
+16: Pipeline(
+	0: StandardScaler()
+	1: Balancing(strategy='none')
+	2: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=12,
+                                                    max_features=0.7878280266467313,
+                                                    min_samples_leaf=19,
+                                                    random_state=42),
+                   learning_rate=0.4008398689366833, n_estimators=48,
+                   random_state=42)
+) -> Fitness: 0.6336200457194373
+
+17: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectFwe(alpha=0.011522402226031275)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=28,
+                                                    max_features=0.8606694665915507,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.7393695965615525, n_estimators=96,
+                   random_state=42)
+) -> Fitness: 0.6473337840883481
+
+18: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: SelectFwe(alpha=0.01897339631431604)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(max_depth=28,
+                                                    max_features=0.8606694665915507,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.7393695965615525, n_estimators=96,
+                   random_state=42)
+) -> Fitness: 0.6495137641263402
+
+19: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='exp', n_components=35, random_state=42,
+        whiten='arbitrary-variance')
+	2: Balancing(strategy='none')
+	3: LogisticRegression(C=11.29489758384251, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=42, solver='newton-cg')
+) -> Fitness: 0.6333261341318137
+
+Ensemble fitness: 0.6806932934093177
+Weights: [0.9651114499402895, 0.9650206148839138, 0.9570014235624281, 0.9613765336920456, 0.9923560209630587, 0.9741805395061991, 0.997737012001922, 0.9924808649327479, 0.9923560209630587, 0.9923560209630587, 0.9677084825763236, 0.9784064600566841, 0.9650206148839138, 0.9912548086029831, 1.0, 0.997737012001922, 0.9702551181245224, 0.9912548086029831, 0.9945929870642872, 0.969805054677044]
+Prediction: [4 0 0 4 2 1 2 4 2 0 1 4 0 3 2 1 3 0 2 0 1 0 0 0 3 0 1 0 1 4 1 1 2 4 4 1 4
+ 3 2 2 4 2 2 0 1 1 4 2 3 1 4 2 4 2 1 0 0 3 0 4 0 2 2 2 0 0 4 2 3 2 4 2 2 2
+ 0 0 0 1 2 1 2 4 4 2 4 4 4 2 1 0 4 1 2 2 4 4 1 0 1 4 0 4 2 1 4 3 3 0 0 2 3
+ 4 4 3 3 1 3 4 1 4 2 3 2 3 2 1 4 3 2 2 2 2 2 4 4 4 4 0 2 0 3 2 0 0 2 1 4 0
+ 4 2 2 2 0 2 2 2 4 2 0 1 4 1 0 3 1 2 4 1 0 1 2 4 0 4 4 4 4 3 2 1 0 4 3 3 3
+ 2 0 1 2 2 1 1 2 4 4 4 1 4 1 3 0 3 4 0 2 2 2 4 0 2 4 3 2 3 4 4 2 1 3 0 3 0
+ 4 1 4 4 0 4 2 4 1 3 3 4 3 0 2 1 3 3 4 1 2 0 3 2 4 4 3 4 4 0 2 0 1 2 1 0 0
+ 2 3 1 2 3 2 2 1 2 2 2 4 2 2 3 4 0 0 2 3 3 2 2 2 0 2 1 4 4 4 3 1 4 0 4 2 3
+ 4 3 3 0 2 1 2 2 2 1 4 2 2 2 4 2 2 1 0 4 4 2 4 2 4 1 2 3 2 4 3 3 2 3 0 3 1
+ 3 0 3 2 2 2 0 2 0 3 2 0 0 1 0 0 4 2 2 2 4 0 3 1 3 4 0 2 2 2 2 2 1 2 3 0 0
+ 3 4 2 0 1 2 2 2 4 4 4 1 4 4 1 2 2 4 2 2 2 0 0 4 2 3 0 0 3 3 2 2 0 4 0 4 0
+ 4 4 4 2 0 4 3 4 1 2 3 4 4 4 1 4 1 2 1 4 1 2 4 1 1 4 0 2 2 2 2 0 4 3 3 2 1
+ 3 4 0 3 2 4 4 4 4 3 3 0 0 1 2 1 3 2 3 2 0 2 2 1 1 0 0 4 4 0 3 3 1 2 2 4 0
+ 1 4 4 3 4 2 2 3 2 2 4 0 0]

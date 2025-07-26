@@ -1,0 +1,146 @@
+0: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=16, min_samples_split=18, n_estimators=26,
+                     random_state=42)
+) -> Fitness: 0.8367799653967973
+
+1: Pipeline(
+	0: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.8558029158544906, min_samples_leaf=19,
+                       min_samples_split=3, n_estimators=59, random_state=42)
+) -> Fitness: 0.8217426077102342
+
+2: Pipeline(
+	0: MinMaxScaler()
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: MaxAbsScaler()
+	3: VarianceThreshold()
+	4: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=16, min_samples_split=18, n_estimators=26,
+                     random_state=42)
+) -> Fitness: 0.8367799653967973
+
+3: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=16, min_samples_split=18, n_estimators=26,
+                     random_state=42)
+) -> Fitness: 0.8367799653967973
+
+4: Pipeline(
+	0: VarianceThreshold()
+	1: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=16, min_samples_split=18, n_estimators=26,
+                     random_state=42)
+) -> Fitness: 0.8367799653967973
+
+5: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       criterion='entropy', max_features='log2',
+                       min_samples_leaf=19, min_samples_split=3,
+                       n_estimators=59, random_state=42)
+) -> Fitness: 0.8381477387596664
+
+6: Pipeline(
+	0: MinMaxScaler()
+	1: MaxAbsScaler()
+	2: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.6513999909851677, min_samples_leaf=13,
+                       min_samples_split=18, n_estimators=68, random_state=42)
+) -> Fitness: 0.8363146316607704
+
+7: Pipeline(
+	0: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.6513999909851677, min_samples_leaf=13,
+                       min_samples_split=18, n_estimators=68, random_state=42)
+) -> Fitness: 0.8363146316607704
+
+8: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.6513999909851677, min_samples_leaf=13,
+                       min_samples_split=13, n_estimators=68, random_state=42)
+) -> Fitness: 0.8363146316607704
+
+9: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=20, min_samples_split=4, n_estimators=53,
+                     random_state=42)
+) -> Fitness: 0.8121085479940733
+
+10: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=19,
+                       max_features=0.24183111306830918, min_samples_leaf=13,
+                       min_samples_split=15, random_state=42)
+) -> Fitness: 0.8112385839558055
+
+11: Pipeline(
+	0: VarianceThreshold()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=22,
+                       max_features=0.2690835792689571, min_samples_leaf=14,
+                       min_samples_split=8, random_state=42)
+) -> Fitness: 0.8083734342761826
+
+12: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=3, min_samples_split=11, n_estimators=80,
+                     random_state=42)
+) -> Fitness: 0.8195923139422913
+
+13: Pipeline(
+	0: MinMaxScaler()
+	1: MaxAbsScaler()
+	2: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.6513999909851677, min_samples_leaf=13,
+                       min_samples_split=18, n_estimators=68, random_state=42)
+) -> Fitness: 0.8282406445791498
+
+14: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.6513999909851677, min_samples_leaf=13,
+                       min_samples_split=13, n_estimators=68, random_state=42)
+) -> Fitness: 0.8282406445791498
+
+15: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.997342010443345, min_samples_leaf=13,
+                       min_samples_split=16, n_estimators=86, random_state=42)
+) -> Fitness: 0.8336384972045356
+
+16: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.6513999909851677, min_samples_leaf=13,
+                       min_samples_split=16, n_estimators=68, random_state=42)
+) -> Fitness: 0.8282406445791498
+
+17: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     min_samples_leaf=20, min_samples_split=4, n_estimators=26,
+                     random_state=42)
+) -> Fitness: 0.8207543243711563
+
+18: Pipeline(
+	0: MinMaxScaler()
+	1: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features='log2', min_samples_leaf=15,
+                       min_samples_split=9, n_estimators=40, random_state=42)
+) -> Fitness: 0.8295112999329717
+
+19: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       criterion='entropy', max_features=0.8558029158544906,
+                       min_samples_leaf=19, min_samples_split=3,
+                       n_estimators=59, random_state=42)
+) -> Fitness: 0.824318340109139
+
+Ensemble fitness: 0.8345941552548327
+Weights: [0.998368099918884, 0.9804269220200852, 0.998368099918884, 0.998368099918884, 0.998368099918884, 1.0, 0.9978129069445337, 0.9978129069445337, 0.9978129069445337, 0.9689324571773859, 0.9678944969252289, 0.9644760665613137, 0.9778613913045516, 0.9881797758051849, 0.9881797758051849, 0.9946199919816001, 0.9881797758051849, 0.9792477941726003, 0.9896958037022502, 0.9835000465777156]
+Prediction: [0 0 0 ... 0 0 0]

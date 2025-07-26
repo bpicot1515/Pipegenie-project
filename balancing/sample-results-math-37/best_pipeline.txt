@@ -1,0 +1,3 @@
+varianceThreshold();maxAbsScaler();decisionTree('gini',24,19,0.8147101556794951,12,'balanced')
+Fitness: 0.7914706919487063
+Prediction: [1 0 0 ... 0 0 0]

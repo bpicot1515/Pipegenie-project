@@ -1,0 +1,3 @@
+randomForest(34,'gini',0.6788970057202638,5,15,False,'balanced_subsample')
+Fitness: 0.8150643756508569
+Prediction: [1 0 0 ... 0 0 0]

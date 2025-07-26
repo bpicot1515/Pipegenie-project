@@ -1,0 +1,463 @@
+{
+    "metafeatures": {
+        "NumberOfInstances": 331.0,
+        "NumberOfFeatures": 10.0,
+        "DatasetRatio": 0.030211480362537766,
+        "SkewnessMean": 0.3494819451352803,
+        "KurtosisMean": -0.10948223602271137,
+        "TargetSkewness": 0.49777110119095913,
+        "TargetKurtosis": -0.7611188666399995,
+        "TargetMean": 150.02114803625378,
+        "TargetStdev": 75.55504289882536
+    },
+    "elite_pipelines": [
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "regressor"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "mlpRegressor(mlpRegressor_hp)"
+            },
+            {
+                "symbol": "mlpRegressor",
+                "type": "terminal",
+                "arity": 6,
+                "name": "mlpRegressor"
+            },
+            {
+                "symbol": "mlpRegressor_hp",
+                "type": "nonterminal",
+                "production": "mlp::hidden_layer_sizes;mlp::alpha;mlp::learning_rate_init;mlp::solver;mlp::activation"
+            },
+            {
+                "symbol": "mlp::hidden_layer_sizes",
+                "type": "terminal",
+                "arity": 0,
+                "name": "(62, 18)"
+            },
+            {
+                "symbol": "mlp::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.04856171507892712"
+            },
+            {
+                "symbol": "mlp::learning_rate_init",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.08504291026680227"
+            },
+            {
+                "symbol": "mlp::solver",
+                "type": "terminal",
+                "arity": 0,
+                "name": "adam"
+            },
+            {
+                "symbol": "mlp::activation",
+                "type": "terminal",
+                "arity": 0,
+                "name": "identity"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "median"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "mlpRegressor(mlpRegressor_hp)"
+            },
+            {
+                "symbol": "mlpRegressor",
+                "type": "terminal",
+                "arity": 6,
+                "name": "mlpRegressor"
+            },
+            {
+                "symbol": "mlpRegressor_hp",
+                "type": "nonterminal",
+                "production": "mlp::hidden_layer_sizes;mlp::alpha;mlp::learning_rate_init;mlp::solver;mlp::activation"
+            },
+            {
+                "symbol": "mlp::hidden_layer_sizes",
+                "type": "terminal",
+                "arity": 0,
+                "name": "(97, 7)"
+            },
+            {
+                "symbol": "mlp::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.0015751929701701335"
+            },
+            {
+                "symbol": "mlp::learning_rate_init",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.19279112703175058"
+            },
+            {
+                "symbol": "mlp::solver",
+                "type": "terminal",
+                "arity": 0,
+                "name": "adam"
+            },
+            {
+                "symbol": "mlp::activation",
+                "type": "terminal",
+                "arity": 0,
+                "name": "identity"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "median"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "mlpRegressor(mlpRegressor_hp)"
+            },
+            {
+                "symbol": "mlpRegressor",
+                "type": "terminal",
+                "arity": 6,
+                "name": "mlpRegressor"
+            },
+            {
+                "symbol": "mlpRegressor_hp",
+                "type": "nonterminal",
+                "production": "mlp::hidden_layer_sizes;mlp::alpha;mlp::learning_rate_init;mlp::solver;mlp::activation"
+            },
+            {
+                "symbol": "mlp::hidden_layer_sizes",
+                "type": "terminal",
+                "arity": 0,
+                "name": "(97, 7)"
+            },
+            {
+                "symbol": "mlp::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.0015751929701701335"
+            },
+            {
+                "symbol": "mlp::learning_rate_init",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.19279112703175058"
+            },
+            {
+                "symbol": "mlp::solver",
+                "type": "terminal",
+                "arity": 0,
+                "name": "adam"
+            },
+            {
+                "symbol": "mlp::activation",
+                "type": "terminal",
+                "arity": 0,
+                "name": "identity"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "median"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "maxAbsScaler"
+            },
+            {
+                "symbol": "maxAbsScaler",
+                "type": "terminal",
+                "arity": 1,
+                "name": "maxAbsScaler"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "mlpRegressor(mlpRegressor_hp)"
+            },
+            {
+                "symbol": "mlpRegressor",
+                "type": "terminal",
+                "arity": 6,
+                "name": "mlpRegressor"
+            },
+            {
+                "symbol": "mlpRegressor_hp",
+                "type": "nonterminal",
+                "production": "mlp::hidden_layer_sizes;mlp::alpha;mlp::learning_rate_init;mlp::solver;mlp::activation"
+            },
+            {
+                "symbol": "mlp::hidden_layer_sizes",
+                "type": "terminal",
+                "arity": 0,
+                "name": "(97, 7)"
+            },
+            {
+                "symbol": "mlp::alpha",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.0015751929701701335"
+            },
+            {
+                "symbol": "mlp::learning_rate_init",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.19279112703175058"
+            },
+            {
+                "symbol": "mlp::solver",
+                "type": "terminal",
+                "arity": 0,
+                "name": "adam"
+            },
+            {
+                "symbol": "mlp::activation",
+                "type": "terminal",
+                "arity": 0,
+                "name": "identity"
+            }
+        ],
+        [
+            {
+                "symbol": "workflow",
+                "type": "nonterminal",
+                "production": "imputation;rescaling;regressor"
+            },
+            {
+                "symbol": "imputation",
+                "type": "nonterminal",
+                "production": "simpleImputer(simpleImputer_hp)"
+            },
+            {
+                "symbol": "simpleImputer",
+                "type": "terminal",
+                "arity": 2,
+                "name": "simpleImputer"
+            },
+            {
+                "symbol": "simpleImputer_hp",
+                "type": "nonterminal",
+                "production": "imp::strategy"
+            },
+            {
+                "symbol": "imp::strategy",
+                "type": "terminal",
+                "arity": 0,
+                "name": "most_frequent"
+            },
+            {
+                "symbol": "rescaling",
+                "type": "nonterminal",
+                "production": "robustScaler(robustScaler_hp)"
+            },
+            {
+                "symbol": "robustScaler",
+                "type": "terminal",
+                "arity": 3,
+                "name": "robustScaler"
+            },
+            {
+                "symbol": "robustScaler_hp",
+                "type": "nonterminal",
+                "production": "rs::with_centering;rs::with_scaling"
+            },
+            {
+                "symbol": "rs::with_centering",
+                "type": "terminal",
+                "arity": 0,
+                "name": "False"
+            },
+            {
+                "symbol": "rs::with_scaling",
+                "type": "terminal",
+                "arity": 0,
+                "name": "True"
+            },
+            {
+                "symbol": "regressor",
+                "type": "nonterminal",
+                "production": "adaBoost(adaBoost_hp)"
+            },
+            {
+                "symbol": "adaBoost",
+                "type": "terminal",
+                "arity": 5,
+                "name": "adaBoost"
+            },
+            {
+                "symbol": "adaBoost_hp",
+                "type": "nonterminal",
+                "production": "ada::estimator;ada::n_estimators;ada::learning_rate;ada::algorithm"
+            },
+            {
+                "symbol": "ada::estimator",
+                "type": "nonterminal",
+                "production": "decisionTree(decisionTree_hp)"
+            },
+            {
+                "symbol": "decisionTree",
+                "type": "terminal",
+                "arity": 6,
+                "name": "decisionTree"
+            },
+            {
+                "symbol": "decisionTree_hp",
+                "type": "nonterminal",
+                "production": "dt::criterion;dt::max_depth;dt::min_samples_split;dt::max_features;dt::min_samples_leaf"
+            },
+            {
+                "symbol": "dt::criterion",
+                "type": "terminal",
+                "arity": 0,
+                "name": "friedman_mse"
+            },
+            {
+                "symbol": "dt::max_depth",
+                "type": "terminal",
+                "arity": 0,
+                "name": "13"
+            },
+            {
+                "symbol": "dt::min_samples_split",
+                "type": "terminal",
+                "arity": 0,
+                "name": "18"
+            },
+            {
+                "symbol": "dt::max_features",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.6741627277942797"
+            },
+            {
+                "symbol": "dt::min_samples_leaf",
+                "type": "terminal",
+                "arity": 0,
+                "name": "18"
+            },
+            {
+                "symbol": "ada::n_estimators",
+                "type": "terminal",
+                "arity": 0,
+                "name": "79"
+            },
+            {
+                "symbol": "ada::learning_rate",
+                "type": "terminal",
+                "arity": 0,
+                "name": "0.5002223650442716"
+            },
+            {
+                "symbol": "ada::algorithm",
+                "type": "terminal",
+                "arity": 0,
+                "name": "SAMME"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,180 @@
+0: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=17, random_state=42,
+        whiten='arbitrary-variance')
+	1: ExtraTreesClassifier(class_weight='balanced_subsample', min_samples_leaf=17,
+                     min_samples_split=4, n_estimators=68, random_state=42)
+) -> Fitness: 0.8032166881351082
+
+1: Pipeline(
+	0: VarianceThreshold()
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=0.8403882578316726, degree=4, gamma=7.368816092296558,
+         kernel='poly', n_components=22, random_state=42)
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=19, min_samples_split=6, n_estimators=41,
+                     random_state=42)
+) -> Fitness: 0.7731662372978387
+
+2: Pipeline(
+	0: VarianceThreshold()
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=0.8403882578316726, degree=4, gamma=7.368816092296558,
+         kernel='poly', n_components=22, random_state=42)
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=19, min_samples_split=6, n_estimators=41,
+                     random_state=42)
+) -> Fitness: 0.7716741806211536
+
+3: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=17, random_state=42,
+        whiten='arbitrary-variance')
+	1: ExtraTreesClassifier(class_weight='balanced_subsample', min_samples_leaf=8,
+                     min_samples_split=4, n_estimators=68, random_state=42)
+) -> Fitness: 0.7961728925146702
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=48.77664871867002)
+	2: MaxAbsScaler()
+	3: FastICA(algorithm='deflation', fun='cube', n_components=21, random_state=42,
+        whiten='arbitrary-variance')
+	4: ExtraTreesClassifier(class_weight='balanced', min_samples_leaf=8,
+                     min_samples_split=11, n_estimators=72, random_state=42)
+) -> Fitness: 0.7859632174037497
+
+5: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=48.77664871867002)
+	2: MaxAbsScaler()
+	3: FastICA(algorithm='deflation', fun='cube', n_components=21, random_state=42,
+        whiten='arbitrary-variance')
+	4: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=8, n_estimators=72, random_state=42)
+) -> Fitness: 0.7859632174037497
+
+6: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     max_features='log2', min_samples_leaf=8,
+                     min_samples_split=4, n_estimators=94, random_state=42)
+) -> Fitness: 0.7867604121940747
+
+7: Pipeline(
+	0: MinMaxScaler()
+	1: MaxAbsScaler()
+	2: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=8, min_samples_split=6, n_estimators=41,
+                     random_state=42)
+) -> Fitness: 0.7933673250322026
+
+8: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=66, random_state=42,
+        whiten='arbitrary-variance')
+	1: MaxAbsScaler()
+	2: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     max_features='log2', min_samples_leaf=19,
+                     min_samples_split=6, n_estimators=41, random_state=42)
+) -> Fitness: 0.7776942893945898
+
+9: Pipeline(
+	0: SelectPercentile(percentile=89.4749434817931)
+	1: PCA(n_components=0.6434281670627767, random_state=42)
+	2: FastICA(algorithm='deflation', fun='cube', n_components=41, random_state=42,
+        whiten='arbitrary-variance')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=3, min_samples_split=4, n_estimators=80,
+                     random_state=42)
+) -> Fitness: 0.7761514240732789
+
+10: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=8, min_samples_split=4, n_estimators=72,
+                     random_state=42)
+) -> Fitness: 0.7867604121940747
+
+11: Pipeline(
+	0: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=8, min_samples_split=4, n_estimators=94,
+                     random_state=42)
+) -> Fitness: 0.7810963217403749
+
+12: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=17, random_state=42,
+        whiten='arbitrary-variance')
+	1: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     criterion='entropy', min_samples_leaf=8,
+                     min_samples_split=4, n_estimators=68, random_state=42)
+) -> Fitness: 0.7903388435666237
+
+13: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=6, min_samples_split=11, n_estimators=72,
+                     random_state=42)
+) -> Fitness: 0.7871701016172892
+
+14: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=8, min_samples_split=16, n_estimators=41,
+                     random_state=42)
+) -> Fitness: 0.7933673250322026
+
+15: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=6, min_samples_split=6, n_estimators=72,
+                     random_state=42)
+) -> Fitness: 0.7915764992128238
+
+16: Pipeline(
+	0: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     max_features='log2', min_samples_leaf=8,
+                     min_samples_split=18, n_estimators=53, random_state=42)
+) -> Fitness: 0.7941348218119364
+
+17: Pipeline(
+	0: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=6, min_samples_split=4, n_estimators=72,
+                     random_state=42)
+) -> Fitness: 0.7908519393158724
+
+18: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=6,
+                     min_samples_split=11, n_estimators=72, random_state=42)
+) -> Fitness: 0.7915764992128238
+
+19: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     max_features='log2', min_samples_leaf=6,
+                     min_samples_split=11, n_estimators=72, random_state=42)
+) -> Fitness: 0.7915764992128238
+
+Ensemble fitness: 0.7840428653213111
+Weights: [1.0, 0.962587367417577, 0.9607297657283623, 0.9912305163419947, 0.9785195315458184, 0.9785195315458184, 0.9795120343188569, 0.9877376015110274, 0.9682247653497145, 0.9663039072000995, 0.9795120343188569, 0.9724602753883366, 0.9839671600967554, 0.9800220952143367, 0.9877376015110274, 0.9855080340159387, 0.988693130437494, 0.9846059612531906, 0.9855080340159387, 0.9855080340159387]
+Prediction: [0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0
+ 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 1 0 0
+ 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0
+ 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0
+ 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0
+ 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0
+ 0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0
+ 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 1]

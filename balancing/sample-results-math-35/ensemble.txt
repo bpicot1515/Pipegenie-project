@@ -1,0 +1,171 @@
+0: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=26, max_features=0.5340334831522808,
+                       min_samples_leaf=19, min_samples_split=10,
+                       random_state=35)
+) -> Fitness: 0.6992290631588931
+
+1: Pipeline(
+	0: VarianceThreshold()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=9, max_features=0.11838802516352387,
+                       min_samples_leaf=11, min_samples_split=6,
+                       random_state=35)
+) -> Fitness: 0.6874910931636838
+
+2: Pipeline(
+	0: MaxAbsScaler()
+	1: VarianceThreshold()
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=27, max_features=0.8767342343987324,
+                       min_samples_leaf=19, min_samples_split=9,
+                       random_state=35)
+) -> Fitness: 0.6998655158912551
+
+3: Pipeline(
+	0: SelectPercentile(percentile=7.153377560422549)
+	1: RobustScaler(with_scaling=False)
+	2: VarianceThreshold()
+	3: RandomForestClassifier(class_weight='balanced_subsample',
+                       max_features=0.5711458007152778, min_samples_split=3,
+                       n_estimators=24, random_state=35)
+) -> Fitness: 0.6889024467352949
+
+4: Pipeline(
+	0: RobustScaler()
+	1: VarianceThreshold()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.7755013237310036, min_samples_leaf=19,
+                       min_samples_split=13, n_estimators=67, random_state=35)
+) -> Fitness: 0.6811433459548979
+
+5: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.7755013237310036, min_samples_leaf=19,
+                       min_samples_split=13, random_state=35)
+) -> Fitness: 0.692254457066009
+
+6: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.7755013237310036, min_samples_leaf=19,
+                       min_samples_split=13, n_estimators=67, random_state=35)
+) -> Fitness: 0.6811433459548979
+
+7: Pipeline(
+	0: MinMaxScaler()
+	1: MaxAbsScaler()
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=9, max_features=0.11838802516352387,
+                       min_samples_leaf=19, min_samples_split=9,
+                       random_state=35)
+) -> Fitness: 0.6815228318997277
+
+8: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=9, max_features=0.38900861216385363,
+                       min_samples_leaf=11, min_samples_split=7,
+                       random_state=35)
+) -> Fitness: 0.6892184114338245
+
+9: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=9, max_features=0.11838802516352387,
+                       min_samples_leaf=11, min_samples_split=6,
+                       random_state=35)
+) -> Fitness: 0.6874910931636838
+
+10: Pipeline(
+	0: VarianceThreshold()
+	1: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=27, max_features=0.8767342343987324,
+                       min_samples_leaf=19, min_samples_split=6,
+                       random_state=35)
+) -> Fitness: 0.6998655158912551
+
+11: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: RobustScaler(with_centering=False, with_scaling=False)
+	3: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=27, max_features=0.7413039867925104,
+                       min_samples_leaf=12, min_samples_split=3,
+                       random_state=35)
+) -> Fitness: 0.6999824903149555
+
+12: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=25,
+                       max_features=0.9733144810828277, min_samples_leaf=12,
+                       min_samples_split=5, random_state=35)
+) -> Fitness: 0.675709652943451
+
+13: Pipeline(
+	0: SelectFwe(alpha=0.04771167878313441)
+	1: Nystroem(coef0=-0.727165344945635, degree=2, gamma=0.05575753243778609,
+         kernel='cosine', n_components=32, random_state=35)
+	2: GaussianNB(var_smoothing=0.0035382670328519094)
+) -> Fitness: 0.6766742177183422
+
+14: Pipeline(
+	0: SelectFwe(alpha=0.04771167878313441)
+	1: Nystroem(coef0=-0.727165344945635, degree=2, gamma=0.05575753243778609,
+         kernel='cosine', n_components=32, random_state=35)
+	2: VarianceThreshold()
+	3: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=19, max_features=0.19142347123905423,
+                       min_samples_leaf=6, min_samples_split=16,
+                       random_state=35)
+) -> Fitness: 0.6802048511555177
+
+15: Pipeline(
+	0: SelectFwe(alpha=0.04771167878313441)
+	1: Nystroem(coef0=-0.727165344945635, degree=2, gamma=0.05575753243778609,
+         kernel='cosine', n_components=32, random_state=35)
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=20, max_features=0.7413039867925104,
+                       min_samples_leaf=12, min_samples_split=3,
+                       random_state=35)
+) -> Fitness: 0.6802048511555177
+
+16: Pipeline(
+	0: MinMaxScaler()
+	1: MaxAbsScaler()
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=27, max_features=0.8767342343987324,
+                       min_samples_leaf=19, min_samples_split=9,
+                       random_state=35)
+) -> Fitness: 0.6998655158912551
+
+17: Pipeline(
+	0: SelectFwe(alpha=0.04771167878313441)
+	1: Nystroem(coef0=-0.11559984778073384, degree=2, gamma=0.05575753243778609,
+         kernel='cosine', n_components=32, random_state=35)
+	2: VarianceThreshold()
+	3: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=24, max_features=0.17213923595351022,
+                       min_samples_split=10, random_state=35)
+) -> Fitness: 0.6802048511555177
+
+18: Pipeline(
+	0: SelectPercentile(percentile=7.153377560422549)
+	1: RobustScaler(with_scaling=False)
+	2: VarianceThreshold()
+	3: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.7755013237310036, min_samples_leaf=19,
+                       min_samples_split=13, n_estimators=67, random_state=35)
+) -> Fitness: 0.6886704434084547
+
+19: Pipeline(
+	0: SelectPercentile(percentile=7.153377560422549)
+	1: RobustScaler()
+	2: MaxAbsScaler()
+	3: RandomForestClassifier(class_weight='balanced_subsample',
+                       max_features=0.7755013237310036, min_samples_leaf=19,
+                       min_samples_split=13, n_estimators=67, random_state=35)
+) -> Fitness: 0.6882031536888286
+
+Ensemble fitness: 0.7303322705927271
+Weights: [0.9989236485676615, 0.9821547005473649, 0.9998328895003534, 0.9841709703700229, 0.973086263412702, 0.988959676340662, 0.973086263412702, 0.9736283997519396, 0.9846223598017605, 0.9821547005473649, 0.9998328895003534, 1.0, 0.9653236506521998, 0.9667016347992851, 0.9717455230193844, 0.9717455230193844, 0.9998328895003534, 0.9717455230193844, 0.9838395287553393, 0.9831719553144438]
+Prediction: [0 0 0 ... 1 0 0]

@@ -1,0 +1,247 @@
+0: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectPercentile(percentile=40.502131493682974)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=94, random_state=42)
+) -> Fitness: 0.9685710181055699
+
+1: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectPercentile(percentile=40.502131493682974)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=94, random_state=42)
+) -> Fitness: 0.9685710181055699
+
+2: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=12,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.38294421529187067, n_estimators=78,
+                   random_state=42)
+) -> Fitness: 0.9675821446780899
+
+3: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: SelectPercentile(percentile=40.502131493682974)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=94, random_state=42)
+) -> Fitness: 0.9685710181055699
+
+4: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=6, n_estimators=94, random_state=42)
+) -> Fitness: 0.9671290648560781
+
+5: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=12,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.38294421529187067, n_estimators=78,
+                   random_state=42)
+) -> Fitness: 0.9675821446780899
+
+6: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=40.502131493682974)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=94, random_state=42)
+) -> Fitness: 0.9685710181055699
+
+7: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=26,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_split=17,
+                                                    random_state=42),
+                   learning_rate=0.5140534126274071, n_estimators=86,
+                   random_state=42)
+) -> Fitness: 0.9675499219988083
+
+8: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=12,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.38294421529187067, n_estimators=78,
+                   random_state=42)
+) -> Fitness: 0.9675821446780899
+
+9: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=40.502131493682974)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=94, random_state=42)
+) -> Fitness: 0.9685710181055699
+
+10: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=26,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=19,
+                                                    random_state=42),
+                   learning_rate=0.5140534126274071, n_estimators=86,
+                   random_state=42)
+) -> Fitness: 0.9673102321246239
+
+11: Pipeline(
+	0: StandardScaler()
+	1: SelectPercentile(percentile=67.43449825737483)
+	2: Balancing(strategy='none')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=79, random_state=42)
+) -> Fitness: 0.9648376428444962
+
+12: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: SelectPercentile(percentile=40.502131493682974)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=94, random_state=42)
+) -> Fitness: 0.9685710181055699
+
+13: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=26,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_split=17,
+                                                    random_state=42),
+                   learning_rate=0.5140534126274071, n_estimators=86,
+                   random_state=42)
+) -> Fitness: 0.9675499219988083
+
+14: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=12,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.38294421529187067, n_estimators=78,
+                   random_state=42)
+) -> Fitness: 0.9675821446780899
+
+15: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=26,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_split=17,
+                                                    random_state=42),
+                   learning_rate=0.5140534126274071, n_estimators=86,
+                   random_state=42)
+) -> Fitness: 0.9675499219988083
+
+16: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='weighting')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=26,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=19,
+                                                    random_state=42),
+                   learning_rate=0.5140534126274071, n_estimators=86,
+                   random_state=42)
+) -> Fitness: 0.9673102321246239
+
+17: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectPercentile(percentile=40.502131493682974)
+	2: Balancing(strategy='weighting')
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=3, n_estimators=94, random_state=42)
+) -> Fitness: 0.9685710181055699
+
+18: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=12,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=18,
+                                                    random_state=42),
+                   learning_rate=0.38294421529187067, n_estimators=78,
+                   random_state=42)
+) -> Fitness: 0.9675821446780899
+
+19: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: SelectPercentile(percentile=61.70217792133914)
+	2: Balancing(strategy='none')
+	3: AdaBoostClassifier(algorithm='SAMME',
+                   estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=26,
+                                                    max_features=0.10258764678776067,
+                                                    min_samples_split=17,
+                                                    random_state=42),
+                   learning_rate=0.5140534126274071, n_estimators=78,
+                   random_state=42)
+) -> Fitness: 0.9678564334960681
+
+Ensemble fitness: 0.9707484605628522
+Weights: [1.0, 1.0, 0.9989790388014973, 1.0, 0.9985112570761077, 0.9989790388014973, 1.0, 0.9989457705344531, 0.9989790388014973, 1.0, 0.9986983030078558, 0.9961454811353164, 1.0, 0.9989457705344531, 0.9989790388014973, 0.9989457705344531, 0.9986983030078558, 1.0, 0.9989790388014973, 0.9992622279666189]
+Prediction: [2 1 1 ... 2 1 2]

@@ -1,0 +1,228 @@
+0: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False)
+	2: MLPRegressor(activation='logistic', alpha=0.04770888361444776,
+             hidden_layer_sizes=(91, 10), learning_rate_init=0.7876292856024367,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.19540795640181227
+
+1: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.05051858630910139,
+             hidden_layer_sizes=(59, 13),
+             learning_rate_init=0.48306811135064043, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.2012724146042149
+
+2: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(59, 13),
+             learning_rate_init=0.08351587149242544, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.20887581806692537
+
+3: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(59, 13),
+             learning_rate_init=0.48306811135064043, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.20887581806692537
+
+4: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(59, 13),
+             learning_rate_init=0.03384354003355651, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.20887581806692537
+
+5: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False)
+	2: MLPRegressor(activation='logistic', alpha=0.048865306914990574,
+             hidden_layer_sizes=(67, 10),
+             learning_rate_init=0.06177798487513349, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.20921679309314373
+
+6: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False)
+	2: MLPRegressor(activation='logistic', alpha=0.048865306914990574,
+             hidden_layer_sizes=(67, 10),
+             learning_rate_init=0.48306811135064043, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.20921679309314373
+
+7: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False)
+	2: MLPRegressor(activation='logistic', alpha=0.048865306914990574,
+             hidden_layer_sizes=(67, 10), learning_rate_init=0.5366928289737507,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.20921679309314373
+
+8: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False)
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(59, 13), learning_rate_init=0.5366928289737507,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.21090895677085367
+
+9: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False)
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(59, 13),
+             learning_rate_init=0.48306811135064043, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.21090895677085367
+
+10: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.051199806116904154,
+             hidden_layer_sizes=(47, 10), learning_rate_init=0.0604689255296996,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.21102081080541338
+
+11: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.051199806116904154,
+             hidden_layer_sizes=(47, 10), learning_rate_init=0.0604689255296996,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.21102081080541338
+
+12: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.051199806116904154,
+             hidden_layer_sizes=(47, 10), learning_rate_init=0.0604689255296996,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.21102081080541338
+
+13: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False)
+	2: MLPRegressor(activation='logistic', alpha=0.05793141820508817,
+             hidden_layer_sizes=(59, 13), learning_rate_init=0.8621827887970699,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.2118729031129906
+
+14: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.006952757560983134,
+             hidden_layer_sizes=(59, 13), learning_rate_init=0.9181855232229428,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.2124653653521295
+
+15: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(47, 10),
+             learning_rate_init=0.48306811135064043, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.21319259270983965
+
+16: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(47, 10),
+             learning_rate_init=0.48306811135064043, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.21319259270983965
+
+17: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(47, 10), learning_rate_init=0.8621827887970699,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.21319259270983965
+
+18: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(47, 10), learning_rate_init=0.8621827887970699,
+             random_state=42, solver='lbfgs')
+) -> Fitness: 0.21319259270983965
+
+19: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler()
+	2: MLPRegressor(activation='logistic', alpha=0.07652790724134484,
+             hidden_layer_sizes=(47, 10),
+             learning_rate_init=0.48306811135064043, random_state=42,
+             solver='lbfgs')
+) -> Fitness: 0.21319259270983965
+
+Ensemble fitness: 0.19772089996669495
+Weights: [1.0, 0.9708630801993676, 0.9355221595790572, 0.9355221595790572, 0.9355221595790572, 0.933997474642565, 0.933997474642565, 0.933997474642565, 0.9265038308169967, 0.9265038308169967, 0.9260127266878998, 0.9260127266878998, 0.9260127266878998, 0.9222885679609645, 0.919716755142434, 0.9165794829831039, 0.9165794829831039, 0.9165794829831039, 0.9165794829831039, 0.9165794829831039]
+Prediction: [-0.73886475  0.64149733  0.26786912  1.53258916 -1.62861364  1.39367144
+ -0.99495092  0.98920693 -1.50836848 -1.89197322 -1.85399554 -0.41228479
+  0.69876552 -0.05272223  1.1420195   1.57345563 -2.01210255 -0.40919714
+  1.23902508 -0.81536066  0.52245469  1.02313747  1.4983342  -1.12212781
+  1.16542696  0.54505861  1.20482639  0.15971663 -0.51758727  0.80821585
+  1.33300004  0.23177554 -0.20051246 -0.39518508  0.71924396  0.13103203
+ -0.25262596 -0.05875703  0.43528297  0.33099102 -0.61738094  0.31777479
+  0.16756691 -0.99604379 -0.07835771 -1.61420721 -1.42546756 -1.2328245
+  0.79193333  0.72648384  0.92779035  0.71145017  0.52636652  1.55229738
+  1.02008631  1.33161165  0.90584274 -0.59766214 -0.41548661 -0.11119354
+  0.52655883 -0.0202015  -1.09480656 -0.72157666 -0.3741573   0.95180187
+  0.63629639 -1.31980966 -0.77285791  0.77087604  1.79064684  0.72331689
+  0.23364905 -0.15089243 -1.07493972  0.27176923 -1.02791513  0.77218947
+ -0.91983206  0.88312144  1.15225531 -1.4490126   0.27841201 -0.43135362
+ -0.60320398 -0.76206486  1.51652036  0.1055711   0.24655342  0.53986665
+ -1.21894331  0.11227348  1.51103575  1.3390581   0.25208553  0.02618394
+ -2.18713032 -0.31925316 -1.53637632  1.49890462  0.88993252  0.93653643
+  0.6389592  -1.42610309  0.2236705   1.24333179 -0.07977921  0.52126621
+  1.448637   -0.07857429  0.70607849 -1.3175429  -2.03755405  0.10357322
+  0.13783337 -0.92302833  1.07590697  0.84932019  0.51514035 -1.02784227
+  1.10284886 -1.46267345 -0.63205125  0.21165737  1.08568068  1.34433009
+ -0.98212501  0.45176144  0.26514009 -2.26439892  0.29060675  0.31788868
+ -0.65048802 -0.19762094 -0.35678422 -0.5120712   1.80683837 -0.59900024
+ -1.19847658 -0.5841077   0.0636917   1.58931853 -0.92641806  0.23996597
+  0.82884223  1.62283745  1.90538321 -1.0752464  -1.99055778  0.7557702
+  0.70284429 -0.00654826 -0.59691035  0.03723712  1.10224391  0.09008015
+ -0.59663856  0.22775352  0.54855461 -0.02079929  0.16969523 -0.13463252
+  0.55220754  0.87449302  1.40995062  0.62765437  1.00774567  1.91621957
+ -1.79160625 -0.24555314 -1.65480767 -1.6958635  -0.2635166   0.0259036
+ -0.52432066 -0.87355491 -0.90579604  0.24510102  1.43476837 -0.88354329
+  0.83540315  0.79417529 -0.45256797  1.66687814  0.85693933 -0.24081359
+  0.99111435  0.04100003 -0.53640116  0.8325173  -0.5430218   0.82849061
+  0.79202398 -0.61256923 -0.56540051 -1.53200288 -0.49854853  1.22869194
+  1.34860278 -0.88236257  1.07191825  1.13698761  0.5375127  -1.08477596
+  0.59073158 -1.2039447   0.67362531 -1.60872609  0.05435781  0.07673333
+ -1.49846764  0.41094976  0.42660187  0.9561954  -2.00424599 -1.1837367
+  0.4362677  -0.63990815 -0.68713542 -0.62355494 -1.49604047  1.37221976
+  0.51862987  0.85763496  0.74291434  0.46539836 -1.49643067  0.98718674
+  0.91161562  1.12353348 -0.94085761 -0.63307477  0.89084701 -0.03699605
+  0.77344154  0.91054653 -0.86501435 -1.02266279 -0.13507466 -0.30089269
+  0.8291474  -0.56503299 -0.09792456  0.64051814  0.1238268  -1.81328566
+  2.19265653  0.61827546 -1.16645222 -1.33119339 -0.53537335 -0.50223285
+ -0.68209381  1.41449403  0.78733511  1.17291156  0.22483375 -0.46180219
+  0.84574182 -1.38474012 -0.89314398 -1.20063021 -1.20394566 -0.47228427
+  1.16907724 -0.94575398 -0.47164422  1.77114987 -1.8061488  -1.74870302
+  0.20329828  0.02502882 -0.53047283 -0.25765749 -0.96990788 -0.08756063
+  0.62490755 -0.32962084 -0.2484825   0.28858695  1.43465053  0.70874111
+  0.3362647   0.18081476  0.99981476  0.09784738  1.22487121  0.21523534
+ -0.18259504 -0.24228016  0.01322553 -1.54176625 -0.56292329 -1.04460324
+  0.27341172 -0.60745343 -0.81921714 -1.58134509  1.15859868 -1.88812281
+ -0.05167327 -0.25189027 -0.78062408 -1.65050125 -0.2173562  -0.22236583
+ -0.26914188  0.1767356   0.05741936  0.83193245 -0.35767722 -1.33241953
+ -0.23207938 -0.55747551 -0.59935067 -0.70688459  1.02649371  0.85441734
+  0.22439489 -0.37241919  0.08226869  0.42044343 -1.13234095 -1.38589736
+  0.97150013  0.07724124  1.68181212  0.23578663 -1.96996131 -0.52601954
+ -0.85886448  0.33757892  1.48281472  1.30271699 -1.05031925]

@@ -1,0 +1,322 @@
+0: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5026277130084463,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+1: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+2: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+3: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+4: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+5: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+6: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+7: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+8: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+9: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+10: Pipeline(
+	0: SimpleImputer()
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+11: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+12: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=60,
+                  random_state=42)
+) -> Fitness: 4.371905290078561
+
+13: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=31,
+                  random_state=42)
+) -> Fitness: 4.378343381697819
+
+14: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=31,
+                  random_state=42)
+) -> Fitness: 4.378343381697819
+
+15: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=31,
+                  random_state=42)
+) -> Fitness: 4.378343381697819
+
+16: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=31,
+                  random_state=42)
+) -> Fitness: 4.378343381697819
+
+17: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.4914455970663347,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=31,
+                  random_state=42)
+) -> Fitness: 4.378343381697819
+
+18: Pipeline(
+	0: SimpleImputer(strategy='most_frequent')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=31,
+                  random_state=42)
+) -> Fitness: 4.378343381697819
+
+19: Pipeline(
+	0: SimpleImputer(strategy='median')
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: AdaBoostRegressor(estimator=DecisionTreeRegressor(criterion='absolute_error',
+                                                  max_depth=5,
+                                                  max_features=0.5149133864492259,
+                                                  min_samples_leaf=3,
+                                                  min_samples_split=9,
+                                                  random_state=42),
+                  learning_rate=0.1574490276328187, n_estimators=31,
+                  random_state=42)
+) -> Fitness: 4.378343381697819
+
+Ensemble fitness: 4.36063573818529
+Weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9985295599138774, 0.9985295599138774, 0.9985295599138774, 0.9985295599138774, 0.9985295599138774, 0.9985295599138774, 0.9985295599138774]
+Prediction: [ 5.30559037  7.1503347   6.82630392 10.65902008  6.38072425  5.43496653
+  8.48775102  5.97516735  5.33741633 10.32       16.53619143  9.9405569
+  6.          5.58454351  8.48775102  6.17271755  8.30240563  8.
+  5.          7.02026776  7.75523429 14.60133879 10.89845249 11.33741633
+  6.73737216  5.98076841  8.99062384  7.14789559  5.98076841  7.78
+  5.75        5.5         9.          3.79142572  5.77062384  7.29300669
+  7.92307363  6.74712719 11.10042302 17.48242841 18.17483265  5.86282865
+  9.62769477  5.58741633  8.         11.25        8.91372025  6.69317404
+  5.25        9.0267711   6.9137751  18.85314057  7.66723829  5.66258367
+  4.38461045  6.0975502   4.53251673 11.25       12.87358637  7.71531192
+  8.465       9.79194914 12.16258367  7.19406424  5.78939894  4.38461045
+ 12.05565731  6.79020082  9.0267711   8.41082466  9.13808572 11.96328514
+  6.41258367 11.3181071  10.505      12.48775102 12.84158237  9.02314057
+  8.19400939 16.53619143  8.58670417  5.13657029 12.          6.25
+  7.49184874  8.1503347  13.28269477  9.18572425  8.94685943  8.44334139
+ 11.25       11.25        5.93006694  4.38461045  8.75        8.48775102
+  6.79265061 11.89859706  6.58053412 11.79        4.82516735  7.36993306
+ 13.86461045 10.61       11.89859706 12.06291837  6.1503347  11.25
+  8.66258367 10.62       11.1415582  10.43706025 14.91360636  6.17271755
+ 10.02737077  6.39995584 20.4         7.40384204 11.25        7.73449935
+ 12.48775102  8.41082466 15.73        8.48775102 16.95        6.26583535
+  6.82516735  5.66258367 11.91258367 14.67826516  7.53       11.41258367
+ 10.51374163  7.2737751  11.25        6.25        6.16258367 11.30653682
+ 13.79467739  8.91372025  6.57478849  6.09265061  6.93652613  3.75890898
+ 10.          8.66258367  6.16258367  6.09265061  7.86917534  9.83741633
+  5.78939894 10.60601339 11.11       13.07305225  5.20804016  7.87643641
+  5.41258367  7.98451004  4.66258367 11.25       20.         10.35867469
+ 10.32        8.48775102 11.41258367 11.17521151  6.24090229  5.13657029
+  6.79020082  4.5         7.49125837 12.05565731 11.58129184  9.95629184
+ 12.         44.5        11.285       8.84104686  5.73601339  8.46561175
+  6.71216065 12.48775102 13.45       13.37132531 11.73775102  5.78939894
+  8.93324098 13.16        7.65968808  6.12761714 16.40902287 12.81080327
+  6.79265061  8.66258367  5.46503347  8.30240563  4.8975502  13.36458907
+  6.20489959 12.         12.14307363 11.25       12.         13.07305225
+  6.16258367  5.77062384  9.42481127 12.          5.86188221 11.89859706
+ 10.61        7.26694914  7.14789559 11.49387551  5.86887551 13.07305225
+  8.48775102 11.11975502 11.02971086 10.75        6.25       10.17658098
+ 11.63657029  8.66258367 11.41258367  8.4003347   5.41258367  7.74853012
+  8.63636947  5.5         5.62719412  5.375      12.22376441  7.41258367
+  4.5         7.78       11.41258367  9.44928784 11.77468808  6.54330792
+  5.78939894 11.5         5.78939894 12.          6.88       11.63657029
+  5.13       11.89859706 10.42807363  5.17195984  6.9667818   6.95279518
+ 10.29723829  7.66723829  7.73775102  4.38461045  6.17271755  5.00071216
+ 10.58097992  6.32516735  8.36017804 10.88462114 12.28845249  6.38426506
+ 11.25       11.80069078 10.61        7.92307363  8.32516735 10.25
+  5.67483265  5.46503347 12.72726106  8.50802947  4.09265061  7.69870816
+  5.75        5.         12.16258367  5.93006694  6.3496653  11.235
+  5.6575502   7.69       10.25       11.25       16.84510041  6.92552343
+ 12.          7.39615796  5.83565731  6.93054621  6.82516735 12.
+ 11.73775102 10.09965461  7.6316707   7.09679249 10.09790628 10.65902008
+  5.86887551 11.15895314  7.87643641  7.15314057  6.74712719  6.32516735
+  8.78251673 10.83909771  7.58199331 11.41258367 12.12586882  7.91258367
+ 11.54915396  5.83741633  5.35104686 12.16258367  6.41258367  7.0991098
+  7.26694914  8.83679388 12.30565731  8.91372025  5.92307363  7.92307363
+ 19.65835348  5.73601339 10.32327306 11.89859706 10.08741633  6.17271755
+  9.67276032 11.36706025  5.74387551  8.57879788  9.95629184  8.53327445
+  7.74853012 11.25        6.32516735  5.71608033 11.65472155  7.74853012
+ 11.17521151  9.63112449  7.92307363  7.6503347   7.2737751   5.62761714
+ 10.6275502  11.15895314  4.66258367  8.22547927  5.30559037  9.91870816
+  5.82516735  6.90645919  8.69586882  6.73737216]
