@@ -1,5 +1,9 @@
 # build_metabase.py
 
+""" This is the script to build the metabase for meta-learning, to have a stronger 
+meta-learning module we should increase the number of tasks in CLASSIFICATION_TASKS
+and REGRESSION_TASKS """
+
 import openml
 import numpy as np
 import pandas as pd
